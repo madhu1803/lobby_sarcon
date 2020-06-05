@@ -72,4 +72,11 @@ body {
     background-size: cover;
     height: 500px;
     color: wheat;
+    position: relative;
+}
+
+#lobby .lobby-jumbotron-container .jumbotron .container {
+    position: absolute;
+    bottom: 50px;
+    left: 16px;
 }
