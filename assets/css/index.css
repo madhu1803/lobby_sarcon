@@ -93,6 +93,13 @@ body {
 
 /* grid system  jumbotron*/
 
+#lobby .grid-container .row .auditorium-container .jumbotron,
+#lobby .grid-container .row .exhibition-container .jumbotron,
+#lobby .grid-container .row .networking-container .jumbotron {
+    height: 500px;
+    position: relative;
+}
+
 #lobby .grid-container .row .auditorium-container .jumbotron {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
         url('https://images.unsplash.com/photo-1560184611-ff3e53f00e8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1187&q=80');
@@ -100,9 +107,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
     color: wheat;
-    position: relative;
 }
 
 #lobby .grid-container .row .exhibition-container .jumbotron {
@@ -112,9 +117,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
     color: wheat;
-    position: relative;
 }
 
 #lobby .grid-container .row .networking-container .jumbotron {
@@ -124,7 +127,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
     color: wheat;
-    position: relative;
+}
+
+#lobby .grid-container .row .event-guide-container .jumbotron,
+#lobby .grid-container .row .agenda-container .jumbotron,
+#lobby .grid-container .row .faq-container .jumbotron {
+    background-color: violet;
+    height: 170px;
 }
