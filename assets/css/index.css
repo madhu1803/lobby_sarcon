@@ -9,7 +9,8 @@ body {
 
 /* tabs section */
 .tabs-holder {
-    background: #2c5ed3;
+    background-image: linear-gradient(90deg, #133882 20%, #0164e5 80%) !important;
+    /* background: #2c5ed3; */
     height: 70px !important;
 }
 
