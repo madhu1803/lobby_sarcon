@@ -1,82 +1,81 @@
 html,
 body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 /* tabs section */
 .tabs-holder {
-    background-image: linear-gradient(90deg, #133882 20%, #0164e5 80%) !important;
-    /* background: #2c5ed3; */
-    height: 70px !important;
+  background-color: #133882;
+  height: 70px !important;
 }
 
 .tabs-holder .nav-tabs .nav-link.active,
 .tabs-holder .nav-tabs .nav-link {
-    background-color: transparent;
-    border: none;
-    color: white;
-    border-radius: 0;
-    padding: 10px 15px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  border-radius: 0;
+  padding: 10px 15px;
 }
 
 .tabs-holder .nav.nav-tabs {
-    text-align: center;
-    border: none;
-    overflow: auto;
-    white-space: nowrap;
-    display: block;
-    padding: 1% 0;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  text-align: center;
+  border: none;
+  overflow: auto;
+  white-space: nowrap;
+  display: block;
+  padding: 1% 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .tabs-holder .nav-tabs .nav-link:hover,
 .tabs-holder .nav-tabs .nav-link.active:hover {
-    background: white;
-    color: #2c5ed3 !important;
+  background: white;
+  color: #2c5ed3 !important;
 }
 
 .tabs-holder .nav-tabs .nav-link i {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .tabs-holder .nav-tabs .nav-item {
-    display: inline-block;
+  display: inline-block;
 }
 
-.tab-content>.tab-pane {
-    margin: 0;
-    padding: 0;
+.tab-content > .tab-pane {
+  margin: 0;
+  padding: 0;
 }
 
 .tabs-holder .nav-tabs .nav-item .tab-action-btn {
-    color: white;
-    margin-right: 20px !important;
+  color: white;
+  margin-right: 20px !important;
 }
 
 .tabs-holder .nav-tabs .nav-item .tab-action-btn:hover {
-    color: #2c5ed3 !important;
+  color: #2c5ed3 !important;
 }
 
 /* lobby tab content */
 
 /* lobby header image jumbotron */
 #lobby .lobby-jumbotron-container .jumbotron {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
-        url('https://images.unsplash.com/photo-1583953458882-302655b5c376?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    color: wheat;
-    position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url("https://images.unsplash.com/photo-1583953458882-302655b5c376?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  color: wheat;
+  position: relative;
 }
 
 /* #lobby .lobby-jumbotron-container .jumbotron .container {
@@ -86,52 +85,53 @@ body {
 } */
 
 #lobby .jumbotron .container {
-    position: absolute;
-    bottom: 50px;
-    left: 16px;
+  position: absolute;
+  bottom: 50px;
+  left: 16px;
 }
 
 /* grid system  jumbotron*/
 #lobby .grid-container .row .auditorium-container .jumbotron,
 #lobby .grid-container .row .exhibition-container .jumbotron,
 #lobby .grid-container .row .networking-container .jumbotron {
-    height: 500px;
-    position: relative;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  height: 500px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #lobby .grid-container .row .auditorium-container .jumbotron {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
-        url('https://images.unsplash.com/photo-1560184611-ff3e53f00e8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1187&q=80');
-    color: wheat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url("https://images.unsplash.com/photo-1560184611-ff3e53f00e8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1187&q=80");
+  color: wheat;
 }
 
 #lobby .grid-container .row .exhibition-container .jumbotron {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
-        url('https://images.unsplash.com/photo-1518998053901-5348d3961a04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80');
-    color: wheat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url("https://images.unsplash.com/photo-1518998053901-5348d3961a04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80");
+  color: wheat;
 }
 
 #lobby .grid-container .row .networking-container .jumbotron {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
-        url('https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80');
-    color: wheat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url("https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80");
+  color: wheat;
 }
 
 #lobby .grid-container .row .event-guide-container .jumbotron,
 #lobby .grid-container .row .agenda-container .jumbotron,
 #lobby .grid-container .row .faq-container .jumbotron {
-    height: 170px;
-    background-image: linear-gradient(90deg, #133882 20%, #0164e5 80%) !important;
-    color: white;
+  height: 170px;
+  background-color: #133882;
+  /* background-image: linear-gradient(90deg, #133882 20%, #0164e5 80%) !important; */
+  color: white;
 }
 
 #lobby .grid-container .row .event-guide-container .jumbotron:hover,
 #lobby .grid-container .row .agenda-container .jumbotron:hover,
 #lobby .grid-container .row .faq-container .jumbotron:hover {
-    opacity: 0.8;
-    transition: opacity 0.3s;
+  opacity: 0.8;
+  transition: opacity 0.3s;
 }
