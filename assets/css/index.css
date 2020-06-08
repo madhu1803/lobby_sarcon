@@ -141,7 +141,7 @@ body {
 
 /* expo hall tab content */
 #exhibition_hall .expo-hall-jumbotron-container .jumbotron {
-  height: 400px;
+  height: 50vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
     url("https://images.unsplash.com/photo-1518998053901-5348d3961a04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80");
   color: wheat;
@@ -154,9 +154,12 @@ body {
 
 /* slick carousel  */
 
-
 #exhibition_hall .exhibitors-container .multiple-items {
-  margin: 40px 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 50vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 #exhibition_hall .exhibitors-container .multiple-items .slick-arrow {
@@ -164,5 +167,11 @@ body {
 }
 
 #exhibition_hall .exhibitors-container .multiple-items img {
-  /* height: 400px !important; */
+  height: 30vh;
+}
+
+@media (max-width: 576px) {
+  #exhibition_hall .exhibitors-container .multiple-items img {
+    height: 100px;
+  }
 }
