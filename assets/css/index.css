@@ -253,25 +253,6 @@ body {
   margin: 2% auto;
 }
 
-.alert {
-  background: #2c5ed3 !important;
-  color: white !important;
-}
-
-.event-item {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#event-modal-btn {
-  margin-top: 20px !important;
-  margin-bottom: 20px !important;
-}
-
-#event-modal-btn:hover {
-  background: #2c5ed3 !important;
-}
-
 #even-modal-body {
   max-height: 600px;
   overflow: auto;
@@ -279,9 +260,4 @@ body {
 
 #close-event-btn {
   color: white !important;
-}
-
-.event-room-modal-btn {
-  min-width: 150px;
-  margin-top: 10px;
 }
