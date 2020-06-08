@@ -159,9 +159,9 @@ body {
 #exhibition_hall .exhibitors-container .multiple-items {
   margin-left: 50px;
   margin-right: 50px;
-  height: 50vh;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  height: 40vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #exhibition_hall .exhibitors-container .multiple-items .slick-arrow {
@@ -173,6 +173,15 @@ body {
 }
 
 @media (max-width: 576px) {
+
+  #exhibition_hall .exhibitors-container .multiple-items {
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 30vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   #exhibition_hall .exhibitors-container .multiple-items img {
     height: 100px;
   }
