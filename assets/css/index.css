@@ -6,6 +6,7 @@ body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
   background-color: wheat;
+  box-sizing: border-box
 }
 
 /* tabs section */
