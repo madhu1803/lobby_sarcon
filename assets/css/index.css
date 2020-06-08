@@ -274,14 +274,12 @@ body {
 
 .event-body-container .events-list-container .list-group .list-group-item .event-content {
   width: 50%;
-}
-
-.event-body-container .events-list-container .list-group .list-group-item .event-content h6 {
-  margin-bottom: 0 !important;
+  min-width: 20%;
 }
 
 .event-body-container .events-list-container .list-group .list-group-item .event-content p {
-  font-size: 0.8rem !important;
+  font-size: 0.8rem;
+  margin-bottom: 0 !important;
 }
 
 .event-body-container .events-list-container .list-group .list-group-item .event-date-content .event-date {
