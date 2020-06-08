@@ -277,3 +277,9 @@ body {
   color: #133882;
   font-size: 25px;
 }
+
+@media (max-width: 768px) {
+  .event-list-item {
+    margin: 10px 10px !important;
+  }
+}
