@@ -84,7 +84,8 @@ body {
   position: relative;
 }
 
-#lobby .lobby-jumbotron-container .jumbotron .container {
+#lobby .lobby-jumbotron-container .jumbotron .container,
+#auditorium .jumbotron .container {
   position: absolute;
   bottom: 50px;
   left: 16px;
@@ -162,7 +163,7 @@ body {
 #auditorium .grid-container .row .agenda-container-1 .jumbotron,
 #auditorium .grid-container .row .agenda-container-2 .jumbotron,
 #auditorium .grid-container .row .faq-container .jumbotron {
-  height: 170px;
+  height: 300px;
   background-color: #133882;
   color: white;
 }
