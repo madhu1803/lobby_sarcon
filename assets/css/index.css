@@ -262,33 +262,13 @@ body {
   color: white !important;
 }
 
-.event-body-container .events-list-container .list-group .list-group-item {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-}
-
-.event-body-container .events-list-container .list-group .list-group-item .event-join-btn {
-  height: 50px;
-}
-
-.event-body-container .events-list-container .list-group .list-group-item .event-content {
-  width: 50%;
-  min-width: 20%;
-}
-
-.event-body-container .events-list-container .list-group .list-group-item .event-content p {
+.event-body-container .event-content-p {
   font-size: 0.8rem;
   margin-bottom: 0 !important;
 }
 
-.event-body-container .events-list-container .list-group .list-group-item .event-date-content .event-date {
-  position: absolute;
-  right: 100px;
-  top: 30px;
-}
 
-.event-body-container .events-list-container .list-group .list-group-item .event-icon i {
+.event-body-container i {
   position: absolute;
   right: 30px;
   top: 30px;
