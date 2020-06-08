@@ -174,33 +174,28 @@ body {
 }
 
 /* slick carousel  */
+#exhibition_hall .exhibitors-container {
+  height: 50vh;
+  background-color: #133882;
+  padding-top: 50px;
+}
+
 #exhibition_hall .exhibitors-container .multiple-items {
   margin-left: 50px;
   margin-right: 50px;
   height: 40vh;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 #exhibition_hall .exhibitors-container .multiple-items img {
   height: 30vh;
 }
 
+#exhibition_hall .exhibitors-container .multiple-items a {
+  color: white !important;
+}
+
 @media (max-width: 576px) {
-
-  #exhibition_hall .exhibitors-container .multiple-items {
-    margin-left: 50px;
-    margin-right: 50px;
-    height: 30vh;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
   #exhibition_hall .exhibitors-container .multiple-items img {
     height: 100px;
   }
-}
-
-#exhibition_hall .exhibitors-container .multiple-items .slick-arrow {
-  background-color: #133882 !important;
 }
