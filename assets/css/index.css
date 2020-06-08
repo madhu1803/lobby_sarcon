@@ -194,6 +194,10 @@ body {
   color: white !important;
 }
 
+#exhibition_hall .exhibitors-container .multiple-items p {
+  margin-bottom: 0 !important;
+}
+
 @media (max-width: 576px) {
   #exhibition_hall .exhibitors-container .multiple-items img {
     height: 100px;
