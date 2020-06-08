@@ -175,6 +175,17 @@ body {
   transition: opacity 0.3s;
 }
 
+@media (max-width: 768px) {
+
+  #auditorium .grid-container .row .agenda-container-1 .jumbotron,
+  #auditorium .grid-container .row .agenda-container-2 .jumbotron,
+  #auditorium .grid-container .row .faq-container .jumbotron {
+    height: 170px !important;
+    background-color: #133882;
+    color: white;
+  }
+}
+
 /* expo hall tab content */
 #exhibition_hall .expo-hall-jumbotron-container .jumbotron {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
