@@ -44,8 +44,8 @@ window.onresize = function (event) {
     if (width >= 992) {
         $(".multiple-items").slick({
             infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 2,
+            slidesToShow: 3,
+            slidesToScroll: 3,
             autoplay: true,
             autoplaySpeed: 2000,
         });

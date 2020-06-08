@@ -80,17 +80,17 @@ body {
   position: relative;
 }
 
-/* #lobby .lobby-jumbotron-container .jumbotron .container {
-    position: absolute;
-    bottom: 50px;
-    left: 16px;
-} */
-
-#lobby .jumbotron .container,
-#exhibition_hall .jumbotron .container {
+#lobby .lobby-jumbotron-container .jumbotron .container {
   position: absolute;
   bottom: 50px;
   left: 16px;
+}
+
+
+#exhibition_hall .jumbotron .container {
+  position: absolute;
+  bottom: 130px;
+  right: 0;
 }
 
 /* grid system  jumbotron*/
@@ -153,9 +153,7 @@ body {
 }
 
 /* slick carousel  */
-/* #exhibition_hall .exhibitors-container .multiple-items {
-  padding-top: 100px 10px;
-} */
+
 
 #exhibition_hall .exhibitors-container .multiple-items {
   margin: 40px 50px;
@@ -163,4 +161,8 @@ body {
 
 #exhibition_hall .exhibitors-container .multiple-items .slick-arrow {
   background-color: black !important;
+}
+
+#exhibition_hall .exhibitors-container .multiple-items img {
+  /* height: 400px !important; */
 }
