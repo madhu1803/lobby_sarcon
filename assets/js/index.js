@@ -47,6 +47,9 @@ $("#events-modal-btn").click(function () {
     eventmodal();
 });
 
+$(".tab-item").click(function () {
+    $("#eventmodal").addClass("d-none");
+});
 //on resizing window adjust slick carousel
 
 // window.onresize = function (event) {
