@@ -86,9 +86,6 @@ body {
   left: 16px;
 }
 
-
-
-
 /* grid system  jumbotron*/
 #lobby .grid-container .row .auditorium-container .jumbotron,
 #lobby .grid-container .row .exhibition-container .jumbotron,
@@ -135,9 +132,43 @@ body {
   transition: opacity 0.3s;
 }
 
+/* auditorium tab content */
+#auditorium .auditorium-jumbotron-container .jumbotron {
+  height: 350px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url("https://images.unsplash.com/photo-1560184611-ff3e53f00e8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1187&q=80");
+  color: wheat;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#auditorium .auditorium-jumbotron-container .jumbotron .container {
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+}
+
+@media (max-width: 330px) {
+  #auditorium .auditorium-jumbotron-container .jumbotron .container h1 {
+    font-size: 3.0rem;
+  }
+}
+
+
+#auditorium .grid-container .row .agenda-container-1 .jumbotron,
+#auditorium .grid-container .row .agenda-container-2 .jumbotron,
+#auditorium .grid-container .row .faq-container .jumbotron {
+  height: 170px;
+  background-color: #133882;
+  color: white;
+}
+
 /* expo hall tab content */
 #exhibition_hall .expo-hall-jumbotron-container .jumbotron {
-  height: 400px;
+  height: 350px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
     url("https://images.unsplash.com/photo-1518998053901-5348d3961a04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80");
   color: wheat;
@@ -150,7 +181,7 @@ body {
 
 #exhibition_hall .jumbotron .container {
   position: absolute;
-  bottom: 100px;
+  bottom: 80px;
   right: 0;
 }
 
