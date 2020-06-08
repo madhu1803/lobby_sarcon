@@ -37,6 +37,16 @@ $(document).ready(function () {
 
 });
 
+// Event Modal 
+//close event modal
+function eventmodal() {
+    $("#eventmodal").toggleClass("d-none");
+}
+//btn click
+$("#events-modal-btn").click(function () {
+    eventmodal();
+});
+
 //on resizing window adjust slick carousel
 
 // window.onresize = function (event) {
