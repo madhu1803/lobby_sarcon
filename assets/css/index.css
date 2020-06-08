@@ -261,3 +261,21 @@ body {
 #close-event-btn {
   color: white !important;
 }
+
+.event-body-container .events-list-container .list-group .list-group-item {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.event-body-container .events-list-container .list-group .list-group-item .event-date {
+  position: absolute;
+  right: 100px;
+  top: 30px;
+}
+
+.event-body-container .events-list-container .list-group .list-group-item i {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
