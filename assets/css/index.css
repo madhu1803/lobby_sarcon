@@ -5,7 +5,7 @@ body {
   padding: 0;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 /* tabs section */
@@ -51,7 +51,7 @@ body {
   display: inline-block;
 }
 
-.tab-content>.tab-pane {
+.tab-content > .tab-pane {
   margin: 0;
   padding: 0;
 }
@@ -156,7 +156,7 @@ body {
 
 @media (max-width: 330px) {
   #auditorium .auditorium-jumbotron-container .jumbotron .container h1 {
-    font-size: 3.0rem;
+    font-size: 3rem;
   }
 }
 
@@ -176,7 +176,6 @@ body {
 }
 
 @media (max-width: 768px) {
-
   #auditorium .grid-container .row .agenda-container-1 .jumbotron,
   #auditorium .grid-container .row .agenda-container-2 .jumbotron,
   #auditorium .grid-container .row .faq-container .jumbotron {
@@ -194,7 +193,6 @@ body {
 
 /* slick carousel  */
 #exhibition_hall .exhibitors-container {
-  height: 50vh;
   background-color: #133882;
   padding-top: 50px;
 }
@@ -202,11 +200,11 @@ body {
 #exhibition_hall .exhibitors-container .multiple-items {
   margin-left: 50px;
   margin-right: 50px;
-  height: 40vh;
 }
 
 #exhibition_hall .exhibitors-container .multiple-items img {
   height: 30vh;
+  margin-bottom: 50px;
 }
 
 #exhibition_hall .exhibitors-container .multiple-items a {
@@ -272,9 +270,7 @@ body {
   margin-bottom: 0 !important;
 }
 
-
 .event-body-container i {
-
   color: #133882;
   font-size: 25px;
 }
