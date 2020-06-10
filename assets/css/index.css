@@ -85,6 +85,10 @@ body {
   margin-left: 0px;
 }
 
+.tabs-holder .nav-tabs .fa-smile {
+  font-size: 23px !important;
+}
+
 .jumbotron {
   background-attachment: fixed;
   background-position: center;
