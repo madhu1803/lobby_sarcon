@@ -204,7 +204,7 @@ body {
 
 #exhibition_hall .exhibitors-container .multiple-items img {
   height: 30vh;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 #exhibition_hall .exhibitors-container .multiple-items a {
@@ -280,3 +280,7 @@ body {
     margin: 10px 10px !important;
   }
 }
+
+/* .slick-list.draggable {
+  width: 1100px !important;
+} */

@@ -19,7 +19,8 @@ $(document).ready(function () {
   } else if (width <= 576) {
     $(".multiple-items").slick({
       infinite: true,
-      slidesToShow: 2,
+      rows: 2,
+      slidesPerRow: 2,
       slidesToScroll: 2,
       autoplay: true,
       autoplaySpeed: 3000,
@@ -28,7 +29,8 @@ $(document).ready(function () {
   } else if (width >= 768 && width > 576) {
     $(".multiple-items").slick({
       infinite: true,
-      slidesToShow: 3,
+      rows: 2,
+      slidesPerRow: 3,
       slidesToScroll: 2,
       autoplay: true,
       autoplaySpeed: 3000,
