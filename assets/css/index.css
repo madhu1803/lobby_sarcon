@@ -26,7 +26,8 @@ body {
 .tabs-holder .nav.nav-tabs {
   text-align: center;
   border: none;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden !important;
   white-space: nowrap;
   display: block;
   padding: 1% 0;

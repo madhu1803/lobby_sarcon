@@ -4,8 +4,7 @@ AOS.init();
 //slick caorousel
 
 $(document).ready(function () {
-
-  width = $(window).width()
+  width = $(window).width();
   if (width >= 992) {
     $(".multiple-items").slick({
       rows: 2,
@@ -15,7 +14,6 @@ $(document).ready(function () {
       autoplay: true,
       autoplaySpeed: 3000,
     });
-
   } else if (width <= 576) {
     $(".multiple-items").slick({
       infinite: true,
@@ -24,7 +22,6 @@ $(document).ready(function () {
       slidesToScroll: 2,
       autoplay: true,
       autoplaySpeed: 3000,
-
     });
   } else if (width >= 768 && width > 576) {
     $(".multiple-items").slick({
@@ -34,13 +31,11 @@ $(document).ready(function () {
       slidesToScroll: 2,
       autoplay: true,
       autoplaySpeed: 3000,
-
     });
   }
-
 });
 
-// Event Modal 
+// Event Modal
 //close event modal
 function eventmodal() {
   $("#eventmodal").toggleClass("d-none");
