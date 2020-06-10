@@ -107,3 +107,6 @@ $(".tab-item").click(function () {
 //         });
 //     }
 // };
+function VirtualBooth() {
+  document.getElementById("virtual_booth").click();
+}
