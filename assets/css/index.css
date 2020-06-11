@@ -112,16 +112,14 @@ body {
 
 /* --------------------------------------- tab bar edit and business card profile modal -------------------------------------- */
 
-#profileModal .modal-dialog .modal-content .modal-header {
+#profileModal .modal-dialog .modal-content .modal-header,
+#businessCardModal .modal-dialog .modal-content .modal-header {
   background-color: #133882;
   color: white;
 }
 
-/* #profileModal .modal-dialog .modal-body {
-  overflow: auto;
-} */
-
-#profileModal .close {
+#profileModal .close,
+#businessCardModal .close {
   color: white !important;
 }
 
@@ -130,13 +128,20 @@ body {
   margin-bottom: 10px;
 }
 
-#profileModal .modal-dialog .modal-footer .btn {
+#profileModal .modal-dialog .modal-footer .btn,
+#businessCardModal .modal-dialog .modal-footer .btn {
   background-color: #133882 !important;
   color: white;
 }
 
+#businessCardModal .modal-dialog .modal-content .modal-body h6,
+#businessCardModal .modal-dialog .modal-content .modal-body h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
 @media (min-width: 768px) {
+
   #profileModal .modal-dialog {
     max-width: 1000px !important;
     margin: 2rem auto !important;
@@ -145,7 +150,9 @@ body {
 }
 
 @media (max-width: 576px) {
-  #profileModal .modal-dialog {
+
+  #profileModal .modal-dialog,
+  #businessCardModal .modal-dialog {
     max-width: 500px !important;
     margin: 2rem auto !important;
     padding: 20px !important;
