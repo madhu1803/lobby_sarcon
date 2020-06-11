@@ -1,3 +1,4 @@
+/* --------------------------------------------------- body ---------------------------------------------------------------- */
 html,
 body {
   height: 100%;
@@ -7,6 +8,8 @@ body {
   overflow-x: hidden;
   box-sizing: border-box;
 }
+
+/* --------------------------------------------------- tab bar section ------------------------------------------------------ */
 
 /* tabs section */
 .tabs-holder {
@@ -66,7 +69,7 @@ body {
   color: #2c5ed3 !important;
 }
 
-/* profile dropdown */
+/* --------------------------------------------------- tab bar profile dropdown ----------------------------------------------- */
 
 .dropdown-submenu {
   position: relative;
@@ -76,7 +79,6 @@ body {
   content: "\f0da";
   float: right;
   border: none;
-  font-family: "FontAwesome";
 }
 
 .dropdown-submenu>.dropdown-menu {
@@ -90,6 +92,72 @@ body {
   font-size: 23px !important;
 }
 
+#emoji_dropdownMenu1 {
+  position: fixed;
+  /* visibility: hidden; */
+  opacity: 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .sub_menu_responsive.dropdown-menu {
+    position: inherit !important;
+    left: 0 !important;
+  }
+
+  .tabs-holder .nav.nav-tabs {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+/* --------------------------------------------------- tab bar edit profile modal -------------------------------------------- */
+
+#profileModal .modal-dialog .modal-content .modal-header {
+  background-color: #133882;
+  color: white;
+}
+
+#profileModal .close {
+  color: white !important;
+}
+
+#profileModal .col-md-6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#profileModal .modal-dialog .modal-footer .btn {
+  background-color: #133882 !important;
+  color: white;
+}
+
+
+@media (min-width: 768px) {
+  #profileModal .modal-dialog {
+    max-width: 1000px !important;
+    margin: 2rem auto !important;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  #profileModal .modal-dialog {
+    max-width: 500px !important;
+    margin: 2rem auto !important;
+    padding: 20px !important;
+  }
+
+  #profileModal .modal-body {
+    height: 300px;
+    overflow-y: auto;
+  }
+
+  #profileModal .modal-footer .profile-modal-footer-btn {
+    text-align: center;
+  }
+}
+
+/* --------------------------------------------------tab contents------------------------------------------------------------ */
 .jumbotron {
   background-attachment: fixed;
   background-position: center;
@@ -98,7 +166,7 @@ body {
   position: relative;
 }
 
-/* lobby tab content */
+/* --------------------------------------------------- lobby tab content ---------------------------------------------------- */
 
 /* lobby header image jumbotron */
 #lobby .lobby-jumbotron-container .jumbotron {
@@ -156,7 +224,7 @@ body {
   transition: opacity 0.3s;
 }
 
-/* auditorium and exhibition jumbotron tab content */
+/*-------------------------------- auditorium and exhibition jumbotron tab content ----------------------------------------*/
 
 #auditorium .auditorium-jumbotron-container .jumbotron,
 #exhibition_hall .expo-hall-jumbotron-container .jumbotron {
@@ -173,7 +241,7 @@ body {
   right: 0;
 }
 
-/* auditorium tab content */
+/*---------------------------------------------- auditorium tab content ----------------------------------------------------*/
 #auditorium .auditorium-jumbotron-container .jumbotron {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
     url("https://images.unsplash.com/photo-1560184611-ff3e53f00e8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1187&q=80");
@@ -211,7 +279,7 @@ body {
   }
 }
 
-/* auditorium event modal  */
+/* ---------------------------------------------------auditorium event modal-----------------------------------------  */
 .event-modal-dialog {
   max-width: 90% !important;
   width: 90% !important;
@@ -271,7 +339,7 @@ body {
   }
 }
 
-/* expo hall tab content */
+/*-----------------------------------------------  expo hall tab content ----------------------------------------------------*/
 #exhibition_hall .expo-hall-jumbotron-container .jumbotron {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
     url("https://images.unsplash.com/photo-1518998053901-5348d3961a04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80");
@@ -307,7 +375,7 @@ body {
   }
 }
 
-/*  booth expo hall  */
+/*------------------------------------------------  booth expo hall  ------------------------------------------------ */
 #booth {
   height: 100%;
   margin: 0;
@@ -503,22 +571,4 @@ body {
   /* You can set the dimensions to whatever you want */
   height: 200px;
   object-fit: cover;
-}
-
-#emoji_dropdownMenu1 {
-  position: fixed;
-  /* visibility: hidden; */
-  opacity: 0;
-}
-
-@media only screen and (max-width: 900px) {
-  .sub_menu_responsive.dropdown-menu {
-    position: inherit !important;
-    left: 0 !important;
-  }
-
-  .tabs-holder .nav.nav-tabs {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
 }

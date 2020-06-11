@@ -74,7 +74,7 @@
     <a id="emoji_dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
         class="nav-link dropdown-toggle"><i class="far fa-smile"></i></a>
     <ul id="emoji_dropdownMenu1_content" aria-labelledby="emoji_dropdownMenu1" class="dropdown-menu border-0 shadow">
-        <li><a href="#" class="dropdown-item">Edit profile </a></li>
+        <li><a href="#" class="dropdown-item" data-toggle="modal" data-target="#profileModal">Edit profile </a></li>
         <!-- Level two dropdown-->
         <li class="dropdown-submenu">
             <a id="emoji_dropdownMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -587,6 +587,154 @@
         </div>
     </div>
     <!-- Tab Panes End -->
+
+    <!-- Edit Profile Modal -->
+    <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <label for="first_name">First Name</label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Madhumithaa"
+                                                id="first_name" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <label for="last_name">Last Name</label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="last_name"
+                                                placeholder="Saravanane" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <label for="job_title">Job Ttile</label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="job_title" placeholder="Manager"
+                                                readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <label for="designation_name">Designation Name</label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="designation_name"
+                                                placeholder="Test Company" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <label for="mobile_no">Mobile Number</label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="mobile_no"
+                                                placeholder="938092123" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <label for="email_address">Email Address</label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="email_address"
+                                                placeholder="madhu@gmail.com" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- col-md- 6-->
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <label for="facebook_profile">Facebook Profile</label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="facebook_profile"
+                                                placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- col-md- 6-->
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <label for="linkdin_profile">Linkedin Profile</label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="linkdin_profile" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- col-md- 6-->
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <label for="profile_picture">Upload DP</label>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="form-group">
+                                            <input type="file" class="form-control-file" id="profile_picture">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- col-md- 6-->
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="profile-modal-footer-btn">
+                        <button type="button" class="btn btn-primary mt-1 mb-1">View
+                            Business Card</button>
+                        <button type="button" class="btn btn-secondary mt-1 mb-1" data-dismiss="modal">Save changes &
+                            close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Agenda Modal -->
     <div class="modal-dialog event-modal-dialog d-none" role="document" id="eventmodal">
