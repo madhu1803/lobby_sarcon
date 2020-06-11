@@ -13,20 +13,6 @@
     <title>Hello, world!</title>
 </head>
 <style>
-    /* #profileModal {
-        max-width: 5000px !important;
-    } */
-
-    /* #profileModal .modal-dialog .modal-content .modal-body {
-        overflow: auto;
-
-    } */
-
-    #profileModal .col-md-6 {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
     @media (min-width: 768px) {
         #profileModal .modal-dialog {
             max-width: 1000px !important;
@@ -41,6 +27,35 @@
             margin: 2rem auto !important;
             padding: 20px !important;
         }
+
+        #profileModal .modal-body {
+            height: 300px;
+            overflow-y: auto;
+        }
+
+        #profileModal .modal-footer .profile-modal-footer-btn {
+            text-align: center;
+        }
+    }
+
+
+    #profileModal .modal-dialog .modal-content .modal-header {
+        background-color: #133882;
+        color: white;
+    }
+
+    #profileModal .close {
+        color: white !important;
+    }
+
+    #profileModal .col-md-6 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #profileModal .modal-dialog .modal-footer .btn {
+        background-color: #133882 !important;
+        color: white;
     }
 </style>
 
@@ -187,8 +202,12 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <div class="profile-modal-footer-btn">
+                        <button type="button" class="btn btn-primary mt-1 mb-1">View
+                            Business Card</button>
+                        <button type="button" class="btn btn-secondary mt-1 mb-1" data-dismiss="modal">Save changes &
+                            close</button>
+                    </div>
                 </div>
             </div>
         </div>
