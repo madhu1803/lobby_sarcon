@@ -148,8 +148,12 @@ body {
   }
 
   #profileModal .modal-body {
-    height: 300px;
+    height: 320px;
     overflow-y: auto;
+  }
+
+  #profileModal .modal-footer {
+    padding: 0.5rem !important;
   }
 
   #profileModal .modal-footer .profile-modal-footer-btn {
