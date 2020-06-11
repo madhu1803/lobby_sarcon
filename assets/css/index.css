@@ -52,7 +52,7 @@ body {
   display: inline-block;
 }
 
-.tab-content > .tab-pane {
+.tab-content>.tab-pane {
   margin: 0;
   padding: 0;
 }
@@ -65,20 +65,21 @@ body {
 .tabs-holder .nav-tabs .nav-item .tab-action-btn:hover {
   color: #2c5ed3 !important;
 }
+
 /* profile dropdown */
 
 .dropdown-submenu {
   position: relative;
 }
 
-.dropdown-submenu > a:after {
+.dropdown-submenu>a:after {
   content: "\f0da";
   float: right;
   border: none;
   font-family: "FontAwesome";
 }
 
-.dropdown-submenu > .dropdown-menu {
+.dropdown-submenu>.dropdown-menu {
   top: 0;
   left: 100%;
   margin-top: 0px;
@@ -200,6 +201,7 @@ body {
 }
 
 @media (max-width: 768px) {
+
   #auditorium .grid-container .row .agenda-container-1 .jumbotron,
   #auditorium .grid-container .row .agenda-container-2 .jumbotron,
   #auditorium .grid-container .row .faq-container .jumbotron {
@@ -315,6 +317,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 #booth .main-container {
   width: 100%;
   padding: 50px;
@@ -368,7 +371,7 @@ body {
 }
 
 #booth .nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
+.nav-pills .show>.nav-link {
   color: #fff;
   background-image: linear-gradient(90deg, #133882 20%, #0164e5 80%) !important;
 }
@@ -380,6 +383,7 @@ body {
     min-height: 390px;
   }
 }
+
 #booth .col-md-9 .tab-content {
   background: white;
 }
@@ -418,24 +422,13 @@ body {
   color: white;
   font-size: 30px;
 }
-#booth
-  .col-md-9
-  .tab-content
-  .tab-pane
-  .content
-  .gradient-container
-  .download-btn {
+
+#booth .col-md-9 .tab-content .tab-pane .content .gradient-container .download-btn {
   color: #0264e5;
 }
 
 @media (min-width: 577px) {
-  #booth
-    .col-md-9
-    .tab-content
-    .tab-pane
-    .content
-    .gradient-container
-    .download-btn {
+  #booth .col-md-9 .tab-content .tab-pane .content .gradient-container .download-btn {
     position: absolute;
     right: 10px;
     bottom: 8px;
@@ -443,13 +436,7 @@ body {
 }
 
 @media (max-width: 576px) {
-  #booth
-    .col-md-9
-    .tab-content
-    .tab-pane
-    .content
-    .gradient-container
-    .download-btn {
+  #booth .col-md-9 .tab-content .tab-pane .content .gradient-container .download-btn {
     margin-bottom: 10px;
   }
 }
@@ -512,7 +499,26 @@ body {
 
 /* image gallery container  tab */
 #booth .col-md-9 .tab-content .tab-pane .content .image-gallery-container img {
-  width: 200px; /* You can set the dimensions to whatever you want */
+  width: 200px;
+  /* You can set the dimensions to whatever you want */
   height: 200px;
   object-fit: cover;
+}
+
+#emoji_dropdownMenu1 {
+  position: fixed;
+  /* visibility: hidden; */
+  opacity: 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .sub_menu_responsive.dropdown-menu {
+    position: inherit !important;
+    left: 0 !important;
+  }
+
+  .tabs-holder .nav.nav-tabs {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }

@@ -110,3 +110,34 @@ $(".tab-item").click(function () {
 function VirtualBooth() {
   document.getElementById("virtual_booth").click();
 }
+
+// there are two buttons
+// the button u see with an emoji => dummy button
+// the other button hidden => acutal button
+// on resize and scroll get the position of the dummy button and place the actual button over it
+function emoji_button_position() {
+  let dummy_button = $("#emoji_button");
+  let actual_button = $("#emoji_dropdownMenu1");
+  let dummy_position = dummy_button.offset();
+
+  let top_px = `${dummy_position.top}px`;
+  let left_px = `${dummy_position.left}px`;
+
+  actual_button.css("top", top_px);
+  actual_button.css("left", left_px);
+  actual_button.css("width", `${dummy_button.width() + 18}px`);
+
+  console.log(top_px, left_px);
+}
+
+window.addEventListener("resize", function () {
+  emoji_button_position();
+});
+
+window.onload = function () {
+  emoji_button_position();
+};
+
+$("#myTab").scroll(function () {
+  emoji_button_position();
+});
