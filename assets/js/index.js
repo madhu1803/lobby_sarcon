@@ -43,8 +43,8 @@ $(document).ready(function () {
       slidesPerRow: 3,
       infinite: true,
       slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 3000,
+      // autoplay: true,
+      // autoplaySpeed: 3000,
     });
   } else if (width <= 576) {
     $(".multiple-items").slick({
@@ -52,8 +52,8 @@ $(document).ready(function () {
       rows: 2,
       slidesPerRow: 2,
       slidesToScroll: 2,
-      autoplay: true,
-      autoplaySpeed: 3000,
+      // autoplay: true,
+      // autoplaySpeed: 3000,
     });
   } else if (width >= 768 && width > 576) {
     $(".multiple-items").slick({
@@ -61,8 +61,8 @@ $(document).ready(function () {
       rows: 2,
       slidesPerRow: 3,
       slidesToScroll: 2,
-      autoplay: true,
-      autoplaySpeed: 3000,
+      // autoplay: true,
+      // autoplaySpeed: 3000,
     });
   }
 });
