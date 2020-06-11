@@ -117,6 +117,10 @@ body {
   color: white;
 }
 
+#profileModal .modal-dialog .modal-body {
+  overflow: auto;
+}
+
 #profileModal .close {
   color: white !important;
 }
