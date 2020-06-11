@@ -27,6 +27,12 @@ $(function () {
   });
 });
 
+//Business card modal
+
+function openBusinessCardModal() {
+  $('#businessCardModal').modal('show');
+}
+
 //slick caorousel
 
 $(document).ready(function () {

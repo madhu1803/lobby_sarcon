@@ -110,16 +110,16 @@ body {
   }
 }
 
-/* --------------------------------------------------- tab bar edit profile modal -------------------------------------------- */
+/* --------------------------------------- tab bar edit and business card profile modal -------------------------------------- */
 
 #profileModal .modal-dialog .modal-content .modal-header {
   background-color: #133882;
   color: white;
 }
 
-#profileModal .modal-dialog .modal-body {
+/* #profileModal .modal-dialog .modal-body {
   overflow: auto;
-}
+} */
 
 #profileModal .close {
   color: white !important;
