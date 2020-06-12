@@ -33,6 +33,19 @@ function openBusinessCardModal() {
   $('#businessCardModal').modal('show');
 }
 
+// Notification Modal
+// minimize modal
+$("#minimize-btn").click(function () {
+  $(".notification-modal-class").toggleClass("d-none");
+});
+
+//on load minimize notification modal
+$("#minimize-btn").click();
+
+function toggleAnnouncementsModal() {
+  $("#notification-modal-dialog").toggleClass("d-none");
+}
+
 //slick caorousel
 
 $(document).ready(function () {

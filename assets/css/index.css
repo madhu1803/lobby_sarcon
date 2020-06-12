@@ -172,6 +172,57 @@ body {
   }
 }
 
+
+/*---------------------------------------------------- notification modal -------------------------------------------*/
+#notification-modal-dialog {
+  min-width: 280px;
+  max-width: 200px;
+  position: fixed;
+  bottom: -15px;
+  right: 10px;
+  max-height: 88vh;
+  z-index: 1000;
+}
+
+#notification-modal-header {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  color: #133882 !important;
+}
+
+#minimize-btn {
+  position: absolute;
+  right: 40px;
+  color: #133882 !important;
+}
+
+.modal-dialog-scrollable .modal-body {
+  max-height: 85vh;
+  overflow-y: auto !important;
+}
+
+.list-group-item,
+.list-group-item:first-child {
+  border: none !important;
+  padding: 0 !important;
+}
+
+.notification-username {
+  background-color: #133882;
+}
+
+@media only screen and (max-width: 450px) {
+  #notification-modal-dialog {
+    max-width: 100%;
+    right: 5px;
+    left: 5px;
+  }
+
+  .image-logo-position {
+    display: none;
+  }
+}
+
 /* --------------------------------------------------tab contents------------------------------------------------------------ */
 .jumbotron {
   background-attachment: fixed;

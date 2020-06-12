@@ -783,6 +783,125 @@
         </div>
     </div>
 
+    <!-- notification modal -->
+    <div class="modal-dialog modal-dialog-scrollable " role="document" id="notification-modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" id="notification-modal-header">
+                <h4 class="modal-title"><i class="fas fa-volume-down"></i></h4>
+                <button id="minimize-btn"> <i class='fa fa-minus'></i> </button>
+                <button type="button" class="close" onclick="toggleAnnouncementsModal()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body notification-modal-class" id="notification-modal-body">
+                <div class="list-group" id="list-messages">
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+                        <div class="d-flex w-100 justify-content-between">
+                            <div class="media w-100 mb-3">
+                                <div class="media-body">
+                                    <div class="notification-username mb-2 px-3 py-2">
+                                        <p class="text-small mb-0 text-white">Ashish chaudary</p>
+                                    </div>
+                                    <div class="bg-white rounded py-2 px-3 mb-2">
+                                        <p class="text-small mb-0 text-muted">Test which
+                                            is a new approach all
+                                            solutions</p>
+                                    </div>
+                                    <p class="small text-muted  ml-3">12:00 PM | Aug 13</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <div class="media w-100 mb-3">
+                                <div class="media-body  ">
+                                    <div class="notification-username mb-2 px-3 py-2 text-white">
+                                        <p class="text-small mb-0 text-white">Ashish chaudary</p>
+                                    </div>
+                                    <div class="bg-white rounded py-2 px-3 mb-2">
+                                        <p class="text-small mb-0 text-muted">Test which
+                                            is a new approach all
+                                            solutions</p>
+                                    </div>
+                                    <p class="small text-muted ml-3">12:00 PM | Aug 13</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <div class="media w-100 mb-3">
+                                <div class="media-body  ">
+                                    <div class="notification-username mb-2 px-3 py-2 text-white">
+                                        <p class="text-small mb-0 text-white">Ashish chaudary</p>
+                                    </div>
+                                    <div class="bg-white rounded py-2 px-3 mb-2">
+                                        <p class="text-small mb-0 text-muted">Test which
+                                            is a new approach all
+                                            solutions</p>
+                                    </div>
+                                    <p class="small text-muted ml-3">12:00 PM | Aug 13</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <div class="media w-100 mb-3">
+                                <div class="media-body  ">
+                                    <div class="notification-username mb-2 px-3 py-2 text-white">
+                                        <p class="text-small mb-0 text-white">Ashish chaudary</p>
+                                    </div>
+                                    <div class="bg-white rounded py-2 px-3 mb-2">
+                                        <p class="text-small mb-0 text-muted">Test which
+                                            is a new approach all
+                                            solutions</p>
+                                    </div>
+                                    <p class="small text-muted ml-3">12:00 PM | Aug 13</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <div class="media w-100 mb-3">
+                                <div class="media-body ">
+                                    <div class="notification-username mb-2 px-3 py-2 text-white">
+                                        <p class="text-small mb-0 text-white">Ashish chaudary</p>
+                                    </div>
+                                    <div class="bg-white rounded py-2 px-3 mb-2">
+                                        <p class="text-small mb-0 text-muted">Test which
+                                            is a new approach all
+                                            solutions</p>
+                                    </div>
+                                    <p class="small text-muted  ml-3">12:00 PM | Aug 13</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <div class="media w-100 mb-3">
+                                <div class="media-body">
+                                    <div class="notification-username mb-2 px-3 py-2 text-white">
+                                        <p class="text-small mb-0 text-white">Ashish chaudary</p>
+                                    </div>
+                                    <div class="bg-white rounded py-2 px-3 mb-2">
+                                        <p class="text-small mb-0 text-muted ">Test which
+                                            is a new approach all
+                                            solutions</p>
+                                    </div>
+                                    <p class="small text-muted ml-3">12:00 PM | Aug 13</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Agenda Modal -->
     <div class="modal-dialog event-modal-dialog d-none" role="document" id="eventmodal">
         <div class="modal-content">
@@ -965,10 +1084,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <!-- Slick Carousel JS -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
