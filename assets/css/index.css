@@ -387,6 +387,17 @@ body {
   margin-bottom: 0 !important;
 }
 
+@media (min-width: 768px) {
+  .slick-slide {
+    height: 77vh !important;
+  }
+
+  .slick-slide .slick-current {
+    /* padding-left: 100px !important;
+    width: 1000px !important; */
+  }
+}
+
 @media (max-width: 576px) {
   #exhibition_hall .exhibitors-container .multiple-items img {
     height: 100px;
