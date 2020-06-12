@@ -160,3 +160,9 @@ window.onload = function () {
 $("#myTab").scroll(function () {
   emoji_button_position();
 });
+
+$('body').scroll(function () {
+  if ($(this).scrollTop() > 10 && $('#emoji_dropdownMenu1_content').hasClass('show')) {
+    $('#emoji_dropdownMenu1').click()
+  }
+});
