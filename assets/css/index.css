@@ -174,10 +174,17 @@ body {
 
 
 /*---------------------------------------------------- notification modal -------------------------------------------*/
+#notification-btn {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  z-index: 1000;
+}
+
 #notification-modal-dialog {
   min-width: 280px;
   max-width: 200px;
-  position: fixed;
+  position: absolute;
   bottom: -15px;
   right: 10px;
   max-height: 88vh;
@@ -187,12 +194,6 @@ body {
 #notification-modal-header {
   padding-top: 10px !important;
   padding-bottom: 10px !important;
-  color: #133882 !important;
-}
-
-#minimize-btn {
-  position: absolute;
-  right: 40px;
   color: #133882 !important;
 }
 

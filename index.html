@@ -783,12 +783,17 @@
         </div>
     </div>
 
+    <!-- notification modal btn icon -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" onclick="toggleAnnouncementsModal()"
+        id="notification-btn">
+        <i class="fas fa-volume-up"></i>
+    </button>
+
     <!-- notification modal -->
     <div class="modal-dialog modal-dialog-scrollable " role="document" id="notification-modal-dialog">
         <div class="modal-content">
             <div class="modal-header" id="notification-modal-header">
-                <h4 class="modal-title"><i class="fas fa-volume-down"></i></h4>
-                <button id="minimize-btn"> <i class='fa fa-minus'></i> </button>
+                <h5 class="modal-title">Announcements</h5>
                 <button type="button" class="close" onclick="toggleAnnouncementsModal()">
                     <span aria-hidden="true">&times;</span>
                 </button>

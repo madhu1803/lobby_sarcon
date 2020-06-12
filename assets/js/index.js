@@ -1,6 +1,6 @@
 // aos init
 AOS.init();
-
+toggleAnnouncementsModal()
 // dropdown profile
 $(function () {
   // ------------------------------------------------------- //
