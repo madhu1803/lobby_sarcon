@@ -264,6 +264,28 @@
         .modal-open #chatModal.modal {
             overflow-y: hidden !important;
         }
+
+        .main {
+            width: 50%;
+        }
+
+        /* Bootstrap 4 text input with search icon */
+
+        .has-search .form-control {
+            padding-left: 2.375rem;
+        }
+
+        .has-search .form-control-feedback {
+            position: absolute;
+            z-index: 2;
+            display: block;
+            width: 2.375rem;
+            height: 2.375rem;
+            line-height: 2.375rem;
+            text-align: center;
+            pointer-events: none;
+            color: #aaa;
+        }
     </style>
 </head>
 
@@ -287,6 +309,14 @@
 
                                     <div class="header">
                                         <p>Online Users</p>
+                                        <nav class="navbar navbar-light">
+                                            <form class="form-inline">
+                                                <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                                    aria-label="Search">
+                                                <button class="btn btn-outline-success my-2 my-sm-0"
+                                                    type="submit">Search</button>
+                                            </form>
+                                        </nav>
                                     </div>
                                     <div class="header_content">
                                         <div class="message_indicator_box to_messages">
