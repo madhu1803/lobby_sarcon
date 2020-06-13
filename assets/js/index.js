@@ -1,6 +1,7 @@
 // aos init
 AOS.init();
 toggleAnnouncementsModal();
+
 // dropdown profile
 $(function () {
   // ------------------------------------------------------- //
@@ -28,7 +29,6 @@ $(function () {
 });
 
 //Business card modal
-
 function openBusinessCardModal() {
   $("#businessCardModal").modal("show");
 }
@@ -41,13 +41,11 @@ $("#minimize-btn").click(function () {
 
 //on load minimize notification modal
 $("#minimize-btn").click();
-
 function toggleAnnouncementsModal() {
   $("#notification-modal-dialog").toggleClass("d-none");
 }
 
 //slick caorousel
-
 $(document).ready(function () {
   width = $(window).width();
   if (width >= 992) {
@@ -92,6 +90,7 @@ $("#events-modal-btn").click(function () {
 
 $(".tab-item").click(function () {
   $("#eventmodal").addClass("d-none");
+  $("#notification-modal-dialog").addClass("d-none");
 });
 //on resizing window adjust slick carousel
 
