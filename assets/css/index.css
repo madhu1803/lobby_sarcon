@@ -76,8 +76,7 @@ body {
 }
 
 .dropdown-submenu>a:after {
-  content: "\f0da";
-  float: right;
+
   border: none;
 }
 
