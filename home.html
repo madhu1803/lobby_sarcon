@@ -258,7 +258,11 @@
         #chatModal .modal-dialog .modal-body {
             padding: 0 !important;
             max-height: 90vh !important;
-            overflow: auto;
+            /* overflow: auto; */
+        }
+
+        .modal-open #chatModal.modal {
+            overflow-y: hidden !important;
         }
     </style>
 </head>
@@ -285,12 +289,18 @@
                                         <p>Online Users</p>
                                     </div>
                                     <div class="header_content">
-
                                         <div class="message_indicator_box to_messages">
                                             <img src="./assets/img/avatar.svg" />
                                             <p>Madhumithaa</p>
                                         </div>
-
+                                        <div class="message_indicator_box to_messages">
+                                            <img src="./assets/img/avatar.svg" />
+                                            <p>Madhumithaa</p>
+                                        </div>
+                                        <div class="message_indicator_box to_messages">
+                                            <img src="./assets/img/avatar.svg" />
+                                            <p>Madhumithaa</p>
+                                        </div>
                                     </div>
                                     <div class="header">
                                         <p>Other Users</p>
