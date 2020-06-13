@@ -907,6 +907,195 @@
         </div>
     </div>
 
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#chatModal" id="chat-modal-btn">
+        Quick Network Zone
+    </button>
+
+    <!-- Chat Modal -->
+    <div class="modal fade" id="chatModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container-fluid main_chat_screen_container">
+                        <div class="row">
+                            <!-- online users screen -- start -->
+                            <div class="col-lg-6 individual_screen online_users">
+                                <div class="scroll_content">
+
+                                    <div class="header">
+                                        <p>Online Users</p>
+                                    </div>
+                                    <div class="header_content">
+                                        <div class="message_indicator_box to_messages">
+                                            <img src="./assets/img/avatar.svg" />
+                                            <p>Madhumithaa</p>
+                                        </div>
+                                        <div class="message_indicator_box to_messages">
+                                            <img src="./assets/img/avatar.svg" />
+                                            <p>Madhumithaa</p>
+                                        </div>
+                                        <div class="message_indicator_box to_messages">
+                                            <img src="./assets/img/avatar.svg" />
+                                            <p>Madhumithaa</p>
+                                        </div>
+                                    </div>
+                                    <div class="header">
+                                        <p>Other Users</p>
+                                    </div>
+                                    <div class="header_content">
+
+                                        <div class="message_indicator_box to_messages company">
+                                            <img src="./assets/img/avatar.svg" />
+                                            <p>Madhumithaa</p>
+                                            <small>test company</small>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- online users screen -- end -->
+                            <!-- messages page -- start -->
+                            <div class="col-lg-6 individual_screen messages">
+                                <div class="messages_header">
+                                    <i class="fas fa-comments"></i>
+                                    <p>General Chat<button type="button" class="close" data-dismiss="modal"
+                                            aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button></p>
+                                    <i onclick="toggleChatRooms()" class="fas fa-times close_button"></i>
+                                </div>
+                                <div class="scroll_content messages_scroll">
+
+                                    <div class="single_message_container recipient">
+                                        <div class="single_message">
+                                            <div class="img_holder">
+                                                <img src="./assets/img/avatar.svg" />
+                                            </div>
+                                            <div class="message_text">
+                                                <p><b>Test Name 1:</b> <small>19, May 2019</small></p>
+                                                <p>Test here</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single_message_container myself">
+                                        <div class="single_message">
+                                            <div class="img_holder">
+                                                <img src="./assets/img/avatar.svg" />
+                                            </div>
+                                            <div class="message_text">
+                                                <p><b>Test Name 1:</b> <small>19, May 2019</small></p>
+                                                <p>Test here</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ============================ TODO: dummy content start ============================ -->
+                                    <div class="single_message_container recipient">
+                                        <div class="single_message">
+                                            <div class="img_holder">
+                                                <img src="./assets/img/avatar.svg" />
+                                            </div>
+                                            <div class="message_text">
+                                                <p><b>Test Name 1:</b> <small>19, May 2019</small></p>
+                                                <p>Test here</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single_message_container myself">
+                                        <div class="single_message">
+                                            <div class="img_holder">
+                                                <img src="./assets/img/avatar.svg" />
+                                            </div>
+                                            <div class="message_text">
+                                                <p><b>Test Name 1:</b> <small>19, May 2019</small></p>
+                                                <p>Test here</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single_message_container recipient">
+                                        <div class="single_message">
+                                            <div class="img_holder">
+                                                <img src="./assets/img/avatar.svg" />
+                                            </div>
+                                            <div class="message_text">
+                                                <p><b>Test Name 1:</b> <small>19, May 2019</small></p>
+                                                <p>Test here</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single_message_container recipient">
+                                        <div class="single_message">
+                                            <div class="img_holder">
+                                                <img src="./assets/img/avatar.svg" />
+                                            </div>
+                                            <div class="message_text">
+                                                <p><b>Test Name 1:</b> <small>19, May 2019</small></p>
+                                                <p>Test here</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single_message_container myself">
+                                        <div class="single_message">
+                                            <div class="img_holder">
+                                                <img src="./assets/img/avatar.svg" />
+                                            </div>
+                                            <div class="message_text">
+                                                <p><b>Test Name 1:</b> <small>19, May 2019</small></p>
+                                                <p>Test here</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single_message_container recipient">
+                                        <div class="single_message">
+                                            <div class="img_holder">
+                                                <img src="./assets/img/avatar.svg" />
+                                            </div>
+                                            <div class="message_text">
+                                                <p><b>Test Name 1:</b> <small>19, May 2019</small></p>
+                                                <p>Test here</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single_message_container recipient">
+                                        <div class="single_message">
+                                            <div class="img_holder">
+                                                <img src="./assets/img/avatar.svg" />
+                                            </div>
+                                            <div class="message_text">
+                                                <p><b>Test Name 1:</b> <small>19, May 2019</small></p>
+                                                <p>Test here</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single_message_container myself">
+                                        <div class="single_message">
+                                            <div class="img_holder">
+                                                <img src="./assets/img/avatar.svg" />
+                                            </div>
+                                            <div class="message_text">
+                                                <p><b>Test Name 1:</b> <small>19, May 2019</small></p>
+                                                <p>Test here</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ============================ TODO: dummy content end ============================ -->
+
+                                </div>
+                                <div class="input_holder">
+                                    <input placeholder="Enter Message" />
+                                    <button><i class="fas fa-paper-plane"></i></button>
+                                </div>
+                            </div>
+                            <!-- messages page -- end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Agenda Modal -->
     <div class="modal-dialog event-modal-dialog d-none" role="document" id="eventmodal">
         <div class="modal-content">

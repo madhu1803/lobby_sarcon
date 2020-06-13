@@ -121,7 +121,8 @@ body {
 }
 
 #profileModal .close,
-#businessCardModal .close {
+#businessCardModal .close,
+#chatModal .close {
   color: white !important;
 }
 
@@ -223,6 +224,264 @@ body {
     display: none;
   }
 }
+
+/* --------------------------------------------------- chat Modal ------------------------------------------------------------ */
+
+#chat-modal-btn {
+  position: absolute;
+  bottom: 30px;
+  right: 100px;
+  z-index: 1000;
+}
+
+.modal-open #chatModal.modal {
+  overflow-y: hidden !important;
+}
+
+@media (min-width: 768px) {
+  #chatModal .modal-dialog {
+    max-width: 1200px !important;
+    margin: 2rem auto !important;
+    padding: 20px;
+    max-height: 90vh !important;
+  }
+}
+
+#chatModal .modal-dialog .modal-body {
+  padding: 0 !important;
+  max-height: 90vh !important;
+  /* overflow: auto; */
+}
+
+.main_chat_screen_container,
+.main_chat_screen_container .row,
+.main_chat_screen_container .row .individual_screen {
+  height: 94vh;
+}
+
+.messages {
+  background: #fbfbfb;
+}
+
+.online_users {
+  background: #ffffff;
+  padding: 15px;
+  padding-top: 0;
+}
+
+.messages {
+  padding: 0;
+}
+
+.scroll_content {
+  overflow: auto;
+  height: 94vh;
+}
+
+.individual_screen .header {
+  border-bottom: 1px solid #b2b3b6;
+  padding-top: 15px;
+  position: relative;
+}
+
+.individual_screen .cursor {
+  cursor: pointer;
+}
+
+.individual_screen .header i {
+  position: absolute;
+  right: 10px;
+  top: 25px;
+  color: #2096f3;
+}
+
+.message_indicator_box {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 15px 15px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.message_indicator_box.active {
+  background-image: linear-gradient(90deg,
+      #2096f3 10%,
+      #409de2 30%,
+      #4ebeda 60%);
+}
+
+.message_indicator_box.active i {
+  color: white;
+}
+
+.message_indicator_box.active p {
+  color: white;
+}
+
+.message_indicator_box img {
+  height: 35px;
+}
+
+.message_indicator_box i {
+  color: #2096f3;
+}
+
+.message_indicator_box p {
+  margin: auto 15px;
+}
+
+.messages_header {
+  background: #2d2e33;
+  padding: 15px;
+}
+
+.messages_header .close_button {
+  float: right;
+  display: none;
+}
+
+.messages_header i {
+  color: #2096f3;
+  margin-right: 10px;
+}
+
+.messages_header p {
+  margin: 0;
+  display: inline;
+  color: white;
+}
+
+.input_holder {
+  border-top: 1px solid #e9e8e8;
+  padding: 15px 10px;
+  position: relative;
+}
+
+.input_holder input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #b2b3b6;
+}
+
+.input_holder button {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  border-radius: 100%;
+  background-color: #b2b3b6;
+}
+
+.input_holder button i {
+  color: white;
+}
+
+.messages_scroll {
+  width: 100%;
+  height: 77vh;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 10px 15px;
+}
+
+.single_message_container {
+  width: 100%;
+}
+
+.single_message {
+  max-width: 400px;
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.single_message_container.recipient .single_message {
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  background-color: #f2f2f2;
+}
+
+.single_message_container.myself .single_message {
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-right: 0;
+  margin-left: auto;
+  flex-direction: row-reverse;
+  background-image: linear-gradient(90deg,
+      #2096f3 10%,
+      #409de2 30%,
+      #4ebeda 60%);
+}
+
+.single_message_container.recipient .single_message .message_text p {
+  color: #828181;
+}
+
+.single_message_container.recipient .single_message .message_text p b,
+.single_message_container.recipient .single_message .message_text p small {
+  color: #828181;
+}
+
+.single_message .img_holder img {
+  width: 40px;
+}
+
+.single_message .img_holder {
+  padding-top: 10px;
+}
+
+.single_message .message_text {
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.single_message .message_text p {
+  margin-bottom: 5px;
+  color: white;
+}
+
+.single_message .message_text p b,
+.single_message .message_text p small {
+  color: white;
+}
+
+
+/* responsive scripts */
+@media screen and (max-width: 960px) {
+  .single_message {
+    max-width: 350px;
+  }
+
+  .messages_header .close_button {
+    display: block;
+  }
+}
+
+.message_indicator_box.company {
+  position: relative;
+}
+
+.message_indicator_box.company p {
+  margin-top: 0;
+}
+
+.message_indicator_box.company small {
+  position: absolute;
+  top: 40px;
+  left: 65px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+
+
 
 /* --------------------------------------------------tab contents------------------------------------------------------------ */
 .jumbotron {
