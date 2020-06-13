@@ -45,6 +45,28 @@ function toggleAnnouncementsModal() {
   $("#notification-modal-dialog").toggleClass("d-none");
 }
 
+// $(document).ready(function () {
+//   width = $(window).width();
+//   if (width <= 992) {
+//     $("#chatModal .close").click();
+//   }
+// });
+
+// Event Modal
+//close event modal
+function eventmodal() {
+  $("#eventmodal").toggleClass("d-none");
+}
+//btn click
+$("#events-modal-btn").click(function () {
+  eventmodal();
+});
+
+$(".tab-item").click(function () {
+  $("#eventmodal").addClass("d-none");
+  $("#notification-modal-dialog").addClass("d-none");
+});
+
 //slick caorousel
 $(document).ready(function () {
   width = $(window).width();
@@ -78,20 +100,6 @@ $(document).ready(function () {
   }
 });
 
-// Event Modal
-//close event modal
-function eventmodal() {
-  $("#eventmodal").toggleClass("d-none");
-}
-//btn click
-$("#events-modal-btn").click(function () {
-  eventmodal();
-});
-
-$(".tab-item").click(function () {
-  $("#eventmodal").addClass("d-none");
-  $("#notification-modal-dialog").addClass("d-none");
-});
 //on resizing window adjust slick carousel
 
 // window.onresize = function (event) {

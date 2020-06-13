@@ -269,6 +269,10 @@ body {
   padding-top: 0;
 }
 
+#chatModal .navbar {
+  padding: 0 !important;
+}
+
 .messages {
   padding: 0;
 }
@@ -479,8 +483,6 @@ body {
 a {
   text-decoration: none !important;
 }
-
-
 
 
 /* --------------------------------------------------tab contents------------------------------------------------------------ */
