@@ -1,6 +1,6 @@
 // aos init
 AOS.init();
-toggleAnnouncementsModal()
+toggleAnnouncementsModal();
 // dropdown profile
 $(function () {
   // ------------------------------------------------------- //
@@ -30,7 +30,7 @@ $(function () {
 //Business card modal
 
 function openBusinessCardModal() {
-  $('#businessCardModal').modal('show');
+  $("#businessCardModal").modal("show");
 }
 
 // Notification Modal
@@ -161,8 +161,11 @@ $("#myTab").scroll(function () {
   emoji_button_position();
 });
 
-$('body').scroll(function () {
-  if ($(this).scrollTop() > 10 && $('#emoji_dropdownMenu1_content').hasClass('show')) {
-    $('#emoji_dropdownMenu1').click()
+$("body").scroll(function () {
+  if (
+    $(this).scrollTop() > 10 &&
+    $("#emoji_dropdownMenu1_content").hasClass("show")
+  ) {
+    $("#emoji_dropdownMenu1").click();
   }
 });
