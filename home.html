@@ -31,14 +31,6 @@
 
         .online_users {
             background: #ffffff;
-        }
-
-        .chat_rooms {
-            background: #f2f2f2;
-        }
-
-        .chat_rooms,
-        .online_users {
             padding: 15px;
             padding-top: 0;
         }
@@ -224,19 +216,6 @@
             color: white;
         }
 
-        .custom_nav_bar {
-            justify-content: space-between !important;
-            background-color: #2096f3;
-            color: white;
-        }
-
-        .custom_nav_bar i {
-            color: white;
-        }
-
-        .custom_nav_bar .nav_icons {
-            display: none;
-        }
 
         /* responsive scripts */
         @media screen and (max-width: 960px) {
@@ -244,18 +223,9 @@
                 max-width: 350px;
             }
 
-            .custom_nav_bar .nav_icons {
-                display: block;
-            }
-
             .messages_header .close_button {
                 display: block;
             }
-        }
-
-        .custom_nav_bar .nav_icons button {
-            background-color: transparent;
-            border: none;
         }
 
         .message_indicator_box.company {
@@ -276,63 +246,19 @@
             text-decoration: none !important;
         }
 
-        /*announcements modal*/
-        /* notification modal */
-        #notification-modal-dialog {
-            min-width: 280px;
-            max-width: 200px;
-            position: fixed;
-            bottom: -15px;
-            right: 10px;
-            max-height: 88vh;
-            z-index: 1000;
-        }
-
-        #notification-modal-header {
-            padding-top: 10px !important;
-            padding-bottom: 10px !important;
-        }
-
-        #notification-modal-header .modal-title {
-            color: #3197f3 !important;
-        }
-
-        #minimize-btn .fa-minus {
-            color: #3197f3 !important;
-        }
-
-        #minimize-btn {
-            position: absolute;
-            right: 40px;
-        }
-
-        .list-group-item,
-        .list-group-item:first-child {
-            border: none !important;
-            padding: 0 !important;
-        }
-
-        .notification-username {
-            background-image: linear-gradient(90deg,
-                    #2096f3 10%,
-                    #409de2 30%,
-                    #4ebeda 60%);
-        }
-
-        @media only screen and (max-width: 450px) {
-            #notification-modal-dialog {
-                max-width: 100%;
-                right: 5px;
-                left: 5px;
-            }
-        }
-
         @media (min-width: 768px) {
             .modal-dialog {
                 max-width: 1200px !important;
                 margin: 2rem auto !important;
                 padding: 20px;
+                max-height: 90vh !important;
             }
+        }
+
+        .modal-body {
+            padding: 0 !important;
+            max-height: 70vh !important;
+            overflow: auto;
         }
     </style>
 </head>
