@@ -55,7 +55,7 @@ body {
   display: inline-block;
 }
 
-.tab-content>.tab-pane {
+.tab-content > .tab-pane {
   margin: 0;
   padding: 0;
 }
@@ -75,12 +75,11 @@ body {
   position: relative;
 }
 
-.dropdown-submenu>a:after {
-
+.dropdown-submenu > a:after {
   border: none;
 }
 
-.dropdown-submenu>.dropdown-menu {
+.dropdown-submenu > .dropdown-menu {
   top: 0;
   left: -100%;
   margin-top: 0px;
@@ -152,7 +151,6 @@ body {
 }
 
 @media (max-width: 576px) {
-
   #profileModal .modal-dialog,
   #businessCardModal .modal-dialog {
     max-width: 500px !important;
@@ -256,7 +254,7 @@ body {
 .main_chat_screen_container,
 .main_chat_screen_container .row,
 .main_chat_screen_container .row .individual_screen {
-  height: 90vh;
+  height: 85vh;
 }
 
 .messages {
@@ -279,7 +277,7 @@ body {
 
 .scroll_content {
   overflow: auto;
-  height: 90vh;
+  height: 85vh;
 }
 
 .individual_screen .header {
@@ -309,10 +307,12 @@ body {
 }
 
 .message_indicator_box.active {
-  background-image: linear-gradient(90deg,
-      #2096f3 10%,
-      #409de2 30%,
-      #4ebeda 60%);
+  background-image: linear-gradient(
+    90deg,
+    #2096f3 10%,
+    #409de2 30%,
+    #4ebeda 60%
+  );
 }
 
 .message_indicator_box.active i {
@@ -383,7 +383,7 @@ body {
 
 .messages_scroll {
   width: 100%;
-  height: 73vh;
+  height: 68vh;
   display: flex;
   flex-direction: column-reverse;
   padding: 10px 15px;
@@ -415,10 +415,12 @@ body {
   margin-right: 0;
   margin-left: auto;
   flex-direction: row-reverse;
-  background-image: linear-gradient(90deg,
-      #2096f3 10%,
-      #409de2 30%,
-      #4ebeda 60%);
+  background-image: linear-gradient(
+    90deg,
+    #2096f3 10%,
+    #409de2 30%,
+    #4ebeda 60%
+  );
 }
 
 .single_message_container.recipient .single_message .message_text p {
@@ -454,7 +456,6 @@ body {
   color: white;
 }
 
-
 /* responsive scripts */
 @media screen and (max-width: 960px) {
   .single_message {
@@ -483,7 +484,6 @@ body {
 a {
   text-decoration: none !important;
 }
-
 
 /* --------------------------------------------------tab contents------------------------------------------------------------ */
 .jumbotron {
@@ -597,7 +597,6 @@ a {
 }
 
 @media (max-width: 768px) {
-
   #auditorium .grid-container .row .agenda-container-1 .jumbotron,
   #auditorium .grid-container .row .agenda-container-2 .jumbotron,
   #auditorium .grid-container .row .faq-container .jumbotron {
@@ -609,11 +608,11 @@ a {
 
 /* ---------------------------------------------------auditorium event modal-----------------------------------------  */
 .event-modal-dialog {
-  max-width: 90% !important;
-  width: 90% !important;
+  max-width: 70% !important;
+  width: 70% !important;
   position: absolute;
   top: 90px;
-  left: 5%;
+  left: 15%;
   bottom: 0;
   z-index: 100000;
   margin: 0 !important;
@@ -639,7 +638,7 @@ a {
 }
 
 #even-modal-body {
-  max-height: 600px;
+  max-height: 550px;
   overflow: auto;
 }
 
@@ -664,6 +663,19 @@ a {
 @media (max-width: 768px) {
   .event-list-item {
     margin: 10px 10px !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .event-modal-dialog {
+    max-width: 90% !important;
+    width: 90% !important;
+    position: absolute;
+    top: 90px;
+    left: 5%;
+    bottom: 0;
+    z-index: 100000;
+    margin: 0 !important;
   }
 }
 
@@ -781,7 +793,7 @@ a {
 }
 
 #booth .nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
+.nav-pills .show > .nav-link {
   color: #fff;
   background-image: linear-gradient(90deg, #133882 20%, #0164e5 80%) !important;
 }
@@ -833,12 +845,24 @@ a {
   font-size: 30px;
 }
 
-#booth .col-md-9 .tab-content .tab-pane .content .gradient-container .download-btn {
+#booth
+  .col-md-9
+  .tab-content
+  .tab-pane
+  .content
+  .gradient-container
+  .download-btn {
   color: #0264e5;
 }
 
 @media (min-width: 577px) {
-  #booth .col-md-9 .tab-content .tab-pane .content .gradient-container .download-btn {
+  #booth
+    .col-md-9
+    .tab-content
+    .tab-pane
+    .content
+    .gradient-container
+    .download-btn {
     position: absolute;
     right: 10px;
     bottom: 8px;
@@ -846,7 +870,13 @@ a {
 }
 
 @media (max-width: 576px) {
-  #booth .col-md-9 .tab-content .tab-pane .content .gradient-container .download-btn {
+  #booth
+    .col-md-9
+    .tab-content
+    .tab-pane
+    .content
+    .gradient-container
+    .download-btn {
     margin-bottom: 10px;
   }
 }
