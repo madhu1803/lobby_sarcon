@@ -666,16 +666,17 @@ a {
   }
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   .event-modal-dialog {
     max-width: 90% !important;
     width: 90% !important;
     position: absolute;
-    top: 90px;
+    top: 20px;
     left: 5%;
     bottom: 0;
     z-index: 100000;
     margin: 0 !important;
+    max-height: 400px;
   }
 }
 
