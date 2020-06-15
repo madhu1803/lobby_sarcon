@@ -636,6 +636,10 @@ a {
   background-color: #133882 !important;
 }
 
+.event-body-container .event-btn-size {
+  font-size: 15px;
+}
+
 .event-body-container .event-content-p {
   font-size: 0.8rem;
   margin-bottom: 0 !important;
