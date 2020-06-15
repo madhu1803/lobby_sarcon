@@ -138,8 +138,8 @@ body {
 
 #businessCardModal .modal-dialog .modal-content .modal-body h6,
 #businessCardModal .modal-dialog .modal-content .modal-body h2 {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 @media (min-width: 768px) {
@@ -623,20 +623,6 @@ a {
   color: white;
 }
 
-.container .about-heading .title {
-  font-weight: 900;
-  font-size: 42px;
-}
-
-.container .about-heading .sessions {
-  color: #133882;
-}
-
-.container .about-heading .lead {
-  color: #133882;
-  margin: 2% auto;
-}
-
 #even-modal-body {
   max-height: 480px;
   overflow: auto;
@@ -653,11 +639,6 @@ a {
 .event-body-container .event-content-p {
   font-size: 0.8rem;
   margin-bottom: 0 !important;
-}
-
-.event-body-container i {
-  color: #133882;
-  font-size: 25px;
 }
 
 @media (max-width: 768px) {
