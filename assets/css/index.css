@@ -641,6 +641,11 @@ a {
   margin-bottom: 0 !important;
 }
 
+.event-body-container i {
+  color: #133882;
+  font-size: 30px;
+}
+
 @media (max-width: 768px) {
   .event-list-item {
     margin: 10px 10px !important;
