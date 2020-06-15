@@ -638,7 +638,7 @@ a {
 }
 
 #even-modal-body {
-  max-height: 550px;
+  max-height: 480px;
   overflow: auto;
 }
 
