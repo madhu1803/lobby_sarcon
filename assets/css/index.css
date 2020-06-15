@@ -650,6 +650,11 @@ a {
   font-size: 30px;
 }
 
+.event-list-item .event-date {
+  font-size: 14px !important;
+  margin-bottom: 10px !important;
+}
+
 @media (max-width: 768px) {
   .event-list-item {
     margin: 10px 10px !important;
