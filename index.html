@@ -785,10 +785,13 @@
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#chatModal" id="chat-modal-btn">
         <i class="fas fa-user-friends"></i> Quick Network Zone
     </button>
+    <button type="button" class="btn btn-primary" id="quick-network-chat-btn">
+        <i class="fas fa-user-friends"></i> Quick Network Zone
+    </button>
 
     <!-- Chat Modal -->
-    <div class="modal fade" id="chatModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-        aria-hidden="true">
+    <div class="modal fade hidden-md" id="chatModal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-body">
@@ -890,7 +893,7 @@
                                 <div class="messages_header">
                                     <i class="fas fa-comments"></i>
                                     <p>General Chat<button type="button" class="close" data-dismiss="modal"
-                                            aria-label="Close">
+                                            aria-label="Close" id="chat-modal-close-btn">
                                             <span aria-hidden="true">&times;</span>
                                         </button></p>
                                     <i onclick="toggleChatRooms()" class="fas fa-times close_button"></i>

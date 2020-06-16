@@ -41,6 +41,7 @@ $("#minimize-btn").click(function () {
 
 //on load minimize notification modal
 $("#minimize-btn").click();
+
 function toggleAnnouncementsModal() {
   $("#notification-modal-dialog").toggleClass("d-none");
 }
@@ -66,6 +67,8 @@ $(".tab-item").click(function () {
   $("#eventmodal").addClass("d-none");
   $("#notification-modal-dialog").addClass("d-none");
 });
+
+
 
 //slick caorousel
 $(document).ready(function () {

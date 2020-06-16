@@ -225,13 +225,27 @@ body {
 
 /* --------------------------------------------------- chat Modal ------------------------------------------------------------ */
 
-#chat-modal-btn {
+#chat-modal-btn,
+#quick-network-chat-btn {
   position: absolute;
   bottom: 30px;
   right: 100px;
   z-index: 1000;
 }
 
+@media (min-width: 993px) {
+  #quick-network-chat-btn {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  #chat-modal-btn {
+    display: none;
+  }
+  #quick-network-chat-btn {
+    display: block;
+  }
+}
 .modal-open #chatModal.modal {
   overflow-y: hidden !important;
 }
