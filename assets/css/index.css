@@ -119,6 +119,10 @@ body {
   color: white;
 }
 
+#businessCardModal {
+  z-index: 10000;
+}
+
 #profileModal .close,
 #businessCardModal .close,
 #chatModal .close {
