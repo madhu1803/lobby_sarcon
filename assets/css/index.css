@@ -117,6 +117,13 @@ body {
 #businessCardModal .modal-dialog .modal-content .modal-header {
   background-color: #133882;
   color: white;
+  position: relative;
+}
+
+#businessCardModal .modal-dialog .modal-content .modal-header i {
+  position: absolute;
+  right: 50px;
+  top: 20px;
 }
 
 #businessCardModal {
