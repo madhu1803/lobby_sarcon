@@ -132,7 +132,9 @@ body {
 
 #profileModal .close,
 #businessCardModal .close,
-#chatModal .close {
+#chatModal .close,
+#attendeeModal .close,
+#dummyModal .close {
   color: white !important;
 }
 
@@ -257,23 +259,23 @@ body {
     display: block;
   }
 }
-.modal-open #chatModal.modal {
+.modal-open #chatModal.modal,
+.modal-open #attendeeModal.modal {
   overflow-y: hidden !important;
 }
 
 @media (min-width: 768px) {
-  #chatModal .modal-dialog {
+  #chatModal .modal-dialog,
+  #attendeeModal .modal-dialog {
     max-width: 1100px !important;
     margin: 2rem auto !important;
     padding: 20px;
-    /* max-height: 90vh !important; */
   }
 }
 
+#attendeeModal .modal-dialog .modal-body,
 #chatModal .modal-dialog .modal-body {
   padding: 0 !important;
-  /* max-height: 90vh !important; */
-  /* overflow: auto; */
 }
 
 .main_chat_screen_container,
@@ -292,7 +294,8 @@ body {
   padding-top: 0;
 }
 
-#chatModal .navbar {
+#chatModal .navbar,
+#attendeeModal .navbar {
   padding: 0 !important;
 }
 
@@ -361,7 +364,9 @@ body {
   margin: auto 15px;
 }
 
-.message_indicator_box p .fa-circle {
+/* chat modal message icons */
+
+#chatModal .message_indicator_box p .fa-circle {
   position: absolute;
   top: 27px;
   right: 50px;
@@ -369,7 +374,31 @@ body {
   color: green;
 }
 
-.message_indicator_box p .fa-address-card {
+#chatModal .message_indicator_box p .fa-address-card {
+  position: absolute;
+  top: 23px;
+  right: 10px;
+  font-size: 20px;
+}
+
+/* attendee modal message icons */
+
+#attendeeModal .message_indicator_box p .fa-circle {
+  position: absolute;
+  top: 27px;
+  right: 75px;
+  font-size: 12px;
+  color: green;
+}
+
+#attendeeModal .message_indicator_box p .fa-address-card {
+  position: absolute;
+  top: 23px;
+  right: 40px;
+  font-size: 20px;
+}
+
+#attendeeModal .message_indicator_box p .fa-user {
   position: absolute;
   top: 23px;
   right: 10px;
