@@ -148,5 +148,9 @@ window.addEventListener("resize", function () {
   width = $(window).width()
   if (width <= 992) {
     $('#chatModal .close').click()
+    $('#attendeeModal .close').click()
+    $('#exhibitorModal .close').click()
+    $('#speakerModal .close').click()
+
   }
 });

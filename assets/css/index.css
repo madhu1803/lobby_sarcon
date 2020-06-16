@@ -55,7 +55,7 @@ body {
   display: inline-block;
 }
 
-.tab-content > .tab-pane {
+.tab-content>.tab-pane {
   margin: 0;
   padding: 0;
 }
@@ -75,11 +75,11 @@ body {
   position: relative;
 }
 
-.dropdown-submenu > a:after {
+.dropdown-submenu>a:after {
   border: none;
 }
 
-.dropdown-submenu > .dropdown-menu {
+.dropdown-submenu>.dropdown-menu {
   top: 0;
   left: -100%;
   margin-top: 0px;
@@ -134,7 +134,8 @@ body {
 #businessCardModal .close,
 #chatModal .close,
 #attendeeModal .close,
-#dummyModal .close {
+#exhibitorModal .close,
+#speakerModal .close {
   color: white !important;
 }
 
@@ -164,6 +165,7 @@ body {
 }
 
 @media (max-width: 576px) {
+
   #profileModal .modal-dialog,
   #businessCardModal .modal-dialog {
     max-width: 500px !important;
@@ -251,22 +253,30 @@ body {
     display: none;
   }
 }
+
 @media (max-width: 992px) {
   #chat-modal-btn {
     display: none;
   }
+
   #quick-network-chat-btn {
     display: block;
   }
 }
+
 .modal-open #chatModal.modal,
-.modal-open #attendeeModal.modal {
+.modal-open #attendeeModal.modal,
+.modal-open #exhibitorModal.modal,
+.modal-open #speakerModal.modal {
   overflow-y: hidden !important;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
+
   #chatModal .modal-dialog,
-  #attendeeModal .modal-dialog {
+  #attendeeModal .modal-dialog,
+  #exhibitorModal .modal-dialog,
+  #speakerModal .modal-dialog {
     max-width: 1100px !important;
     margin: 2rem auto !important;
     padding: 20px;
@@ -274,7 +284,9 @@ body {
 }
 
 #attendeeModal .modal-dialog .modal-body,
-#chatModal .modal-dialog .modal-body {
+#chatModal .modal-dialog .modal-body,
+#speakerModal .modal-dialog .modal-body,
+#exhibitorModal .modal-dialog .modal-body {
   padding: 0 !important;
 }
 
@@ -295,7 +307,9 @@ body {
 }
 
 #chatModal .navbar,
-#attendeeModal .navbar {
+#attendeeModal .navbar,
+#exhibitorModal .navbar,
+#speakerModal .navbar {
   padding: 0 !important;
 }
 
@@ -336,12 +350,10 @@ body {
 }
 
 .message_indicator_box.active {
-  background-image: linear-gradient(
-    90deg,
-    #2096f3 10%,
-    #409de2 30%,
-    #4ebeda 60%
-  );
+  background-image: linear-gradient(90deg,
+      #2096f3 10%,
+      #409de2 30%,
+      #4ebeda 60%);
 }
 
 .message_indicator_box.active i {
@@ -366,7 +378,9 @@ body {
 
 /* chat modal message icons */
 
-#chatModal .message_indicator_box p .fa-circle {
+#chatModal .message_indicator_box p .fa-circle,
+#exhibitorModal .message_indicator_box p .fa-circle,
+#speakerModal .message_indicator_box p .fa-circle {
   position: absolute;
   top: 27px;
   right: 50px;
@@ -374,7 +388,9 @@ body {
   color: green;
 }
 
-#chatModal .message_indicator_box p .fa-address-card {
+#chatModal .message_indicator_box p .fa-address-card,
+#exhibitorModal .message_indicator_box p .fa-address-card,
+#speakerModal .message_indicator_box p .fa-address-card {
   position: absolute;
   top: 23px;
   right: 10px;
@@ -386,7 +402,7 @@ body {
 #attendeeModal .message_indicator_box p .fa-circle {
   position: absolute;
   top: 27px;
-  right: 75px;
+  right: 80px;
   font-size: 12px;
   color: green;
 }
@@ -394,11 +410,11 @@ body {
 #attendeeModal .message_indicator_box p .fa-address-card {
   position: absolute;
   top: 23px;
-  right: 40px;
+  right: 45px;
   font-size: 20px;
 }
 
-#attendeeModal .message_indicator_box p .fa-user {
+#attendeeModal .message_indicator_box p .fa-user-plus {
   position: absolute;
   top: 23px;
   right: 10px;
@@ -485,12 +501,10 @@ body {
   margin-right: 0;
   margin-left: auto;
   flex-direction: row-reverse;
-  background-image: linear-gradient(
-    90deg,
-    #2096f3 10%,
-    #409de2 30%,
-    #4ebeda 60%
-  );
+  background-image: linear-gradient(90deg,
+      #2096f3 10%,
+      #409de2 30%,
+      #4ebeda 60%);
 }
 
 .single_message_container.recipient .single_message .message_text p {
@@ -667,6 +681,7 @@ a {
 }
 
 @media (max-width: 768px) {
+
   #auditorium .grid-container .row .agenda-container-1 .jumbotron,
   #auditorium .grid-container .row .agenda-container-2 .jumbotron,
   #auditorium .grid-container .row .faq-container .jumbotron {
@@ -860,7 +875,7 @@ a {
 }
 
 #booth .nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
+.nav-pills .show>.nav-link {
   color: #fff;
   background-image: linear-gradient(90deg, #133882 20%, #0164e5 80%) !important;
 }
@@ -912,24 +927,12 @@ a {
   font-size: 30px;
 }
 
-#booth
-  .col-md-9
-  .tab-content
-  .tab-pane
-  .content
-  .gradient-container
-  .download-btn {
+#booth .col-md-9 .tab-content .tab-pane .content .gradient-container .download-btn {
   color: #0264e5;
 }
 
 @media (min-width: 577px) {
-  #booth
-    .col-md-9
-    .tab-content
-    .tab-pane
-    .content
-    .gradient-container
-    .download-btn {
+  #booth .col-md-9 .tab-content .tab-pane .content .gradient-container .download-btn {
     position: absolute;
     right: 10px;
     bottom: 8px;
@@ -937,13 +940,7 @@ a {
 }
 
 @media (max-width: 576px) {
-  #booth
-    .col-md-9
-    .tab-content
-    .tab-pane
-    .content
-    .gradient-container
-    .download-btn {
+  #booth .col-md-9 .tab-content .tab-pane .content .gradient-container .download-btn {
     margin-bottom: 10px;
   }
 }
