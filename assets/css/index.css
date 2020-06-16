@@ -279,7 +279,7 @@ body {
 .main_chat_screen_container,
 .main_chat_screen_container .row,
 .main_chat_screen_container .row .individual_screen {
-  height: 85vh;
+  height: 650px;
 }
 
 .messages {
@@ -302,7 +302,7 @@ body {
 
 .scroll_content {
   overflow: auto;
-  height: 85vh;
+  height: 650px;
 }
 
 .individual_screen .header {
@@ -424,7 +424,7 @@ body {
 
 .messages_scroll {
   width: 100%;
-  height: 68vh;
+  height: 520px;
   display: flex;
   flex-direction: column-reverse;
   padding: 10px 15px;
