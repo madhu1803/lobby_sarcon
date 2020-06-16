@@ -304,6 +304,7 @@ body {
   padding: 15px 15px;
   margin-top: 5px;
   cursor: pointer;
+  position: relative;
 }
 
 .message_indicator_box.active {
@@ -333,6 +334,21 @@ body {
 
 .message_indicator_box p {
   margin: auto 15px;
+}
+
+.message_indicator_box p .fa-circle {
+  position: absolute;
+  top: 27px;
+  right: 50px;
+  font-size: 12px;
+  color: green;
+}
+
+.message_indicator_box p .fa-address-card {
+  position: absolute;
+  top: 23px;
+  right: 10px;
+  font-size: 20px;
 }
 
 .messages_header {
