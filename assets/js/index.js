@@ -46,13 +46,6 @@ function toggleAnnouncementsModal() {
   $("#notification-modal-dialog").toggleClass("d-none");
 }
 
-// $(document).ready(function () {
-//   width = $(window).width();
-//   if (width <= 992) {
-//     $("#chatModal .close").click();
-//   }
-// });
-
 // Event Modal
 //close event modal
 function eventmodal() {
@@ -177,5 +170,12 @@ $("body").scroll(function () {
     $("#emoji_dropdownMenu1_content").hasClass("show")
   ) {
     $("#emoji_dropdownMenu1").click();
+  }
+});
+
+window.addEventListener("resize", function () {
+  width = $(window).width()
+  if (width <= 992) {
+    $('#chatModal .close').click()
   }
 });
