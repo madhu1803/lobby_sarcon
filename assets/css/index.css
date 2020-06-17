@@ -504,7 +504,7 @@ body {
 }
 
 .single_message {
-  max-width: 400px;
+  max-width: 300px;
   display: flex;
   flex-direction: row;
   margin: 10px 0;
