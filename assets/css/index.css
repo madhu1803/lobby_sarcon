@@ -524,15 +524,17 @@ body {
 
 .single_message_container.recipient .single_message .message_text p {
   color: #828181;
+  font-size: 0.85rem !important;
 }
 
 .single_message_container.recipient .single_message .message_text p b,
 .single_message_container.recipient .single_message .message_text p small {
   color: #828181;
+  font-size: 0.9rem !important;
 }
 
 .single_message .img_holder img {
-  width: 35px;
+  width: 30px;
 }
 
 .single_message .img_holder {
@@ -548,11 +550,13 @@ body {
 .single_message .message_text p {
   margin-bottom: 5px;
   color: white;
+  font-size: 0.85rem !important;
 }
 
 .single_message .message_text p b,
 .single_message .message_text p small {
   color: white;
+  font-size: 0.9rem !important;
 }
 
 /* responsive scripts */
