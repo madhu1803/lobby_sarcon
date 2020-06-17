@@ -112,6 +112,7 @@ body {
 }
 
 /* --------------------------------------- tab bar edit and business card profile modal -------------------------------------- */
+/* --------------------------------------chat modal attendee modal exhibitor speaker modal ----------------------------------- */
 
 #profileModal .modal-dialog .modal-content .modal-header,
 #businessCardModal .modal-dialog .modal-content .modal-header {
@@ -129,6 +130,7 @@ body {
 #businessCardModal {
   z-index: 10000;
 }
+
 
 #profileModal .close,
 #businessCardModal .close,
@@ -264,6 +266,8 @@ body {
   }
 }
 
+/* --------------------------------------chat modal attendee modal exhibitor speaker modal -------------------------------------- */
+
 .modal-open #chatModal.modal,
 .modal-open #attendeeModal.modal,
 .modal-open #exhibitorModal.modal,
@@ -289,6 +293,9 @@ body {
 #exhibitorModal .modal-dialog .modal-body {
   padding: 0 !important;
 }
+
+
+/* -------------------------------------------------------chat messages --------------------------------------------------------------- */
 
 .main_chat_screen_container,
 .main_chat_screen_container .row,
@@ -362,6 +369,7 @@ body {
 
 .message_indicator_box.active p {
   color: white;
+  font-size: 0.9rem;
 }
 
 .message_indicator_box img {
@@ -374,6 +382,7 @@ body {
 
 .message_indicator_box p {
   margin: auto 15px;
+  font-size: 0.9rem;
 }
 
 .message_indicator_box.active {
@@ -582,6 +591,7 @@ body {
   position: absolute;
   top: 35px;
   left: 65px;
+  font-size: 70%;
 }
 
 .message_indicator_box.company.active small {
