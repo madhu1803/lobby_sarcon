@@ -136,6 +136,16 @@ $("#events-modal-btn").click(function () {
   eventmodal();
 });
 
+// Event Bag Modal
+//close event modal
+function eventbagmodal() {
+  $("#eventbagmodal").toggleClass("d-none");
+}
+//btn click
+$("#event-bag-modal-btn").click(function () {
+  eventbagmodal();
+});
+
 // on tab item click - close modal
 $(".tab-item").click(function () {
   $("#eventmodal").addClass("d-none");
