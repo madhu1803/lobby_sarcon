@@ -241,6 +241,17 @@ body {
 }
 
 /* --------------------------------------------------- chat Modal ------------------------------------------------------------ */
+#eventbagmodal hr {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+#eventbagmodal .fa-download,
+#eventbagmodal .fa-envelope-open-text {
+  font-size: 18px;
+}
+
+/* --------------------------------------------------- chat Modal ------------------------------------------------------------ */
 
 #chat-modal-btn,
 #quick-network-chat-btn {
@@ -248,6 +259,11 @@ body {
   bottom: 30px;
   right: 100px;
   z-index: 1000;
+}
+
+#quick-network-chat-btn span,
+#chat-modal-btn span {
+  color: #F8C146;
 }
 
 @media (min-width: 993px) {
