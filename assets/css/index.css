@@ -356,7 +356,8 @@ body {
       #4ebeda 60%);
 }
 
-.message_indicator_box.active i {
+.message_indicator_box.active i,
+  {
   color: white;
 }
 
@@ -374,6 +375,21 @@ body {
 
 .message_indicator_box p {
   margin: auto 15px;
+}
+
+.message_indicator_box.active {
+  background-image: linear-gradient(90deg,
+      #2096f3 10%,
+      #409de2 30%,
+      #4ebeda 60%);
+}
+
+.message_indicator_box.active i {
+  color: white;
+}
+
+.message_indicator_box.active p {
+  color: white;
 }
 
 /* chat modal message icons */
@@ -561,8 +577,12 @@ body {
 
 .message_indicator_box.company small {
   position: absolute;
-  top: 40px;
+  top: 35px;
   left: 65px;
+}
+
+.message_indicator_box.company.active small {
+  color: white;
 }
 
 a {
