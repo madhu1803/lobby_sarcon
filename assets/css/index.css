@@ -293,7 +293,7 @@ body {
 .main_chat_screen_container,
 .main_chat_screen_container .row,
 .main_chat_screen_container .row .individual_screen {
-  height: 650px;
+  height: 600px;
 }
 
 .messages {
@@ -319,7 +319,7 @@ body {
 
 .scroll_content {
   overflow: auto;
-  height: 650px;
+  height: 600px;
 }
 
 .individual_screen .header {
@@ -356,8 +356,7 @@ body {
       #4ebeda 60%);
 }
 
-.message_indicator_box.active i,
-  {
+.message_indicator_box.active i {
   color: white;
 }
 
@@ -485,7 +484,7 @@ body {
 
 .messages_scroll {
   width: 100%;
-  height: 520px;
+  height: 420px;
   display: flex;
   flex-direction: column-reverse;
   padding: 10px 15px;
