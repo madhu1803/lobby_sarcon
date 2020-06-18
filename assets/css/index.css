@@ -895,6 +895,7 @@ a {
 
 #videochatModal {
   overflow: hidden !important;
+  max-height: 400px !important;
 }
 
 #videochatModal .modal-dialog {
