@@ -176,3 +176,13 @@ window.addEventListener("resize", function () {
 
   }
 });
+
+//general chat tab btn
+// $(function () {
+//   $('.booth-btns').hide();
+
+//   function fadeImage() {
+//     $('.booth-btns').fadeIn(4000);
+//   }
+
+// });

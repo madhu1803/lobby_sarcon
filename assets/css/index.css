@@ -867,7 +867,7 @@ a {
   }
 }
 
-/*------------------------------------------------  general chat tab content  ------------------------------------------------ */
+/*------------------------------------------------  general chat tab content and video chat modal ------------------------------------------------ */
 
 #general_chat .booth-btns {
   text-align: center;
@@ -889,6 +889,28 @@ a {
 #general_chat .booth-btns .exhibitor-modal-btn p,
 #general_chat .booth-btns .video-modal-btn p {
   margin-bottom: 0 !important;
+}
+
+#videochatModal {
+  max-height: 400px !important;
+  height: 400px !important;
+}
+
+#videochatModal .modal-body .col-md-10 p {
+  margin-bottom: 0 !important;
+}
+
+#videochatModal .modal-body .col-md-2 .video-icon.active {
+  color: #3D8939;
+}
+
+#videochatModal .modal-body .col-md-2 .video-icon {
+  color: #C82E33;
+}
+
+#videochatModal .modal-body hr {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
 }
 
 /*------------------------------------------------  booth expo hall  ------------------------------------------------ */

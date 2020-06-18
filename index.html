@@ -617,18 +617,18 @@
             <!-- bottom two buttons -->
             <div class="booth-btns">
                 <button type="button" class="btn btn-primary exhibitor-modal-btn" data-toggle="modal"
-                    data-target="#exhibitorModal" id="attendee-modal-btn">
+                    data-target="#exhibitorModal" id="exhibitor-modal-btn">
                     <div class="bootn-btn-icon">
                         <i class="fa fa-users" aria-hidden="true"></i>
                     </div>
-                    <p>Exhibitor</p>
+                    <p>Quick Chat</p>
                 </button>
                 <button type="button" class="btn btn-primary video-modal-btn" data-toggle="modal"
-                    data-target="#exhibitorModal" id="attendee-modal-btn">
+                    data-target="#videochatModal" id="videochat-modal-btn">
                     <div class="bootn-btn-icon">
                         <i class="fas fa-video"></i>
                     </div>
-                    <p>video</p>
+                    <p>video Chat</p>
                 </button>
             </div>
         </div>
@@ -833,7 +833,7 @@
     <!-- Chat Modal -->
     <div class="modal fade" id="chatModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
         aria-hidden="true">
-        <div class="modal-dialog  modal-dialog-centered" role="document">
+        <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable" role="document">
             <div class="modal-content">
                 <div class="modal-body">
                     <div class="container-fluid main_chat_screen_container">
@@ -1956,6 +1956,55 @@
                             <hr>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video chat modal -general chat -->
+    <div class="modal fade" id="videochatModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Video Chat</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <p>Room name</p>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="video-icon active">
+                                <i class="fas fa-video"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-10">
+                            <p>Room name</p>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="video-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-10">
+                            <p>Room name</p>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="video-icon ">
+                                <i class="fas fa-video"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
                 </div>
             </div>
         </div>
