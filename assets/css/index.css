@@ -122,7 +122,8 @@ body {
 /* --------------------------------------chat modal attendee modal exhibitor speaker modal ----------------------------------- */
 
 #profileModal .modal-dialog .modal-content .modal-header,
-#businessCardModal .modal-dialog .modal-content .modal-header {
+#businessCardModal .modal-dialog .modal-content .modal-header,
+#videochatModal .modal-dialog .modal-content .modal-header {
   background-color: #133882;
   color: white;
   position: relative;
@@ -138,13 +139,14 @@ body {
   z-index: 10000;
 }
 
-
+/* modal close icon  */
 #profileModal .close,
 #businessCardModal .close,
 #chatModal .close,
 #attendeeModal .close,
 #exhibitorModal .close,
-#speakerModal .close {
+#speakerModal .close,
+#videochatModal .close {
   color: white !important;
 }
 
@@ -892,8 +894,11 @@ a {
 }
 
 #videochatModal {
+  overflow: hidden !important;
+}
+
+#videochatModal .modal-dialog {
   max-height: 400px !important;
-  height: 400px !important;
 }
 
 #videochatModal .modal-body .col-md-10 p {
