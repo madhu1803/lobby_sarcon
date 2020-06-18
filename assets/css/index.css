@@ -910,12 +910,13 @@ a {
 
 #general_chat .booth-btns .exhibitor-modal-btn i,
 #general_chat .booth-btns .video-modal-btn i {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 #general_chat .booth-btns .exhibitor-modal-btn p,
 #general_chat .booth-btns .video-modal-btn p {
   margin-bottom: 0 !important;
+  font-size: 0.8rem !important;
 }
 
 #videochatModal {
@@ -925,6 +926,7 @@ a {
 
 #videochatModal .modal-dialog {
   max-height: 400px !important;
+  width: 400px;
 }
 
 #videochatModal .modal-body .col-md-10 p {
