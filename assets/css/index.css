@@ -869,21 +869,27 @@ a {
 
 /*------------------------------------------------  general chat tab content  ------------------------------------------------ */
 
-#general_chat .exhibitor-modal-btn {
-  position: absolute;
+#general_chat .booth-btns {
+  text-align: center;
+  position: fixed;
   bottom: 15px;
-  left: 500px;
-  border-radius: 50%;
+  width: 100%;
 }
 
-#general_chat .video-modal-btn {
-  position: absolute;
-  bottom: 15px;
-  left: 700px;
-  border-radius: 50%;
+#general_chat .booth-btns .exhibitor-modal-btn,
+#general_chat .booth-btns .video-modal-btn {
+  width: 100px !important;
 }
 
+#general_chat .booth-btns .exhibitor-modal-btn i,
+#general_chat .booth-btns .video-modal-btn i {
+  font-size: 20px;
+}
 
+#general_chat .booth-btns .exhibitor-modal-btn p,
+#general_chat .booth-btns .video-modal-btn p {
+  margin-bottom: 0 !important;
+}
 
 /*------------------------------------------------  booth expo hall  ------------------------------------------------ */
 #booth {
