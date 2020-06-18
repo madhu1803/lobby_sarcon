@@ -13,6 +13,10 @@ $(document).ready(function () {
   }, 5000);
 });
 
+//hide booth btns in general chat
+$('.booth-btns').hide()
+
+// $('.booth-btns').delay(5000).fadeIn(500)
 
 
 // dropdown profile
@@ -162,6 +166,7 @@ $(".tab-item").click(function () {
   $("#eventmodal").addClass("d-none");
   $("#eventbagmodal").addClass("d-none");
   $("#notification-modal-dialog").addClass("d-none");
+  $('.booth-btns').delay(2000).fadeIn(500)
 });
 
 
