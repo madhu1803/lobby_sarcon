@@ -867,6 +867,24 @@ a {
   }
 }
 
+/*------------------------------------------------  general chat tab content  ------------------------------------------------ */
+
+#general_chat .exhibitor-modal-btn {
+  position: absolute;
+  bottom: 15px;
+  left: 500px;
+  border-radius: 50%;
+}
+
+#general_chat .video-modal-btn {
+  position: absolute;
+  bottom: 15px;
+  right: 500px;
+  border-radius: 50%;
+}
+
+
+
 /*------------------------------------------------  booth expo hall  ------------------------------------------------ */
 #booth {
   height: 100%;
