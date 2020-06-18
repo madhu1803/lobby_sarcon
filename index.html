@@ -2049,7 +2049,7 @@
             'thumbs',
             'briefcase', // this one is the new button
             'close'];
-        $.fancybox.defaults.btnTpl.briefcase = '<button data-fancybox-briefcase class="fancybox-button fancybox-button--briefcase">btn</button>';
+        $.fancybox.defaults.btnTpl.briefcase = '<button data-fancybox-briefcase class="fancybox-button fancybox-button--briefcase"><i class="fas fa-briefcase"></i></button>';
         $('body').on('click', '[data-fancybox-briefcase]', function (e) {
             alert("briefcase clicked")
         });
