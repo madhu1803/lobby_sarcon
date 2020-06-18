@@ -10,7 +10,7 @@ $(document).ready(function () {
   $('.login-toast').toast('show')
   setTimeout(function () {
     $('.login-toast .close').click()
-  }, 10000);
+  }, 5000);
 });
 
 
