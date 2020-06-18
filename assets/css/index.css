@@ -879,7 +879,7 @@ a {
 #general_chat .video-modal-btn {
   position: absolute;
   bottom: 15px;
-  right: 500px;
+  left: 700px;
   border-radius: 50%;
 }
 
