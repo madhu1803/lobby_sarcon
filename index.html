@@ -2042,6 +2042,18 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Custom js -->
     <script src="assets/js/index.js"></script>
+    <script>
+        $.fancybox.defaults.buttons = [
+            'slideShow',
+            'fullScreen',
+            'thumbs',
+            'briefcase', // this one is the new button
+            'close'];
+        $.fancybox.defaults.btnTpl.briefcase = '<button data-fancybox-briefcase class="fancybox-button fancybox-button--briefcase">btn</button>';
+        $('body').on('click', '[data-fancybox-briefcase]', function (e) {
+            alert("briefcase clicked")
+        });
+    </script>
 </body>
 
 </html>
