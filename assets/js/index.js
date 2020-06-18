@@ -4,6 +4,17 @@ AOS.init();
 //close announcemenets modal on screen ready
 toggleAnnouncementsModal();
 
+
+//toast displayed and goes off after 10 secs
+$(document).ready(function () {
+  $('.login-toast').toast('show')
+  setTimeout(function () {
+    $('.login-toast .close').click()
+  }, 10000);
+});
+
+
+
 // dropdown profile
 $(function () {
   // ------------------------------------------------------- //
