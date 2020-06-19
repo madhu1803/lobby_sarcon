@@ -176,6 +176,7 @@ $(".tab-item").click(function () {
   $("#eventmodal").addClass("d-none");
   $("#eventbagmodal").addClass("d-none");
   $("#notification-modal-dialog").addClass("d-none");
+  $("#brochuresmodal").addClass("d-none");
   $('.booth-btns').delay(3000).fadeIn(500)
 });
 
