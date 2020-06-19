@@ -784,6 +784,15 @@ a {
   bottom: 0;
   z-index: 100000;
   margin: 0 !important;
+  overflow: initial;
+}
+
+@media (max-height: 600px) {
+  .event-modal-dialog .modal-body {
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+  }
+
 }
 
 .event-modal-header {
@@ -791,9 +800,9 @@ a {
   color: white;
 }
 
-#even-modal-body {
-  max-height: 480px;
-  overflow: auto;
+.event-modal-dialog .modal-body {
+  max-height: calc(100vh - 400px);
+  overflow-y: auto;
 }
 
 #close-event-btn {
