@@ -161,6 +161,16 @@ $("#event-bag-modal-btn").click(function () {
   eventbagmodal();
 });
 
+// Brochures Modal
+//close event modal
+function brochuresmodal() {
+  $("#brochuresmodal").toggleClass("d-none");
+}
+//btn click
+$("#brochures-modal-btn").click(function () {
+  brochuresmodal();
+});
+
 // on tab item click - close modal
 $(".tab-item").click(function () {
   $("#eventmodal").addClass("d-none");
