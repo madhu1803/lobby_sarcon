@@ -787,13 +787,6 @@ a {
   overflow: initial;
 }
 
-@media (max-height: 600px) {
-  .event-modal-dialog .modal-body {
-    max-height: calc(100vh - 100px);
-    overflow-y: auto;
-  }
-
-}
 
 .event-modal-header {
   background-color: #133882;
@@ -839,17 +832,36 @@ a {
   }
 }
 
+@media (min-height: 500px) and (max-height: 600px) {
+  .event-modal-dialog .modal-body {
+    max-height: 350px !important;
+    overflow-y: auto;
+  }
+}
+
+@media (max-height: 500px) {
+  .event-modal-dialog .modal-body {
+    max-height: 200px !important;
+    overflow-y: auto;
+  }
+
+}
+
 @media (max-width: 576px) {
   .event-modal-dialog {
     max-width: 90% !important;
     width: 90% !important;
     position: absolute;
-    top: 20px;
+    top: 100px;
     left: 5%;
     bottom: 0;
     z-index: 100000;
     margin: 0 !important;
+  }
+
+  .event-modal-dialog .modal-body {
     max-height: 400px;
+    overflow-y: auto;
   }
 }
 
