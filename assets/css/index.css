@@ -866,7 +866,7 @@ a {
     max-width: 90% !important;
     width: 90% !important;
     position: absolute;
-    top: 100px;
+    top: 10px;
     left: 5%;
     bottom: 0;
     z-index: 100000;
@@ -929,7 +929,7 @@ a {
   }
 }
 
-/*------------------------------------------------  general chat tab content and video chat modal ------------------------------------------------ */
+/*------------------------------------------------  general chat tab content and video ,chat,private booth modal ------------------------------------------------ */
 
 #general_chat .booth-btns {
   text-align: center;
@@ -939,17 +939,20 @@ a {
 }
 
 #general_chat .booth-btns .exhibitor-modal-btn,
-#general_chat .booth-btns .video-modal-btn {
+#general_chat .booth-btns .video-modal-btn,
+#info_desk .private-booth-btn {
   width: 100px !important;
 }
 
 #general_chat .booth-btns .exhibitor-modal-btn i,
-#general_chat .booth-btns .video-modal-btn i {
+#general_chat .booth-btns .video-modal-btn i,
+#info_desk .private-booth-btn i {
   font-size: 18px;
 }
 
 #general_chat .booth-btns .exhibitor-modal-btn p,
-#general_chat .booth-btns .video-modal-btn p {
+#general_chat .booth-btns .video-modal-btn p,
+#info_desk .private-booth-btn p {
   margin-bottom: 0 !important;
   font-size: 0.8rem !important;
 }
@@ -979,6 +982,12 @@ a {
 #videochatModal .modal-body hr {
   margin-top: 0.5rem !important;
   margin-bottom: 0.5rem !important;
+}
+
+#info_desk .private-booth-btn {
+  position: fixed;
+  top: 100px;
+  left: 60px;
 }
 
 /*------------------------------------------------  booth expo hall  ------------------------------------------------ */

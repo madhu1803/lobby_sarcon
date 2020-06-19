@@ -15,6 +15,7 @@ $(document).ready(function () {
 
 //hide booth btns in general chat
 $('.booth-btns').hide()
+$('.private-booth-btn').hide()
 
 // $('.booth-btns').delay(5000).fadeIn(500)
 
@@ -178,6 +179,7 @@ $(".tab-item").click(function () {
   $("#notification-modal-dialog").addClass("d-none");
   $("#brochuresmodal").addClass("d-none");
   $('.booth-btns').delay(3000).fadeIn(500)
+  $('.private-booth-btn').delay(3000).fadeIn(500)
 });
 
 
