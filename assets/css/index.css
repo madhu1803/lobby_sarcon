@@ -249,8 +249,9 @@ body {
   }
 }
 
-/* --------------------------------------------------- chat Modal ------------------------------------------------------------ */
-#eventbagmodal hr {
+/* --------------------------------------------------- chat Modal and brochures modal  ------------------------------------------------------------ */
+#eventbagmodal hr,
+#brochuresmodal hr {
   margin-top: 0.5rem !important;
   margin-bottom: 0.5rem !important;
 }
