@@ -4,21 +4,19 @@ AOS.init();
 //close announcemenets modal on screen ready
 toggleAnnouncementsModal();
 
-
 //toast displayed and goes off after 10 secs
 $(document).ready(function () {
-  $('.login-toast').toast('show')
+  $(".login-toast").toast("show");
   setTimeout(function () {
-    $('.login-toast .close').click()
+    $(".login-toast .close").click();
   }, 5000);
 });
 
 //hide booth btns in general chat
-$('.booth-btns').hide()
-$('.private-booth-btn').hide()
+$(".booth-btns").hide();
+$(".private-booth-btn").hide();
 
 // $('.booth-btns').delay(5000).fadeIn(500)
-
 
 // dropdown profile
 $(function () {
@@ -124,7 +122,6 @@ $(document).ready(function () {
   }
 });
 
-
 //Business card modal
 function openBusinessCardModal() {
   $("#businessCardModal").modal("show");
@@ -141,16 +138,6 @@ $("#minimize-btn").click();
 function toggleAnnouncementsModal() {
   $("#notification-modal-dialog").toggleClass("d-none");
 }
-
-// Event Modal
-//close event modal
-function eventmodal() {
-  $("#eventmodal").toggleClass("d-none");
-}
-//btn click
-$("#events-modal-btn").click(function () {
-  eventmodal();
-});
 
 // Event Bag Modal
 //close event modal
@@ -178,20 +165,18 @@ $(".tab-item").click(function () {
   $("#eventbagmodal").addClass("d-none");
   $("#notification-modal-dialog").addClass("d-none");
   $("#brochuresmodal").addClass("d-none");
-  $('.booth-btns').delay(3000).fadeIn(500)
-  $('.private-booth-btn').delay(3000).fadeIn(500)
+  $(".booth-btns").delay(3000).fadeIn(500);
+  $(".private-booth-btn").delay(3000).fadeIn(500);
 });
-
 
 //chat Modal
 window.addEventListener("resize", function () {
-  width = $(window).width()
+  width = $(window).width();
   if (width <= 992) {
-    $('#chatModal .close').click()
-    $('#attendeeModal .close').click()
-    $('#exhibitorModal .close').click()
-    $('#speakerModal .close').click()
-
+    $("#chatModal .close").click();
+    $("#attendeeModal .close").click();
+    $("#exhibitorModal .close").click();
+    $("#speakerModal .close").click();
   }
 });
 
