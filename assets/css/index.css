@@ -9,7 +9,7 @@ body {
   box-sizing: border-box;
 }
 
-/*  --------------------------------------------------- toast ------------------------------------------------------  */
+/*  --------------------------------------------------- toast --------------------------------------------------------------  */
 .login-toast {
   position: absolute;
   bottom: 10px;
@@ -118,16 +118,23 @@ body {
   }
 }
 
-/* --------------------------------------- tab bar edit and business card profile modal -------------------------------------- */
-/* --------------------------------------chat modal attendee modal exhibitor speaker modal ----------------------------------- */
-
-#profileModal .modal-dialog .modal-content .modal-header,
-#businessCardModal .modal-dialog .modal-content .modal-header,
-#videochatModal .modal-dialog .modal-content .modal-header {
+/* blue header modal component  */
+.blue-modal-header {
   background-color: #133882;
   color: white;
   position: relative;
 }
+
+.blue-modal-header .close {
+  color: white !important;
+}
+
+/* black header modal component  */
+.black-chat-modal-header .close {
+  color: white !important;
+}
+
+/* --------------------------------------- tab bar edit and business card profile modal -------------------------------------- */
 
 #businessCardModal .modal-dialog .modal-content .modal-header i {
   position: absolute;
@@ -137,17 +144,6 @@ body {
 
 #businessCardModal {
   z-index: 10000;
-}
-
-/* modal close icon  */
-#profileModal .close,
-#businessCardModal .close,
-#chatModal .close,
-#attendeeModal .close,
-#exhibitorModal .close,
-#speakerModal .close,
-#videochatModal .close {
-  color: white !important;
 }
 
 #profileModal .col-md-6 {
@@ -788,11 +784,6 @@ a {
   overflow: initial;
 }
 
-
-.event-modal-header {
-  background-color: #133882;
-  color: white;
-}
 
 .event-modal-dialog .modal-body {
   max-height: calc(100vh - 400px);
