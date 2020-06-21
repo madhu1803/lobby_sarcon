@@ -240,105 +240,6 @@ body {
   }
 }
 
-/* ---------------------------------------------------auditorium event modal-----------------------------------------  */
-.event-modal-dialog {
-  max-width: 70% !important;
-  width: 70% !important;
-  position: absolute;
-  top: 150px;
-  left: 15%;
-  bottom: 0;
-  z-index: 100000;
-  margin: 0 !important;
-  overflow: initial;
-}
-
-
-.event-modal-dialog .modal-body {
-  max-height: calc(100vh - 400px);
-  overflow-y: auto;
-}
-
-#close-event-btn {
-  color: white !important;
-}
-
-.event-body-container .btn:hover {
-  background-color: #133882 !important;
-}
-
-.event-body-container .event-btn-size {
-  font-size: 12px;
-  width: 130px;
-}
-
-.event-body-container .event-content-p {
-  font-size: 0.8rem;
-  margin-bottom: 0 !important;
-}
-
-.event-body-container i {
-  color: #133882;
-  font-size: 30px;
-}
-
-.event-list-item .event-date {
-  font-size: 14px !important;
-  margin-bottom: 10px !important;
-}
-
-@media (max-width: 768px) {
-  .event-list-item {
-    margin: 10px 10px !important;
-  }
-}
-
-@media (min-height: 500px) and (max-height: 600px) {
-
-  .event-modal-dialog {
-    max-width: 70% !important;
-    width: 70% !important;
-    position: absolute;
-    top: 90px;
-    left: 15%;
-    bottom: 0;
-    z-index: 100000;
-    margin: 0 !important;
-    overflow: initial;
-  }
-
-  .event-modal-dialog .modal-body {
-    max-height: 350px !important;
-    overflow-y: auto;
-  }
-}
-
-@media (max-height: 500px) {
-  .event-modal-dialog .modal-body {
-    max-height: 200px !important;
-    overflow-y: auto;
-  }
-
-}
-
-@media (max-width: 576px) {
-  .event-modal-dialog {
-    max-width: 90% !important;
-    width: 90% !important;
-    position: absolute;
-    top: 10px;
-    left: 5%;
-    bottom: 0;
-    z-index: 100000;
-    margin: 0 !important;
-  }
-
-  .event-modal-dialog .modal-body {
-    max-height: 400px;
-    overflow-y: auto;
-  }
-}
-
 /*-----------------------------------------------  expo hall tab content ----------------------------------------------------*/
 #exhibition_hall .expo-hall-jumbotron-container .jumbotron {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
@@ -760,6 +661,105 @@ body {
 
   .image-logo-position {
     display: none;
+  }
+}
+
+/* ---------------------------------------------------EVENT BAG AND BROCHURES MODAL----------------------------------------  */
+.event-modal-dialog {
+  max-width: 70% !important;
+  width: 70% !important;
+  position: absolute;
+  top: 150px;
+  left: 15%;
+  bottom: 0;
+  z-index: 100000;
+  margin: 0 !important;
+  overflow: initial;
+}
+
+
+.event-modal-dialog .modal-body {
+  max-height: calc(100vh - 400px);
+  overflow-y: auto;
+}
+
+#close-event-btn {
+  color: white !important;
+}
+
+.event-body-container .btn:hover {
+  background-color: #133882 !important;
+}
+
+.event-body-container .event-btn-size {
+  font-size: 12px;
+  width: 130px;
+}
+
+.event-body-container .event-content-p {
+  font-size: 0.8rem;
+  margin-bottom: 0 !important;
+}
+
+.event-body-container i {
+  color: #133882;
+  font-size: 30px;
+}
+
+.event-list-item .event-date {
+  font-size: 14px !important;
+  margin-bottom: 10px !important;
+}
+
+@media (max-width: 768px) {
+  .event-list-item {
+    margin: 10px 10px !important;
+  }
+}
+
+@media (min-height: 500px) and (max-height: 600px) {
+
+  .event-modal-dialog {
+    max-width: 70% !important;
+    width: 70% !important;
+    position: absolute;
+    top: 90px;
+    left: 15%;
+    bottom: 0;
+    z-index: 100000;
+    margin: 0 !important;
+    overflow: initial;
+  }
+
+  .event-modal-dialog .modal-body {
+    max-height: 300px !important;
+    overflow-y: auto;
+  }
+}
+
+@media (max-height: 500px) {
+  .event-modal-dialog .modal-body {
+    max-height: 200px !important;
+    overflow-y: auto;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .event-modal-dialog {
+    max-width: 90% !important;
+    width: 90% !important;
+    position: absolute;
+    top: 10px;
+    left: 5%;
+    bottom: 0;
+    z-index: 100000;
+    margin: 0 !important;
+  }
+
+  .event-modal-dialog .modal-body {
+    max-height: 400px;
+    overflow-y: auto;
   }
 }
 
