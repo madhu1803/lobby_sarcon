@@ -376,11 +376,6 @@ body {
   .slick-slide {
     height: 77vh !important;
   }
-
-  .slick-slide .slick-current {
-    /* padding-left: 100px !important;
-    width: 1000px !important; */
-  }
 }
 
 @media (max-width: 576px) {
@@ -389,7 +384,7 @@ body {
   }
 }
 
-/*------------------------------------------------  general chat tab content and video ,chat,private booth modal ------------------------------------------------ */
+/*------------------------------------------------  general chat tab content btns, private booth modal ------------------------------------------------ */
 
 #general_chat .booth-btns {
   text-align: center;
@@ -417,33 +412,7 @@ body {
   font-size: 0.8rem !important;
 }
 
-#videochatModal {
-  overflow: hidden !important;
-  max-height: 400px !important;
-}
-
-#videochatModal .modal-dialog {
-  max-height: 400px !important;
-  width: 400px;
-}
-
-#videochatModal .modal-body .col-md-10 p {
-  margin-bottom: 0 !important;
-}
-
-#videochatModal .modal-body .col-md-2 .video-icon.active {
-  color: #3D8939;
-}
-
-#videochatModal .modal-body .col-md-2 .video-icon {
-  color: #C82E33;
-}
-
-#videochatModal .modal-body hr {
-  margin-top: 0.5rem !important;
-  margin-bottom: 0.5rem !important;
-}
-
+/* info desk  */
 #info_desk .private-booth-btn {
   position: fixed;
   top: 100px;
@@ -648,6 +617,7 @@ body {
   object-fit: cover;
 }
 
+/* -------------------------------------MODAL CSS ----------------------------------------------------------------------- */
 /* blue header modal component  */
 .blue-modal-header {
   background-color: #133882;
@@ -682,7 +652,7 @@ body {
   padding: 0 !important;
 }
 
-/* --------------------------------------- tab bar edit profile and business card profile modal -------------------------------------- */
+/* ---------------------------------- tab bar edit profile and business card profile modal ------------------------------- */
 
 #profileModal .col-md-6 {
   margin-top: 10px;
@@ -793,7 +763,7 @@ body {
   }
 }
 
-/* --------------------------------------------------- chat Modal and brochures modal  ------------------------------------------------------------ */
+/* ------------------------------------- chat Modal and brochures modal  -------------------------------------------------- */
 #eventbagmodal hr,
 #brochuresmodal hr {
   margin-top: 0.5rem !important;
@@ -1159,4 +1129,33 @@ a {
     padding: 10px 15px;
   }
 
+}
+
+/* video chat modal - general chat  */
+
+#videochatModal {
+  overflow: hidden !important;
+  max-height: 400px !important;
+}
+
+#videochatModal .modal-dialog {
+  max-height: 400px !important;
+  width: 400px;
+}
+
+#videochatModal .modal-body .col-md-10 p {
+  margin-bottom: 0 !important;
+}
+
+#videochatModal .modal-body .col-md-2 .video-icon.active {
+  color: #3D8939;
+}
+
+#videochatModal .modal-body .col-md-2 .video-icon {
+  color: #C82E33;
+}
+
+#videochatModal .modal-body hr {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
 }
