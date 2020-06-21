@@ -1,10 +1,11 @@
-// aos init
+//------------------------------------------- AOS INIT -------------------------------------------//
+
 AOS.init();
 
 //close announcemenets modal on screen ready
 toggleAnnouncementsModal();
 
-//toast displayed and goes off after 10 secs
+//------------------------------------------- toast -------------------------------------------//
 $(document).ready(function () {
   $(".login-toast").toast("show");
   setTimeout(function () {
@@ -16,9 +17,8 @@ $(document).ready(function () {
 $(".booth-btns").hide();
 $(".private-booth-btn").hide();
 
-// $('.booth-btns').delay(5000).fadeIn(500)
+//------------------------------------------- DROPDOWN PROFILE -------------------------------------------//
 
-// dropdown profile
 $(function () {
   // ------------------------------------------------------- //
   // Multi Level dropdowns
@@ -84,10 +84,7 @@ $("body").scroll(function () {
   }
 });
 
-//auditorium - virtualbooth
-function VirtualBooth() {
-  document.getElementById("virtual_booth").click();
-}
+//------------------------------------------- EXPO HALL BOOTH  -------------------------------------------//
 
 //expo hall - slick caorousel
 $(document).ready(function () {
@@ -121,6 +118,13 @@ $(document).ready(function () {
     });
   }
 });
+
+//on logo click - go to virtual booth
+function VirtualBooth() {
+  document.getElementById("virtual_booth").click();
+}
+
+//------------------------------------------- MODAL CUSTOM JS -------------------------------------------//
 
 //Business card modal
 function openBusinessCardModal() {
@@ -179,13 +183,3 @@ window.addEventListener("resize", function () {
     $("#speakerModal .close").click();
   }
 });
-
-//general chat tab btn
-// $(function () {
-//   $('.booth-btns').hide();
-
-//   function fadeImage() {
-//     $('.booth-btns').fadeIn(4000);
-//   }
-
-// });
