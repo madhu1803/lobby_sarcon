@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)https://ticketing.sarcontech.com/ask-question/virtual/77/attendee/13391 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title></title>
+	<!-- jQuery -->
+	<script src="./jquery.min.js"></script>
+
+	<!-- Firebase -->
+	<script src="./firebase.js"></script>
+	<style type="text/css">
+		.example-base {
+		  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		  color: #333; }
+
+		.hide {
+		  display: none; }
+
+		.l-demo-container {
+		  width: 100%;
+		  word-wrap: break-word; }
+
+		.l-popout {
+		  margin: 0;
+		  padding: 0;
+		  border: 0; }
+		  .l-popout iframe {
+		    width: 100%;
+		    height: 100%;
+		    min-height: 100%;
+		    margin: 0;
+		    padding: 0;
+		    border: 0; }
+
+		.example-chat {
+		  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		  border-radius: 3px;
+		  background-color: #dfe3ea;
+		  border: 1px solid #CCC;
+		  overflow: auto;
+		  padding: 0px;
+		  font-size: 18px;
+		  line-height: 22px;
+		  color: #666; }
+		  .example-chat header {
+		    background-color: #EEE;
+		    background: -webkit-gradient(linear, left top, left bottom, from(#EEEEEE), to(#DDDDDD));
+		    background: -webkit-linear-gradient(top, #EEEEEE, #DDDDDD);
+		    background: linear-gradient(top, #EEEEEE, #DDDDDD);
+		    -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.9), 0px 1px 2px rgba(0, 0, 0, 0.1);
+		    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.9), 0px 1px 2px rgba(0, 0, 0, 0.1);
+		    border-radius: 3px 3px 0px 0px;
+		    border-bottom: 1px solid #CCC;
+		    line-height: 24px;
+		    font-size: 12px;
+		    text-align: center;
+		    color: #999; }
+		  .example-chat input {
+		    -webkit-box-sizing: border-box;
+		    -moz-box-sizing: border-box;
+		    box-sizing: border-box;
+		    -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+		    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+		    border-radius: 3px;
+		    padding: 0px 10px;
+		    height: 30px;
+		    font-size: 18px;
+		    width: 100%;
+		    font-weight: normal;
+		    outline: none; }
+		  .example-chat .example-chat-toolbar {
+		    background-color: #FFF;
+		    padding: 10px;
+		    position: relative;
+		    border-bottom: 1px solid #CCC; }
+		    .example-chat .example-chat-toolbar label {
+		      text-transform: uppercase;
+		      line-height: 32px;
+		      font-size: 14px;
+		      color: #999;
+		      position: absolute;
+		      top: 10px;
+		      left: 20px;
+		      z-index: 1; }
+		    .example-chat .example-chat-toolbar input {
+		      -webkit-box-shadow: none;
+		      box-shadow: none;
+		      border: 1px solid #FFF;
+		      padding-left: 100px;
+		      color: #999; }
+		      .example-chat .example-chat-toolbar input:active, .example-chat .example-chat-toolbar input:focus {
+		        color: #1d9dff;
+		        border: 1px solid #FFF; }
+		  .example-chat ul {
+		    list-style: none;
+		    margin: 0px;
+		    padding: 20px;
+		    height: 300px;
+		    overflow: auto; }
+		    .example-chat ul li {
+		      margin-bottom: 10px;
+		      line-height: 24px; }
+		      .example-chat ul li:last-child {
+		        margin: 0px; }
+		    .example-chat ul .example-chat-username {
+		      margin-right: 10px; }
+		  .example-chat footer {
+		    display: block;
+		    padding: 10px; }
+		    .example-chat footer input {
+		      border: 1px solid #ced3db;
+		      height: 40px; }
+
+		#colorholder {
+		  width: 480px;
+		  height: 30px;
+		  border: 2px solid #424547;
+		  margin: 5px auto 0px auto; }
+
+		#drawing-canvas {
+		  border: 3px solid #999; }
+
+		.colorbox {
+		  width: 22px;
+		  height: 22px;
+		  margin: 1px;
+		  display: inline-block;
+		  border: 3px solid black; }
+
+		.example-leaderboard {
+		  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+		  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+		  padding: 20px;
+		  border-radius: 5px;
+		  background-color: white;
+		  overflow: auto;
+		  color: #666; }
+		  .example-leaderboard table {
+		    border-radius: 3px;
+		    margin-bottom: 20px;
+		    width: 100%;
+		    border-collapse: collapse; }
+		    .example-leaderboard table th {
+		      background: #EEE;
+		      border-bottom: 1px solid #CCC;
+		      font-size: 12px;
+		      color: #999;
+		      padding: 5px 10px;
+		      text-align: left; }
+		    .example-leaderboard table td {
+		      border-bottom: 1px solid #EEE;
+		      padding: 10px;
+		      color: #28a562; }
+		      .example-leaderboard table td em {
+		        font-style: normal;
+		        font-weight: bold;
+		        color: #666; }
+		    .example-leaderboard table tr:first-child td {
+		      background: green; }
+		  .example-leaderboard input {
+		    -webkit-box-sizing: border-box;
+		    -moz-box-sizing: border-box;
+		    box-sizing: border-box;
+		    -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+		    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+		    border-radius: 3px;
+		    padding: 0px 10px;
+		    height: 30px;
+		    font-size: 18px;
+		    font-weight: normal;
+		    outline: none;
+		    border: 1px solid #CCC; }
+		    .example-leaderboard input.example-leaderboard-name {
+		      width: 186px;
+		      margin-right: 10px; }
+		    .example-leaderboard input.example-leaderboard-score {
+		      width: 300px; }
+
+		#highestscore {
+		  margin-top: 20px;
+		  font-size: 14px; }
+
+		/* Presence */
+		#presenceDiv {
+		  text-align: center; }
+
+		/* Tetris */
+		.tetris-body {
+		  width: 600px; }
+
+		#canvas0, #canvas1 {
+		  display: inline-block;
+		  border: 4px solid #424547; }
+
+		#restartButton {
+		  margin-top: 5px; }
+
+		#gameInProgress {
+		  font-size: 14px; }
+	</style>
+<script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script></head>
+<body>
+	
+	<!-- CHAT MARKUP -->
+	<div class="example-chat l-demo-container">
+	  <header>Q &amp; A</header>
+
+	  <!-- <div class='example-chat-toolbar'>
+	    <label for="nameInput">Username:</label>
+	    <input type='text' id='nameInput' placeholder='enter a username...'>
+	  </div> -->
+
+	  <ul id="example-messages" class="example-chat-messages"><li><strong class="example-chat-username">Pavan Kumar</strong>the cyberworld is moving towards password less technology ? what are your thoughts on this?</li><li><strong class="example-chat-username">Pavan Kumar</strong>and how secure its is and what security steps we need to consider</li><li><strong class="example-chat-username">Pavan Kumar</strong>there are cyberattacks by the cyber criminals where there are self-destructing mechanisms . how to detect them apart IDS/IPS or with IDS/IPS?</li><li><strong class="example-chat-username">G Testing</strong>From Preeti if password vault compromises, what is the proposed fixed for that..</li><li><strong class="example-chat-username">Sheril</strong>do you have any recommendation on OT security of pharma industry? especially for SCADA, PLC and HMI?</li><li><strong class="example-chat-username">Dr Mukesh</strong>guidelines</li><li><strong class="example-chat-username">G Testing</strong>In a covid era now is the healthcare industry more targeted by cyber threats globally?</li><li><strong class="example-chat-username">G Testing</strong>Harmit asks Where did u see failure of WHO on the COVID19 Pandemic ?</li><li><strong class="example-chat-username">G Testing</strong>Amol asks -  WHO enabling any program and software to ensure early detection of such pandemic in future and alerting the same to all countries to avoid any catastrophic failures</li><li><strong class="example-chat-username">Shashank </strong>With various apps like aarogya setu and others mandated by Governments worldwide to Track the pandemic spread.. How safe secure and data privacy is getting impacted of all the users using these apps? </li><li><strong class="example-chat-username">Pavan Kumar</strong>Excellent . Humans are the strongest and weakest in any organizations</li><li><strong class="example-chat-username">Pavan Kumar</strong>what are your thoughts on business continuity in these kind of situations i.e covid19? How and what exactly the organizations need to look at ?</li><li><strong class="example-chat-username">Pavan Kumar</strong>i mean resiliency </li><li><strong class="example-chat-username">Jitendra</strong>What changes or protocol change foreseen for international travelling and what additional health check and medication for any international travellers</li><li><strong class="example-chat-username">G Testing</strong>Amol - What is WHO plan for next year or Future for ensuring security if maintained at optimum level.</li><li><strong class="example-chat-username">Pavan Kumar</strong>I see Work from home is going to become new working model . How the cyber world need to look at ? it involves people, assets , software etc.</li><li><strong class="example-chat-username">Pavan Kumar</strong>as you rightly said the impersonation may prevail in this kind of working model by the hackers</li><li><strong class="example-chat-username">Jitendra</strong>Questions I asked because our kids are again going to resume after this for further studies</li><li><strong class="example-chat-username">Shashank </strong>Thanks for your insights</li><li><strong class="example-chat-username">Pavan Kumar</strong>THank you and big applaud to the anchor and team Trescon</li></ul>
+
+	  <footer data-children-count="1">
+	    <input type="text" id="messageInput" placeholder="Type a message...">
+	  </footer>
+	</div>
+
+	    <script type="text/javascript">
+	    	// CREATE A REFERENCE TO FIREBASE
+	    	 var messagesRef = new Firebase(`https://project-6612417184855685496-a6a61.firebaseio.com/production/Q&A/virtual77`);
+
+	    	 // REGISTER DOM ELEMENTS
+	    	 var messageField = $('#messageInput');
+	    	 var nameField = 'Kumar';
+	    	 var messageList = $('#example-messages');
+
+	    	 // LISTEN FOR KEYPRESS EVENT
+	    	 messageField.keypress(function (e) {
+	    	   if (e.keyCode == 13) {
+	    	     //FIELD VALUES
+	    	     var username = 'Kumar';
+	    	     var message = messageField.val();
+
+	    	     //SAVE DATA TO FIREBASE AND EMPTY FIELD
+	    	     messagesRef.push({name:username, text:message, virtual_id:'77'});
+	    	     messageField.val('');
+	    	   }
+	    	 });
+
+	    	 // Add a callback that is triggered for each chat message.
+	    	 messagesRef.limitToLast(20).on('child_added', function (snapshot) {
+	    	   //GET DATA
+	    	   var data = snapshot.val();
+	    	   var username = data.name || "anonymous";
+	    	   var message = data.text;
+
+	    	   //CREATE ELEMENTS MESSAGE & SANITIZE TEXT
+	    	   var messageElement = $("<li>");
+	    	   var nameElement = $("<strong class='example-chat-username'></strong>")
+	    	   nameElement.text(username);
+	    	   messageElement.text(message).prepend(nameElement);
+
+	    	   //ADD MESSAGE
+	    	   messageList.append(messageElement)
+
+	    	   //SCROLL TO BOTTOM OF MESSAGE LIST
+	    	   messageList[0].scrollTop = messageList[0].scrollHeight;
+	    	 });
+	    </script>
+	   
+
+</body></html>
