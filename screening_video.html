@@ -174,42 +174,42 @@
 	<div class="tabs-holder">
 		<ul class="nav nav-tabs" id="myTab" role="tablist">
 			<li class="nav-item tab-item">
-				<a class="nav-link active" data-toggle="tab" href="#lobby" id="lobby_tab">
+				<a class="nav-link active" data-toggle="tab" id="lobby_tab" onClick="tabclick(this.id)">
 					<i class="fas fa-compass"></i>Lobby
 				</a>
 			</li>
 			<li class="nav-item tab-item">
-				<a class="nav-link" data-toggle="tab" href="#auditorium" id="auditorium_tab">
+				<a class="nav-link" data-toggle="tab" id="auditorium_tab" onClick="tabclick(this.id)">
 					<i class="fas fa-microphone"></i>Auditorium
 				</a>
 			</li>
 			<li class="nav-item tab-item">
-				<a class="nav-link" data-toggle="tab" href="#exhibition_hall">
+				<a class="nav-link" data-toggle="tab" id="exhibition_tab" onClick="tabclick(this.id)">
 					<i class="fas fa-store"></i>Expo Hall
 				</a>
 			</li>
 			<li class="nav-item tab-item">
-				<a class="nav-link" data-toggle="tab" href="#lounge">
+				<a class="nav-link" data-toggle="tab" id="lounge_tab" onClick="tabclick(this.id)">
 					<i class="fas fa-users"></i>Lounge
 				</a>
 			</li>
 			<li class="nav-item tab-item">
-				<a class="nav-link" data-toggle="tab" href="#info_desk">
+				<a class="nav-link" data-toggle="tab" onClick="tabclick(this.id)" id="infodesk_tab">
 					<i class="fas fa-info"></i>Info Desk
 				</a>
 			</li>
 			<li class="nav-item tab-item d-none">
-				<a class="nav-link" data-toggle="tab" href="#booth" id="virtual_booth">
+				<a class="nav-link" data-toggle="tab" id="virtual_booth" onClick="tabclick(this.id)">
 					<i class="fas fa-poll-h"></i>Booth
 				</a>
 			</li>
 			<li class="nav-item tab-item">
-				<a class="nav-link" data-toggle="tab" href="#general_chat">
+				<a class="nav-link" data-toggle="tab" id="chat_tab" onClick="tabclick(this.id)">
 					<i class="fas fa-comments"></i>General Chat
 				</a>
 			</li>
 			<li class="nav-item tab-item">
-				<a class="nav-link" data-toggle="tab" href="#">
+				<a class="nav-link" data-toggle="tab" onClick="tabclick(this.id)" id="leaderboard_tab">
 					<i class="fas fa-trophy"></i>LeaderBoard
 				</a>
 			</li>
@@ -219,7 +219,7 @@
 				</a>
 			</li>
 			<li class="nav-item tab-item">
-				<a id="emoji_button" class="nav-link">
+				<a id="emoji_button" class="nav-link" onClick="tabclick(this.id)">
 					<i class="far fa-smile"></i>
 					<i class="fa fa-angle-down mr-0"></i>
 				</a>

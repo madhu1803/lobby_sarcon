@@ -41,6 +41,6 @@ $(".polling-btn").click(function () {
   $("#poll_button").click();
 });
 
-function btnclick() {
-  window.location.href = "./index.html?tab_id=tab1";
+function tabclick(tab_value) {
+  window.location.href = "./index.html?tab_id=".concat(tab_value);
 }
