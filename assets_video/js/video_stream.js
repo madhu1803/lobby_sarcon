@@ -42,5 +42,5 @@ $(".polling-btn").click(function () {
 });
 
 function btnclick() {
-  window.location.href = "./lobby_sarcon.html";
+  window.location.href = "./index.html?tab_id=tab1";
 }

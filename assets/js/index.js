@@ -183,3 +183,10 @@ window.addEventListener("resize", function () {
     $("#speakerModal .close").click();
   }
 });
+
+var url_string = window.location.href
+var url = new URL(url_string);
+var c = url.searchParams.get("tab_id");
+console.log(c);
+if (c == 'tab1')
+  $('#auditorium_tab').click()

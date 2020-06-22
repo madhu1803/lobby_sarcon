@@ -173,6 +173,62 @@
 
 <body onload="initTracking()" data-gr-c-s-loaded="true" cz-shortcut-listen="true">
 	<!--madhus code-->
+	<!-- Navigation Bar Start
+	<div class="tabs-holder">
+		<ul class="nav nav-tabs" id="myTab" role="tablist">
+			<li class="nav-item tab-item">
+				<a class="nav-link active" data-toggle="tab" href="#lobby" id="lobby_tab">
+					<i class="fas fa-compass"></i>Lobby
+				</a>
+			</li>
+			<li class="nav-item tab-item">
+				<a class="nav-link" data-toggle="tab" href="#auditorium" id="auditorium_tab">
+					<i class="fas fa-microphone"></i>Auditorium
+				</a>
+			</li>
+			<li class="nav-item tab-item">
+				<a class="nav-link" data-toggle="tab" href="#exhibition_hall">
+					<i class="fas fa-store"></i>Expo Hall
+				</a>
+			</li>
+			<li class="nav-item tab-item">
+				<a class="nav-link" data-toggle="tab" href="#lounge">
+					<i class="fas fa-users"></i>Lounge
+				</a>
+			</li>
+			<li class="nav-item tab-item">
+				<a class="nav-link" data-toggle="tab" href="#info_desk">
+					<i class="fas fa-info"></i>Info Desk
+				</a>
+			</li>
+			<li class="nav-item tab-item d-none">
+				<a class="nav-link" data-toggle="tab" href="#booth" id="virtual_booth">
+					<i class="fas fa-poll-h"></i>Booth
+				</a>
+			</li>
+			<li class="nav-item tab-item">
+				<a class="nav-link" data-toggle="tab" href="#general_chat">
+					<i class="fas fa-comments"></i>General Chat
+				</a>
+			</li>
+			<li class="nav-item tab-item">
+				<a class="nav-link" data-toggle="tab" href="#">
+					<i class="fas fa-trophy"></i>LeaderBoard
+				</a>
+			</li>
+			<li class="nav-item tab-item">
+				<a class="nav-link" href=" http://madhumithaa.xyz/chat-UI/">
+					<i class="fas fa-user-friends"></i>Networking Zone
+				</a>
+			</li>
+			<li class="nav-item tab-item">
+				<a id="emoji_button" class="nav-link">
+					<i class="far fa-smile"></i>
+					<i class="fa fa-angle-down mr-0"></i>
+				</a>
+			</li>
+		</ul>
+	</div> -->
 	<!-- chat Button trigger modal -->
 	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#chatModal" id="chat-modal-btn">
 		<i class="fas fa-user-friends"></i> Quick Network Zone <span class="badge badge-light ml-1"><i
@@ -612,7 +668,6 @@
 			</div>
 		</center>
 	</div>
-	<button class="btn btn-primary" style="position: absolute; top: 50px;" onclick="btnclick()">back</button>
 
 	<script type="text/javascript">
 		setInterval(function () {
@@ -682,9 +737,7 @@
 			pageAnalytics("audiencePage");
 			userAnalytics("audiencePage");
 		}
-		function btnclick() {
-			window.location.href = "./index.html";
-		}
+
 
 	</script>
 	<!-- Popper.js, then Bootstrap JS -->
