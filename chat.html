@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Page</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- font-awesome icons -->
+    <link rel="stylesheet" href="./assets_chat/css/font_awesome.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets_chat/css/main.css">
+</head>
+
+<body>
+    <nav class="navbar custom_nav_bar">
+        <a class="navbar-brand">Big Cyber Security Show</a>
+
+        <div class="nav_icons">
+            <button onclick="toggleChatRooms()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <button onclick="toggleActiveUsers()">
+                <i class="fas fa-users"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="container-fluid main_chat_screen_container">
+        <div class="row">
+            <!-- chat rooms -- start -->
+            <div class="col-lg-3 individual_screen chat_rooms">
+                <div class="scroll_content">
+
+                    <div class="header cursor" id="chat-1">
+                        <p>Direct Messages</p>
+                        <i class="fas fa-caret-up"></i>
+                    </div>
+                    <div class="header_content" id="content-1">
+                        <div class="message_indicator_box to_messages active">
+                            <i class="fas fa-comments"></i>
+                            <p>Madhumithaa</p>
+                        </div>
+                        <div class="message_indicator_box to_messages">
+                            <i class="fas fa-comments"></i>
+                            <p>Test Name 1</p>
+                        </div>
+                    </div>
+                    <!-- ============================ TODO: dummy start ============================ -->
+                    <div class="header cursor" id="chat-2">
+                        <p>Chat Rooms</p>
+                        <i class="fas fa-caret-up"></i>
+                    </div>
+                    <div class="header_content" id="content-2">
+                        <div class="message_indicator_box to_messages active">
+                            <i class="fas fa-comments"></i>
+                            <p>Test Name 1</p>
+                        </div>
+                        <div class="message_indicator_box to_messages">
+                            <i class="fas fa-comments"></i>
+                            <p>Test Name 2</p>
+                        </div>
+                        <a href="#">
+                            <div class="message_indicator_box" onclick="formInput()">
+                                <i class="fas fa-comments"></i>
+                                <p>Test Name 3</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- ============================ TODO: dummy end ============================ -->
+
+                </div>
+            </div>
+            <!-- chat rooms -- end -->
+
+            <!-- messages page -- start -->
+            <div class="col-lg-6 individual_screen messages">
+                <div class="messages_header">
+                    <i class="fas fa-comments"></i>
+                    <p>General Chat</p>
+                    <i onclick="toggleChatRooms()" class="fas fa-times close_button"></i>
+                </div>
+                <div class="scroll_content messages_scroll">
+
+                    <div class="single_message_container recipient">
+                        <div class="single_message">
+                            <div class="img_holder">
+                                <img src="./assets_chat/img/avatar.svg" />
+                            </div>
+                            <div class="message_text">
+                                <p><b>Test Name 1:</b> <small>19, May 2019</small></p>
+                                <p>Test here</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_message_container myself">
+                        <div class="single_message">
+                            <div class="img_holder">
+                                <img src="./assets_chat/img/avatar.svg" />
+                            </div>
+                            <div class="message_text">
+                                <p><b>Test Name 1:</b> <small>19, May 2019</small></p>
+                                <p>Test here</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ============================ TODO: dummy content start ============================ -->
+                    <div class="single_message_container recipient">
+                        <div class="single_message">
+                            <div class="img_holder">
+                                <img src="./assets_chat/img/avatar.svg" />
+                            </div>
+                            <div class="message_text">
+                                <p><b>Test Name 1:</b> <small>19, May 2019</small></p>
+                                <p>Test here</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_message_container myself">
+                        <div class="single_message">
+                            <div class="img_holder">
+                                <img src="./assets_chat/img/avatar.svg" />
+                            </div>
+                            <div class="message_text">
+                                <p><b>Test Name 1:</b> <small>19, May 2019</small></p>
+                                <p>Test here</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_message_container recipient">
+                        <div class="single_message">
+                            <div class="img_holder">
+                                <img src="./assets_chat/img/avatar.svg" />
+                            </div>
+                            <div class="message_text">
+                                <p><b>Test Name 1:</b> <small>19, May 2019</small></p>
+                                <p>Test here</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_message_container recipient">
+                        <div class="single_message">
+                            <div class="img_holder">
+                                <img src="./assets_chat/img/avatar.svg" />
+                            </div>
+                            <div class="message_text">
+                                <p><b>Test Name 1:</b> <small>19, May 2019</small></p>
+                                <p>Test here</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_message_container myself">
+                        <div class="single_message">
+                            <div class="img_holder">
+                                <img src="./assets_chat/img/avatar.svg" />
+                            </div>
+                            <div class="message_text">
+                                <p><b>Test Name 1:</b> <small>19, May 2019</small></p>
+                                <p>Test here</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_message_container recipient">
+                        <div class="single_message">
+                            <div class="img_holder">
+                                <img src="./assets_chat/img/avatar.svg" />
+                            </div>
+                            <div class="message_text">
+                                <p><b>Test Name 1:</b> <small>19, May 2019</small></p>
+                                <p>Test here</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_message_container recipient">
+                        <div class="single_message">
+                            <div class="img_holder">
+                                <img src="./assets_chat/img/avatar.svg" />
+                            </div>
+                            <div class="message_text">
+                                <p><b>Test Name 1:</b> <small>19, May 2019</small></p>
+                                <p>Test here</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_message_container myself">
+                        <div class="single_message">
+                            <div class="img_holder">
+                                <img src="./assets_chat/img/avatar.svg" />
+                            </div>
+                            <div class="message_text">
+                                <p><b>Test Name 1:</b> <small>19, May 2019</small></p>
+                                <p>Test here</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ============================ TODO: dummy content end ============================ -->
+
+                </div>
+                <div class="input_holder">
+                    <input placeholder="Enter Message" />
+                    <button><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <!-- messages page -- end -->
+
+            <!-- online users screen -- start -->
+            <div class="col-lg-3 individual_screen online_users">
+                <div class="scroll_content">
+
+                    <div class="header">
+                        <p>Online Users</p>
+                    </div>
+                    <div class="header_content">
+
+                        <div class="message_indicator_box to_messages">
+                            <img src="./assets_chat/img/avatar.svg" />
+                            <p>Madhumithaa</p>
+                        </div>
+
+                    </div>
+                    <div class="header">
+                        <p>Other Users</p>
+                    </div>
+                    <div class="header_content">
+
+                        <div class="message_indicator_box to_messages company">
+                            <img src="./assets_chat/img/avatar.svg" />
+                            <p>Madhumithaa</p>
+                            <small>test company</small>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- online users screen -- end -->
+        </div>
+    </div>
+
+    <!-- notification modal  -->
+    <div class="modal-dialog modal-dialog-scrollable " role="document" id="notification-modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" id="notification-modal-header">
+                <h5 class="modal-title">Announcements</h5>
+                <button id="minimize-btn"> <i class='fa fa-minus'></i> </button>
+                <button type="button" class="close" onclick="toggleAnnouncementsModal()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body notification-modal-class" id="notification-modal-body">
+                <div class="list-group" id="list-messages">
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+                        <div class="d-flex w-100 justify-content-between">
+                            <div class="media w-100 mb-3">
+                                <div class="media-body">
+                                    <div class="notification-username mb-2 px-3 py-2">
+                                        <p class="text-small mb-0 text-white">Ashish chaudary</p>
+                                    </div>
+                                    <div class="bg-white rounded py-2 px-3 mb-2">
+                                        <p class="text-small mb-0 text-muted">Test which
+                                            is a new approach all
+                                            solutions</p>
+                                    </div>
+                                    <p class="small text-muted  ml-3">12:00 PM | Aug 13</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <div class="media w-100 mb-3">
+                                <div class="media-body  ">
+                                    <div class="notification-username mb-2 px-3 py-2 text-white">
+                                        <p class="text-small mb-0 text-white">Ashish chaudary</p>
+                                    </div>
+                                    <div class="bg-white rounded py-2 px-3 mb-2">
+                                        <p class="text-small mb-0 text-muted">Test which
+                                            is a new approach all
+                                            solutions</p>
+                                    </div>
+                                    <p class="small text-muted ml-3">12:00 PM | Aug 13</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <div class="media w-100 mb-3">
+                                <div class="media-body ">
+                                    <div class="notification-username mb-2 px-3 py-2 text-white">
+                                        <p class="text-small mb-0 text-white">Ashish chaudary</p>
+                                    </div>
+                                    <div class="bg-white rounded py-2 px-3 mb-2">
+                                        <p class="text-small mb-0 text-muted">Test which
+                                            is a new approach all
+                                            solutions</p>
+                                    </div>
+                                    <p class="small text-muted  ml-3">12:00 PM | Aug 13</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <div class="media w-100 mb-3">
+                                <div class="media-body">
+                                    <div class="notification-username mb-2 px-3 py-2 text-white">
+                                        <p class="text-small mb-0 text-white">Ashish chaudary</p>
+                                    </div>
+                                    <div class="bg-white rounded py-2 px-3 mb-2">
+                                        <p class="text-small mb-0 text-muted ">Test which
+                                            is a new approach all
+                                            solutions</p>
+                                    </div>
+                                    <p class="small text-muted ml-3">12:00 PM | Aug 13</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- sweetalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- custom js -->
+    <script src="./assets_chat/js/main.js"></script>
+</body>
+
+</html>
