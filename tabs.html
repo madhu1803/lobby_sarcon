@@ -38,19 +38,24 @@
             display: inline-block;
         }
 
-        .session-container-icons {
+        .tab-content .session-container-icons {
             float: right;
         }
 
-        .session-container-icons i {
+        .tab-content .session-container-icons i {
             font-size: 20px;
             margin: 20px 10px;
             cursor: pointer;
         }
 
-        .session-container {
+        .tab-content .session-container {
             width: 100%;
             padding-top: 5%;
+        }
+
+        .tab-content .add-session {
+            cursor: pointer;
+            color: blue;
         }
     </style>
 </head>
@@ -93,10 +98,14 @@
                         <div class="col-md-12">
                             <div class="form-group form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                <label class="form-check-label" for="exampleCheck1">Mark as Streaming Session</label>
                             </div>
                         </div>
                     </div>
+                </div>
+                <hr>
+                <div class="add-session">
+                    <p>+ Add Session</p>
                 </div>
             </div>
             <div class="tab-pane" id="contact_02">Contact Form: Molly Lewis</div>
