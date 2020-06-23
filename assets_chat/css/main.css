@@ -5,6 +5,74 @@ body {
   height: 100%;
 }
 
+/* --------------------------------------------------- tab bar section ------------------------------------------------------ */
+
+/* tabs section */
+.tabs-holder {
+  background-color: #133882;
+  height: 50px !important;
+}
+
+.tabs-holder .nav-tabs .nav-link.active,
+.tabs-holder .nav-tabs .nav-link {
+  background-color: transparent;
+  border: none;
+  color: white;
+  border-radius: 0;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.tabs-holder .nav.nav-tabs {
+  text-align: center;
+  border: none;
+  overflow-x: auto;
+  overflow-y: hidden !important;
+  white-space: nowrap;
+  display: block;
+  padding: 1% 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tabs-holder .nav-tabs .nav-link:hover,
+.tabs-holder .nav-tabs .nav-link.active:hover {
+  background: white;
+  color: #2c5ed3 !important;
+}
+
+.tabs-holder .nav-tabs .nav-link:hover i,
+.tabs-holder .nav-tabs .nav-link.active:hover i {
+  color: #2c5ed3 !important;
+}
+
+.tabs-holder .nav-tabs .nav-link i {
+  margin-right: 10px;
+  font-size: 20px;
+  color: white !important;
+
+}
+
+.tabs-holder .nav-tabs .nav-item {
+  display: inline-block;
+}
+
+.tab-content>.tab-pane {
+  margin: 0;
+  padding: 0;
+}
+
+.tabs-holder .nav-tabs .nav-item .tab-action-btn {
+  color: white !important;
+  margin-right: 20px !important;
+}
+
+.tabs-holder .nav-tabs .nav-item .tab-action-btn:hover {
+  color: #2c5ed3 !important;
+}
+
 * {
   color: #828181;
 }
@@ -69,12 +137,10 @@ body {
 }
 
 .message_indicator_box.active {
-  background-image: linear-gradient(
-    90deg,
-    #2096f3 10%,
-    #409de2 30%,
-    #4ebeda 60%
-  );
+  background-image: linear-gradient(90deg,
+      #2096f3 10%,
+      #409de2 30%,
+      #4ebeda 60%);
 }
 
 .message_indicator_box.active i {
@@ -177,12 +243,10 @@ body {
   margin-right: 0;
   margin-left: auto;
   flex-direction: row-reverse;
-  background-image: linear-gradient(
-    90deg,
-    #2096f3 10%,
-    #409de2 30%,
-    #4ebeda 60%
-  );
+  background-image: linear-gradient(90deg,
+      #2096f3 10%,
+      #409de2 30%,
+      #4ebeda 60%);
 }
 
 .single_message_container.recipient .single_message .message_text p {
@@ -269,6 +333,7 @@ body {
 a {
   text-decoration: none !important;
 }
+
 /*announcements modal*/
 /* notification modal */
 #notification-modal-dialog {
@@ -285,6 +350,7 @@ a {
   padding-top: 10px !important;
   padding-bottom: 10px !important;
 }
+
 #notification-modal-header .modal-title {
   color: #3197f3 !important;
 }
@@ -292,6 +358,7 @@ a {
 #minimize-btn .fa-minus {
   color: #3197f3 !important;
 }
+
 #minimize-btn {
   position: absolute;
   right: 40px;
@@ -304,12 +371,10 @@ a {
 }
 
 .notification-username {
-  background-image: linear-gradient(
-    90deg,
-    #2096f3 10%,
-    #409de2 30%,
-    #4ebeda 60%
-  );
+  background-image: linear-gradient(90deg,
+      #2096f3 10%,
+      #409de2 30%,
+      #4ebeda 60%);
 }
 
 @media only screen and (max-width: 450px) {

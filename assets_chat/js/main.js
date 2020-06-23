@@ -81,3 +81,8 @@ $("#minimize-btn").click();
 function toggleAnnouncementsModal() {
   $("#notification-modal-dialog").toggleClass("d-none");
 }
+
+//go back to main page
+function tabclick(tab_value) {
+  window.location.href = "./index.html?tab_id=".concat(tab_value);
+}
