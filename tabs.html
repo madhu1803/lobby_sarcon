@@ -13,6 +13,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
     <style>
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: "Montserrat", sans-serif;
+        }
+
         .container {
             margin-top: 10px;
         }
@@ -50,7 +58,7 @@
 
         .tab-content .session-container {
             width: 100%;
-            padding-top: 5%;
+            padding-top: 6%;
         }
 
         .tab-content .add-session {
@@ -76,38 +84,81 @@
         </ul>
         <div class="tab-content">
             <div class="tab-pane active" id="contact_01">
+                <!--session icons -container 1-->
                 <div class="session-container-icons">
                     <i class="fas fa-edit"></i>
                     <i class="fas fa-sort-amount-up-alt"></i>
                     <i class="fas fa-times"></i>
                 </div>
+                <!--session container -container 2-->
                 <div class="container session-container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p>Name</p>
-                        </div>
-                        <div class="col-md-6">
-                            <p>Date</p>
-                        </div>
-                        <div class="col-md-6">
-                            <p>Description</p>
-                        </div>
-                        <div class="col-md-6">
-                            <p>Time</p>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Mark as Streaming Session</label>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="name">Name</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="name">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="date">Date</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <input type="date" class="form-control" id="date">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="designation">Designation</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="designation">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="time">Time</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <input type="time" class="form-control" id="time">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group form-check mt-2">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Mark as Streaming
+                                        Session</label>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        <hr>
+                        <div class="add-session">
+                            <p>+ Add Session</p>
+                        </div>
+                    </form>
                 </div>
-                <hr>
-                <div class="add-session">
-                    <p>+ Add Session</p>
-                </div>
+                <!--session ontainer 2 end-->
             </div>
+            <!-- tab pane end -->
             <div class="tab-pane" id="contact_02">Contact Form: Molly Lewis</div>
         </div>
     </div>
@@ -136,7 +187,7 @@
             var id = $(".nav-tabs").children().length; //think about it ;)
             var tabId = 'contact_' + id;
             $(this).closest('li').before('<li class="nav-item"><a href="#contact_' + id + '" class="nav-link">Hall ' + id + '</a> <span> x </span></li>');
-            $('.tab-content').append('<div class="tab-pane" id="' + tabId + '">Contact Form: New Contact ' + id + '</div>');
+            $('.tab-content').append('<div class="tab-pane" id="' + tabId + '">hello</div>');
             $('.nav-tabs li:nth-child(' + id + ') a').click();
         });
     </script>
