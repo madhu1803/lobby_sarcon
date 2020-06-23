@@ -843,10 +843,9 @@
                             <!-- online users screen -- start -->
                             <div class="col-lg-4 individual_screen online_users">
                                 <div class="scroll_content">
-
                                     <div class="header">
                                         <!--search bar start -->
-                                        <nav class="navbar navbar-light mb-3 form-inline">
+                                        <nav class="navbar navbar-light mb-3">
                                             <input class="form-control mr-sm-2 mb-1" placeholder="Search" type="search">
                                             <button class="btn btn-outline-success my-2 my-sm-0"
                                                 onclick="searchResults()">Search</button>
@@ -1067,12 +1066,10 @@
                                     <div class="header">
                                         <!--search bar start -->
                                         <nav class="navbar navbar-light mb-3">
-                                            <form class="form-inline">
-                                                <input class="form-control mr-sm-2" type="search" placeholder="Search"
-                                                    aria-label="Search">
-                                                <button class="btn btn-outline-success my-2 my-sm-0"
-                                                    type="submit">Search</button>
-                                            </form>
+                                            <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                                aria-label="Search">
+                                            <button class="btn btn-outline-success"
+                                                onclick="searchResults()">Search</button>
                                         </nav>
                                         <!--search bar end -->
                                         <p>My Interactions
@@ -1266,6 +1263,16 @@
                                             </form>
                                         </nav>
                                         <!--search bar end -->
+                                        <div class="header_content search-results d-none mb-3">
+                                            <div class="message_indicator_box to_messages company ">
+                                                <img src="./assets/images/user.svg" />
+                                                <p>Madhumithaa<i class="fas fa-circle"></i><i
+                                                        class="fas fa-address-card"
+                                                        onclick="openBusinessCardModal()"></i>
+                                                </p>
+                                                <small>test company</small>
+                                            </div>
+                                        </div>
                                         <p>Exhibitor Representatives
                                         </p>
                                     </div>
@@ -1449,6 +1456,16 @@
                                             </form>
                                         </nav>
                                         <!--search bar end -->
+                                        <div class="header_content search-results d-none mb-3">
+                                            <div class="message_indicator_box to_messages company ">
+                                                <img src="./assets/images/user.svg" />
+                                                <p>Madhumithaa<i class="fas fa-circle"></i><i
+                                                        class="fas fa-address-card"
+                                                        onclick="openBusinessCardModal()"></i>
+                                                </p>
+                                                <small>test company</small>
+                                            </div>
+                                        </div>
                                         <p>Speakers
                                         </p>
                                     </div>

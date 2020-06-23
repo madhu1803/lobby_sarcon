@@ -854,6 +854,16 @@ body {
   padding: 0 !important;
 }
 
+.black-chat-modal-header .navbar input {
+  padding: 0 !important;
+  width: 68% !important;
+  padding-left: 15px !important;
+}
+
+.black-chat-modal-header .navbar button {
+  margin-right: 10px !important;
+}
+
 .messages {
   padding: 0;
 }
