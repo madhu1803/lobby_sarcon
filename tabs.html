@@ -4,6 +4,12 @@
 <head>
     <title>jQuery UI Tab : Add and Remove Tabs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
     <style>
@@ -31,6 +37,21 @@
         .nav-tabs>li:hover>span {
             display: inline-block;
         }
+
+        .session-container-icons {
+            float: right;
+        }
+
+        .session-container-icons i {
+            font-size: 20px;
+            margin: 20px 10px;
+            cursor: pointer;
+        }
+
+        .session-container {
+            width: 100%;
+            padding-top: 5%;
+        }
     </style>
 </head>
 
@@ -49,24 +70,44 @@
             </li>
         </ul>
         <div class="tab-content">
-            <div class="tab-pane active" id="contact_01">Contact Form: Joe Smith</div>
+            <div class="tab-pane active" id="contact_01">
+                <div class="session-container-icons">
+                    <i class="fas fa-edit"></i>
+                    <i class="fas fa-sort-amount-up-alt"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="container session-container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>Name</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Date</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Description</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Time</p>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="tab-pane" id="contact_02">Contact Form: Molly Lewis</div>
         </div>
     </div>
 
-    <!-- Fancy Box -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         crossorigin="anonymous"></script>
-    <!-- Slick Carousel JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <!-- AOS Animate JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         $(".nav-tabs").on("click", "a", function (e) {
             e.preventDefault();
