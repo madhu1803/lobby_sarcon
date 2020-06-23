@@ -39,11 +39,13 @@
 
     <div class="container">
         <ul class="nav nav-tabs" role="tablist">
-            <li class="active"><a href="#contact_01" data-toggle="tab">Joe Smith</a><span>x</span>
+            <li class="nav-item active"><a href="#contact_01" data-toggle="tab" class="nav-link active">Joe
+                    Smith</a><span>x</span>
             </li>
-            <li><a href="#contact_02" data-toggle="tab">Molly Lewis</a> <span> x </span>
+            <li class="nav-item"><a href="#contact_02" data-toggle="tab" class="nav-link">Molly Lewis</a> <span> x
+                </span>
             </li>
-            <li><a href="#" class="add-contact">+ Add Contact</a>
+            <li class="nav-item"><a href="#" class="nav-link add-contact">+ Add Contact</a>
             </li>
         </ul>
         <div class="tab-content">
@@ -83,7 +85,7 @@
             e.preventDefault();
             var id = $(".nav-tabs").children().length; //think about it ;)
             var tabId = 'contact_' + id;
-            $(this).closest('li').before('<li><a href="#contact_' + id + '">New Tab</a> <span> x </span></li>');
+            $(this).closest('li').before('<li class="nav-item"><a href="#contact_' + id + '" class="nav-link">New Tab</a> <span> x </span></li>');
             $('.tab-content').append('<div class="tab-pane" id="' + tabId + '">Contact Form: New Contact ' + id + '</div>');
             $('.nav-tabs li:nth-child(' + id + ') a').click();
         });
