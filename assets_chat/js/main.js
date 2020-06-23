@@ -69,14 +69,7 @@ function formInput() {
 }
 
 // notification modal functions
-
-//minimize modal
-$("#minimize-btn").click(function () {
-  $(".notification-modal-class").toggleClass("d-none");
-});
-
-//on load minimize notification modal
-$("#minimize-btn").click();
+toggleAnnouncementsModal()
 
 function toggleAnnouncementsModal() {
   $("#notification-modal-dialog").toggleClass("d-none");

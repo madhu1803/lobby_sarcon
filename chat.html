@@ -297,13 +297,16 @@
             <!-- online users screen -- end -->
         </div>
     </div>
-
+    <!-- notification modal btn icon -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" onclick="toggleAnnouncementsModal()"
+        id="notification-btn">
+        <i class="fa fa-bullhorn" aria-hidden="true"></i>
+    </button>
     <!-- notification modal  -->
     <div class="modal-dialog modal-dialog-scrollable " role="document" id="notification-modal-dialog">
         <div class="modal-content">
             <div class="modal-header" id="notification-modal-header">
                 <h5 class="modal-title">Announcements</h5>
-                <button id="minimize-btn"> <i class='fa fa-minus'></i> </button>
                 <button type="button" class="close" onclick="toggleAnnouncementsModal()">
                     <span aria-hidden="true">&times;</span>
                 </button>

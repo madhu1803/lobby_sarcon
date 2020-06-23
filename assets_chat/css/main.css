@@ -342,6 +342,17 @@ a {
 }
 
 /*announcements modal*/
+#notification-btn {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#notification-btn i {
+  color: white;
+}
+
 /* notification modal */
 #notification-modal-dialog {
   min-width: 280px;
@@ -360,15 +371,6 @@ a {
 
 #notification-modal-header .modal-title {
   color: #3197f3 !important;
-}
-
-#minimize-btn .fa-minus {
-  color: #3197f3 !important;
-}
-
-#minimize-btn {
-  position: absolute;
-  right: 40px;
 }
 
 .list-group-item,
