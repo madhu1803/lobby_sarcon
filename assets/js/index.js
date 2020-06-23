@@ -125,7 +125,9 @@ function VirtualBooth() {
 }
 
 //------------------------------------------- MODAL CUSTOM JS -------------------------------------------//
-
+function searchResults() {
+  $('.search-results').toggleClass('d-none')
+}
 //Business card modal
 function openBusinessCardModal() {
   $("#businessCardModal").modal("show");

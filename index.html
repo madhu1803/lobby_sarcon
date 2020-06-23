@@ -846,15 +846,16 @@
 
                                     <div class="header">
                                         <!--search bar start -->
-                                        <nav class="navbar navbar-light mb-3">
-                                            <form class="form-inline">
-                                                <input class="form-control mr-sm-2" type="search" placeholder="Search"
-                                                    aria-label="Search">
-                                                <button class="btn btn-outline-success my-2 my-sm-0"
-                                                    type="submit">Search</button>
-                                            </form>
+                                        <nav class="navbar navbar-light mb-3 form-inline">
+                                            <input class="form-control mr-sm-2 mb-1" placeholder="Search" type="search">
+                                            <button class="btn btn-outline-success my-2 my-sm-0"
+                                                onclick="searchResults()">Search</button>
                                         </nav>
                                         <!--search bar end -->
+                                        <p class="d-none search-results mb-1"
+                                            style="margin-bottom: 15px !important;margin-top: 15px !important;">results
+                                            found!</p>
+
                                         <p>My Interactions
                                         </p>
                                     </div>
