@@ -76,10 +76,10 @@
             <li class="nav-item active"><a href="#contact_01" data-toggle="tab" class="nav-link active">Hall
                     1</a><span>x</span>
             </li>
-            <li class="nav-item"><a href="#contact_02" data-toggle="tab" class="nav-link">Hall 2</a> <span>
+            <!-- <li class="nav-item"><a href="#contact_02" data-toggle="tab" class="nav-link">Hall 2</a> <span>
                     x
                 </span>
-            </li>
+            </li> -->
             <li class="nav-item"><a href="#" class="nav-link add-contact"> + Add Hall</a>
             </li>
         </ul>
@@ -297,8 +297,8 @@
                 var id = $(".nav-tabs").children().length; //think about it ;)
                 var tabId = 'contact_' + id;
                 $(this).closest('li').before('<li class="nav-item"><a href="#contact_' + id + '" class="nav-link">Hall ' + id + '</a> <span> x </span></li>');
-                // $('.tab-content').append('<div class="tab-pane" id="' + tabId + '">hello</div>');
-                $('.tab-content').append(session);
+                $('.tab-content').append('<div class="tab-pane" id="' + tabId + '">hello</div>');
+                // $('.tab-content').append(session);
                 $('.nav-tabs li:nth-child(' + id + ') a').click();
             });
 
@@ -379,8 +379,10 @@
                             <a type="button" data-toggle="modal" data-target="#AddSessionModal"> + Add Session</a>
                         </div>`;
 
+                var activeTab = $(".tab-content").find(".active");
+                var id = activeTab.attr('id');
                 $('.add-session').empty()
-                $('.tab-content .tab-pane.active .main-session-container').append(myString)
+                $("#" + id).append(myString)
             }
         </script>
 
