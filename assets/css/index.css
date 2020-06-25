@@ -1180,7 +1180,12 @@ a {
 }
 
 #videochatModal .modal-body .col-md-10 p {
-  margin-bottom: 0 !important;
+  margin-bottom: 10px !important;
+  font-size: 17px !important;
+}
+
+#videochatModal .modal-body .col-md-10 .room-description {
+  font-size: 13px !important;
 }
 
 #videochatModal .modal-body .col-md-2 .video-icon.active {
