@@ -105,7 +105,8 @@
                                         </div>
                                         <div class="col-md-8">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" id="Session Description">
+                                                <textarea class="form-control" id="Session Description">
+                                                    </textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -183,11 +184,11 @@
                             <div class="col-md-12">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <label for="Session Name">Session Name</label>
+                                        <label for="Session_Name">Session Name</label>
                                     </div>
                                     <div class="col-md-8">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="Session Name">
+                                            <input type="text" class="form-control" id="Session_Name">
                                         </div>
                                     </div>
                                 </div>
@@ -207,11 +208,12 @@
                             <div class="col-md-12">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <label for="Session Description">Session Description</label>
+                                        <label for="Session_Description">Session Description</label>
                                     </div>
                                     <div class="col-md-8">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="Session Description">
+                                            <textarea type="text" class="form-control" id="Session_Description">
+                                                </textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -265,9 +267,17 @@
         crossorigin="anonymous"></script>
     <script>
         function add() {
+
             var id = $(".form-container form").length + 1;
             var form_id = 'form_' + id;
-            alert(form_id)
+            var name = $("#AddSessionModal #Session_Name").val();
+            var date = $("#AddSessionModal #date").val();
+            var description = $("#AddSessionModal #Session_Description").val();
+            var starttime = $("#AddSessionModal #starttime").val();
+            var endtime = $("#AddSessionModal #endtime").val();
+            var stream = $("#AddSessionModal input[type='checkbox']").val();
+            console.log(name, date, description, starttime, endtime)
+
             var myString = `<div class="form-container">
                     <form id='${form_id}'>
                      <!--session icons -container 1-->
@@ -286,7 +296,7 @@
                                         </div>
                                         <div class="col-md-8">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" id="Session Name">
+                                                <input type="text" class="form-control" id="Session_Name" value='${name}'>
                                             </div>
                                         </div>
                                     </div>
@@ -298,7 +308,7 @@
                                         </div>
                                         <div class="col-md-8">
                                             <div class="form-group">
-                                                <input type="date" class="form-control" id="date">
+                                                <input type="date" class="form-control" id="date" value='${date}'>
                                             </div>
                                         </div>
                                     </div>
@@ -310,7 +320,8 @@
                                         </div>
                                         <div class="col-md-8">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" id="Session Description">
+                                                <textarea type="text" class="form-control" id="Session_Description" value='${description}'>
+                                                </textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -322,7 +333,7 @@
                                         </div>
                                         <div class="col-md-8">
                                             <div class="form-group">
-                                                <input type="time" class="form-control" id="starttime">
+                                                <input type="time" class="form-control" id="starttime" value='${starttime}'>
                                             </div>
                                         </div>
                                     </div>
@@ -341,7 +352,7 @@
                                         </div>
                                         <div class="col-md-8">
                                             <div class="form-group">
-                                                <input type="time" class="form-control" id="time">
+                                                <input type="time" class="form-control" id="endtime" value='${endtime}'>
                                             </div>
                                         </div>
                                     </div>
