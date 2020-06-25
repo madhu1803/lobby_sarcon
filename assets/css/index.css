@@ -1172,11 +1172,13 @@ a {
 #videochatModal {
   overflow: hidden !important;
   max-height: 400px !important;
+  position: fixed;
+  top: 70px;
 }
 
 #videochatModal .modal-dialog {
   max-height: 400px !important;
-  width: 400px;
+  max-width: 400px;
 }
 
 #videochatModal .modal-body .col-md-10 p {
