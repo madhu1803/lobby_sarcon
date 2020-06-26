@@ -200,7 +200,7 @@
                                     </div>
                                     <div class="col-md-8">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="Session_Name">
+                                            <input type="text" class="form-control" name="Session_Name">
                                         </div>
                                     </div>
                                 </div>
@@ -212,7 +212,7 @@
                                     </div>
                                     <div class="col-md-8">
                                         <div class="form-group">
-                                            <input type="date" class="form-control" id="date">
+                                            <input type="date" class="form-control date" name="date">
                                         </div>
                                     </div>
                                 </div>
@@ -224,7 +224,8 @@
                                     </div>
                                     <div class="col-md-8">
                                         <div class="form-group">
-                                            <textarea class="form-control" id="Session_Description">
+                                            <textarea class="form-control Session_Description"
+                                                name="Session_Description">
                                                 </textarea>
                                         </div>
                                     </div>
@@ -237,7 +238,7 @@
                                     </div>
                                     <div class="col-md-8">
                                         <div class="form-group">
-                                            <input type="time" class="form-control" id="starttime">
+                                            <input type="time" class="form-control starttime" name="starttime">
                                         </div>
                                     </div>
                                 </div>
@@ -249,14 +250,14 @@
                                     </div>
                                     <div class="col-md-8">
                                         <div class="form-group">
-                                            <input type="time" class="form-control" id="endtime">
+                                            <input type="time" class="form-control endtime" name="endtime">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group form-check mt-2">
-                                    <input type="checkbox" class="form-check-input" id="checkbox">
+                                    <input type="checkbox" class="form-check-input checkbox" name="checkbox">
                                     <label class="form-check-label" for="exampleCheck1">Mark as Streaming
                                         Session</label>
                                 </div>
@@ -281,35 +282,24 @@
         var id;
         var form_id;
         function clearsessionform() {
-            $("#AddSessionModal #Session_Name").val('');
-            $("#AddSessionModal #date").val('');
-            $("#AddSessionModal #Session_Description").val('');
-            $("#AddSessionModal #starttime").val('');
-            $("#AddSessionModal #endtime").val('');
-            $('#AddSessionModal #checkbox').prop('unchecked')
+            $("#AddSessionModal .Session_Name").val('');
+            $("#AddSessionModal .date").val('');
+            $("#AddSessionModal .Session_Description").val('');
+            $("#AddSessionModal .starttime").val('');
+            $("#AddSessionModal .endtime").val('');
+            $('#AddSessionModal .checkbox').prop('unchecked')
         }
-
-        $('.fa-edit').click(function () {
-            id = $(".form-container form").length + 1;
-            form_id = 'form_' + id;
-
-        })
-        $('.fa-times').click(function () {
-            id = $(".form-container form").length + 1;
-            form_id = 'form_' + id;
-
-        })
 
 
         function add() {
             var id = $(".form-container form").length + 1;
             var form_id = 'form_' + id;
-            var name = $("#AddSessionModal #Session_Name").val();
-            var date = $("#AddSessionModal #date").val();
-            var description = $("#AddSessionModal #Session_Description").val();
-            var starttime = $("#AddSessionModal #starttime").val();
-            var endtime = $("#AddSessionModal #endtime").val();
-            var stream = $('#AddSessionModal #checkbox').prop('checked')
+            var name = $("#AddSessionModal .Session_Name").val();
+            var date = $("#AddSessionModal .date").val();
+            var description = $("#AddSessionModal .Session_Description").val();
+            var starttime = $("#AddSessionModal .starttime").val();
+            var endtime = $("#AddSessionModal .endtime").val();
+            var stream = $('#AddSessionModal .checkbox').prop('checked')
 
             var myString = `<div class="form-container">
                     <form id='${form_id}'>
@@ -317,7 +307,7 @@
                         <div class="session-container-icons">
                             <i class="fas fa-edit" data-toggle="modal" data-target="#UpdateSessionModal" onClick='UpdateSessionModal(${form_id})'></i>
                             <i class="fas fa-sort-amount-up-alt"></i>
-                            <i class="fas fa-times" onClick='remove(${form_id})'></i>
+                            <i class="fas fa-times" onClick="remove('${form_id}')"></i>
                         </div>
                         <!--session container -container 2-->
                         <div class="container session-container">
@@ -408,19 +398,19 @@
 
         function UpdateSessionModal(form) {
             formid = $("form").attr("id");
-            var name = $("#" + formid + " #Session_Name").val();
-            var description = $("#" + formid + " #Session_Description").val();
-            var starttime = $("#" + formid + " #starttime").val();
-            var endtime = $("#" + formid + " #endtime").val();
-            var date = $("#" + formid + " #date").val();
-            var stream = $("#" + formid + " #checkbox").prop('checked')
+            var name = $("#" + formid + " .Session_Name").val();
+            var description = $("#" + formid + " .Session_Description").val();
+            var starttime = $("#" + formid + " .starttime").val();
+            var endtime = $("#" + formid + " .endtime").val();
+            var date = $("#" + formid + " .date").val();
+            var stream = $("#" + formid + " .checkbox").prop('checked')
 
-            $("#UpdateSessionModal #Session_Name").val(name);
-            $("#UpdateSessionModal #date").val(date);
-            $("#UpdateSessionModal #Session_Description").val(description);
-            $("#UpdateSessionModal #starttime").val(starttime);
-            $("#UpdateSessionModal #endtime").val(endtime);
-            $('#UpdateSessionModal #checkbox').prop('checked')
+            $("#UpdateSessionModal .Session_Name").val(name);
+            $("#UpdateSessionModal .date").val(date);
+            $("#UpdateSessionModal .Session_Description").val(description);
+            $("#UpdateSessionModal .starttime").val(starttime);
+            $("#UpdateSessionModal .endtime").val(endtime);
+            $('#UpdateSessionModal .checkbox').prop('checked')
 
         }
 
@@ -429,9 +419,8 @@
         }
 
         function remove(form) {
-            formid = $("form").attr("id");
-            alert(formid)
-            // $('#' + formid).remove()
+            alert(form)
+            $('#' + form).remove()
         }
 
     </script>
