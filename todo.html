@@ -266,7 +266,8 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Reset</button>
-                    <button type="button" class="btn btn-primary" onclick="update()" data-dismiss="modal">Save
+                    <button type="button" class="btn btn-primary" onclick="update('${form_id}')"
+                        data-dismiss="modal">Save
                     </button>
                 </div>
             </div>
@@ -413,8 +414,9 @@
 
         }
 
-        function update() {
+        function update(form) {
             alert("hello")
+            alert(form)
         }
 
         function remove(form) {
