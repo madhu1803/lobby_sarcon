@@ -278,6 +278,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         crossorigin="anonymous"></script>
     <script>
+        var id;
+        var form_id;
         function clearsessionform() {
             $("#AddSessionModal #Session_Name").val('');
             $("#AddSessionModal #date").val('');
@@ -286,6 +288,18 @@
             $("#AddSessionModal #endtime").val('');
             $('#AddSessionModal #checkbox').prop('unchecked')
         }
+
+        $('.fa-edit').click(function () {
+            id = $(".form-container form").length + 1;
+            form_id = 'form_' + id;
+
+        })
+        $('.fa-times').click(function () {
+            id = $(".form-container form").length + 1;
+            form_id = 'form_' + id;
+
+        })
+
 
         function add() {
             var id = $(".form-container form").length + 1;
@@ -416,7 +430,8 @@
 
         function remove(form) {
             formid = $("form").attr("id");
-            $('#' + formid).empty()
+            alert(formid)
+            // $('#' + formid).remove()
         }
 
     </script>
