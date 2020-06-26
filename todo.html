@@ -266,7 +266,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Reset</button>
-                    <button type="button" class="btn btn-primary" onclick="add()" data-dismiss="modal">Save
+                    <button type="button" class="btn btn-primary" onclick="update()" data-dismiss="modal">Save
                     </button>
                 </div>
             </div>
@@ -301,9 +301,9 @@
                     <form id='${form_id}'>
                      <!--session icons -container 1-->
                         <div class="session-container-icons">
-                            <i class="fas fa-edit" data-toggle="modal" data-target="#UpdateSessionModal" onClick='UpdateSessionModal(this.id)'></i>
+                            <i class="fas fa-edit" data-toggle="modal" data-target="#UpdateSessionModal" onClick='UpdateSessionModal(${form_id})'></i>
                             <i class="fas fa-sort-amount-up-alt"></i>
-                            <i class="fas fa-times"></i>
+                            <i class="fas fa-times" onClick='remove(${form_id})'></i>
                         </div>
                         <!--session container -container 2-->
                         <div class="container session-container">
@@ -392,8 +392,31 @@
             $("#" + idt).append(myString)
         }
 
-        function UpdateSessionModal(id) {
-            alert(id)
+        function UpdateSessionModal(form) {
+            formid = $("form").attr("id");
+            var name = $("#" + formid + " #Session_Name").val();
+            var description = $("#" + formid + " #Session_Description").val();
+            var starttime = $("#" + formid + " #starttime").val();
+            var endtime = $("#" + formid + " #endtime").val();
+            var date = $("#" + formid + " #date").val();
+            var stream = $("#" + formid + " #checkbox").prop('checked')
+
+            $("#UpdateSessionModal #Session_Name").val(name);
+            $("#UpdateSessionModal #date").val(date);
+            $("#UpdateSessionModal #Session_Description").val(description);
+            $("#UpdateSessionModal #starttime").val(starttime);
+            $("#UpdateSessionModal #endtime").val(endtime);
+            $('#UpdateSessionModal #checkbox').prop('checked')
+
+        }
+
+        function update() {
+            alert("hello")
+        }
+
+        function remove(form) {
+            formid = $("form").attr("id");
+            $('#' + formid).empty()
         }
 
     </script>
