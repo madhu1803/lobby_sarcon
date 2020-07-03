@@ -19,6 +19,8 @@
         crossorigin="anonymous">
     <!-- Custom css -->
     <link rel="stylesheet" href="assets/css/index.css">
+    <!-- Add IntroJs styles -->
+    <link rel="stylesheet" href="assets/css/introjs.css">
     <title>Lobby</title>
 </head>
 
@@ -122,70 +124,75 @@
                     </div>
                 </div>
                 <!-- Grid system -->
-                <div class="grid-container">
-                    <div class="row">
-                        <div class="col-md-4 exhibition-container">
-                            <div class="jumbotron jumbotron-fluid">
-                                <div class="container">
-                                    <h4 class="display-5">Enter Exhibition</h4>
-                                    <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space
+                <a href="javascript:void(0);" onclick="javascript:introJs().setOption('showProgress', true).start();">
+                    <div class="grid-container">
+                        <div class="row">
+                            <div class="col-md-4 exhibition-container" data-step="1" data-intro="Ok, wasn't that fun?"
+                                data-position='right'>
+                                <div class=" jumbotron jumbotron-fluid">
+                                    <div class="container">
+                                        <h4 class="display-5">Enter Exhibition</h4>
+                                        <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space
                                     of its
                                     parent.</p> -->
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 auditorium-container">
-                            <div class="jumbotron jumbotron-fluid">
-                                <div class="container">
-                                    <h4 class="display-5">Enter Auditorium</h4>
-                                    <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space
+                            <div class="col-md-4 auditorium-container">
+                                <div class="jumbotron jumbotron-fluid" data-step="2" data-intro="Ok, wasn't that fun?"
+                                    data-position='right'>
+                                    <div class="container">
+                                        <h4 class="display-5">Enter Auditorium</h4>
+                                        <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space
                                     of its
                                     parent.</p> -->
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 networking-container">
-                            <div class="jumbotron jumbotron-fluid">
-                                <div class="container">
-                                    <h4 class="display-5">Enter Networking Lounge</h4>
-                                    <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space
+                            <div class="col-md-4 networking-container">
+                                <div class="jumbotron jumbotron-fluid" data-step="3"
+                                    data-intro="More features, more fun." data-position='left'>
+                                    <div class="container">
+                                        <h4 class="display-5">Enter Networking Lounge</h4>
+                                        <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space
                                     of its
                                     parent.</p> -->
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 event-guide-container">
-                            <div class="jumbotron jumbotron-fluid">
-                                <div class="container">
-                                    <h4 class="display-5">Event Guide</h4>
-                                    <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space
+                            <div class="col-md-4 event-guide-container">
+                                <div class="jumbotron jumbotron-fluid">
+                                    <div class="container">
+                                        <h4 class="display-5">Event Guide</h4>
+                                        <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space
                                     of its
                                     parent.</p> -->
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 faq-container">
-                            <div class="jumbotron jumbotron-fluid">
-                                <div class="container">
-                                    <h4 class="display-5">FAQ'S</h4>
-                                    <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space
+                            <div class="col-md-4 faq-container">
+                                <div class="jumbotron jumbotron-fluid">
+                                    <div class="container">
+                                        <h4 class="display-5">FAQ'S</h4>
+                                        <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space
                                     of its
                                     parent.</p> -->
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 agenda-container">
-                            <div class="jumbotron jumbotron-fluid">
-                                <div class="container">
-                                    <h4 class="display-5">Agenda</h4>
-                                    <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space
+                            <div class="col-md-4 agenda-container">
+                                <div class="jumbotron jumbotron-fluid">
+                                    <div class="container">
+                                        <h4 class="display-5">Agenda</h4>
+                                        <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space
                                     of its
                                     parent.</p> -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
         <!-- Auditorium Panel -->
@@ -2551,6 +2558,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <!-- AOS Animate JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- intro js -->
+    <script src="assets/js/intro.js"></script>
     <!-- Custom js -->
     <script src="assets/js/index.js"></script>
     <script>

@@ -1,430 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>tabs</title>
-    <meta Session Name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <title>Basic usage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Intro.js - Better introductions for websites and features with a step-by-step guide for your projects.">
+    <meta name="author" content="Afshin Mehrabani (@afshinmeh) in usabli.ca group">
+
+    <!-- styles -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/demo.css" rel="stylesheet">
+
+    <!-- Add IntroJs styles -->
+    <link href="../../introjs.css" rel="stylesheet">
+
+    <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet">
 </head>
-<style>
-    body {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        font-family: "Montserrat", sans-serif;
-    }
-
-    .main-container {
-        margin-top: 10px;
-    }
-
-    .tab-content .session-container-icons {
-        float: right;
-    }
-
-    .tab-content .session-container-icons i {
-        font-size: 20px;
-        margin: 20px 10px;
-        cursor: pointer;
-    }
-
-    .tab-content .session-container {
-        width: 100%;
-        padding-top: 6%;
-    }
-
-    .tab-content .add-session {
-        cursor: pointer;
-        color: blue;
-    }
-</style>
 
 <body>
-    <div class="main-container container">
-        <!--nav tabs -->
-        <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-tab1" role="tab"
-                    aria-controls="nav-home" aria-selected="true">Hall 1</a>
-                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-tab2" role="tab"
-                    aria-controls="nav-profile" aria-selected="false">Hall 2</a>
-                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-tab3" role="tab"
-                    aria-controls="nav-contact" aria-selected="false">Hall 3</a>
-            </div>
-        </nav>
-        <!-- tabs content -->
-        <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-tab1" role="tabpanel">
 
-                <!--session ontainer 3 -->
-                <div class="container add-session pt-4">
-                    <a type="button" data-toggle="modal" data-target="#AddSessionModal" onClick="clearsessionform()">+
-                        Add Session</a>
-                </div>
+    <div class="container-narrow">
 
+        <div class="masthead">
+            <ul class="nav nav-pills pull-right" data-step="5" data-intro="Get it, use it.">
+                <li><a href="https://github.com/usablica/intro.js/tags"><i class='icon-black icon-download-alt'></i>
+                        Download</a></li>
+                <li><a href="https://github.com/usablica/intro.js">Github</a></li>
+                <li><a href="https://twitter.com/usablica">@usablica</a></li>
+            </ul>
+            <h3 class="muted">Intro.js</h3>
+        </div>
+
+        <hr>
+
+        <div class="jumbotron">
+            <h1 data-step="1" data-intro="This is a tooltip!">Basic Usage</h1>
+            <p class="lead" data-step="4" data-intro="Another step.">This is the basic usage of IntroJs, with
+                <code>data-step</code> and <code>data-intro</code> attributes.</p>
+            <a class="btn btn-large btn-success" href="javascript:void(0);" onclick="javascript:introJs().start();">Show
+                me how</a>
+        </div>
+
+        <hr>
+
+        <div class="row-fluid marketing">
+            <div class="span6" data-step="2" data-intro="Ok, wasn't that fun?" data-position='right'
+                data-scrollTo='tooltip'>
+                <h4>Section One</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue a neque cursus ac blandit
+                    orci faucibus. Phasellus nec metus purus.</p>
+
+                <h4>Section Two</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue a neque cursus ac blandit
+                    orci faucibus. Phasellus nec metus purus.</p>
+
+                <h4>Section Three</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue a neque cursus ac blandit
+                    orci faucibus. Phasellus nec metus purus.</p>
             </div>
-            <!-- tab pane end -->
-            <div class="tab-pane fade" id="nav-tab2" role="tabpanel">
-                <div class="container tab-container">
-                    tab 2
-                </div>
-            </div>
-            <div class="tab-pane fade" id="nav-tab3" role="tabpanel">
-                <div class="container tab-container">
-                    tab 3
-                </div>
+
+            <div class="span6" data-step="3" data-intro="More features, more fun." data-position='left'>
+                <h4>Section Four</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue a neque cursus ac blandit
+                    orci faucibus. Phasellus nec metus purus.</p>
+
+                <h4>Section Five</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue a neque cursus ac blandit
+                    orci faucibus. Phasellus nec metus purus.</p>
+
+                <h4>Section Six</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue a neque cursus ac blandit
+                    orci faucibus. Phasellus nec metus purus.</p>
+
             </div>
         </div>
+
+        <hr>
     </div>
-
-
-    <!-- Add Session Modal -->
-    <div class="modal fade" id="AddSessionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Add Session</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <label for="Session_Name">Session Name</label>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="Session_Name">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <label for="date">Date</label>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="form-group">
-                                            <input type="date" class="form-control" id="date">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <label for="Session_Description">Session Description</label>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="form-group">
-                                            <textarea class="form-control" id="Session_Description">
-                                                </textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <label for="starttime">From</label>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="form-group">
-                                            <input type="time" class="form-control" id="starttime">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <label for="endtime">To</label>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="form-group">
-                                            <input type="time" class="form-control" id="endtime">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group form-check mt-2">
-                                    <input type="checkbox" class="form-check-input" id="checkbox">
-                                    <label class="form-check-label" for="exampleCheck1">Mark as Streaming
-                                        Session</label>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Reset</button>
-                    <button type="button" class="btn btn-primary" onclick="add()" data-dismiss="modal">Save
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Edit Session Modal -->
-    <div class="modal fade" id="UpdateSessionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Edit Session</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <label for="Session_Name">Session Name</label>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="Session_Name">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <label for="date">Date</label>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="form-group">
-                                            <input type="date" class="form-control date" id="date">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <label for="Session_Description">Session Description</label>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="form-group">
-                                            <textarea class="form-control Session_Description" id="Session_Description">
-                                                </textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <label for="starttime">From</label>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="form-group">
-                                            <input type="time" class="form-control starttime" id="starttime">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <label for="endtime">To</label>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="form-group">
-                                            <input type="time" class="form-control endtime" id="endtime">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group form-check mt-2">
-                                    <input type="checkbox" class="form-check-input checkbox" id="checkbox">
-                                    <label class="form-check-label" for="exampleCheck1">Mark as Streaming
-                                        Session</label>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Reset</button>
-                    <button type="button" class="btn btn-primary" onclick="update('${form_id}')"
-                        data-dismiss="modal">Save
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        crossorigin="anonymous"></script>
-    <script>
-        var id;
-        var form_id;
-        function clearsessionform() {
-            $("#AddSessionModal #Session_Name").val('');
-            $("#AddSessionModal #date").val('');
-            $("#AddSessionModal #Session_Description").val('');
-            $("#AddSessionModal #starttime").val('');
-            $("#AddSessionModal #endtime").val('');
-            $('#AddSessionModal #checkbox').prop('unchecked')
-        }
-
-
-        function add() {
-            var id = $(".form-container form").length + 1;
-            var form_id = 'form_' + id;
-            var name = $("#AddSessionModal #Session_Name").val();
-            var date = $("#AddSessionModal #date").val();
-            var description = $("#AddSessionModal #Session_Description").val();
-            var starttime = $("#AddSessionModal #starttime").val();
-            var endtime = $("#AddSessionModal #endtime").val();
-            var stream = $('#AddSessionModal #checkbox').prop('checked')
-
-            var myString = `<div class="form-container">
-                    <form id='${form_id}'>
-                     <!--session icons -container 1-->
-                        <div class="session-container-icons">
-                            <i class="fas fa-edit" data-toggle="modal" data-target="#UpdateSessionModal" onClick='UpdateSessionModal(${form_id})'></i>
-                            <i class="fas fa-sort-amount-up-alt"></i>
-                            <i class="fas fa-times" onClick="remove('${form_id}')"></i>
-                        </div>
-                        <!--session container -container 2-->
-                        <div class="container session-container">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <label for="Session Name">Session Name</label>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="Session_Name" value='${name}'>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <label for="date">Date</label>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="form-group">
-                                                <input type="date" class="form-control" id="date" value='${date}'>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <label for="Session Description">Session Description</label>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="form-group">
-                                                <textarea class="form-control" id="Session_Description">${description}
-                                                </textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <label for="time">From</label>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="form-group">
-                                                <input type="time" class="form-control" id="starttime" value='${starttime}'>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group form-check mt-3">
-                                        <input type="checkbox" class="form-check-input" id="checkbox" ${stream === true ? 'checked' : 'unchecked'}>
-                                        <label class="form-check-label" for="checkbox">Mark as Streaming
-                                            Session</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <label for="endtime">To</label>
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="form-group">
-                                                <input type="time" class="form-control" id="endtime" value='${endtime}'>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                        </div>
-                        <!--session ontainer 3 -->
-                        <div class="container add-session">
-                            <a type="button" data-toggle="modal" data-target="#AddSessionModal" onClick="clearsessionform()">+ Add Session</a>
-                        </div>
-                        </form>
-                        </div>`;
-
-            var activeTab = $(".tab-content").find(".active");
-            var idt = activeTab.attr('id');
-            $('.add-session').empty()
-            $("#" + idt).append(myString)
-        }
-
-        function UpdateSessionModal(form) {
-            formid = form.id
-            var name = $("#" + formid + " #Session_Name").val();
-            var description = $("#" + formid + " #Session_Description").val();
-            var starttime = $("#" + formid + " #starttime").val();
-            var endtime = $("#" + formid + " #endtime").val();
-            var date = $("#" + formid + " #date").val();
-            var stream = $("#" + formid + " #checkbox").prop('checked')
-
-            $("#UpdateSessionModal #Session_Name").val(name);
-            $("#UpdateSessionModal #date").val(date);
-            $("#UpdateSessionModal #Session_Description").val(description);
-            $("#UpdateSessionModal #starttime").val(starttime);
-            $("#UpdateSessionModal #endtime").val(endtime);
-            $('#UpdateSessionModal #checkbox').prop('checked')
-
-        }
-
-        function update(form) {
-            alert("hello")
-            alert(form)
-        }
-
-        function remove(form) {
-            alert(form)
-            $('#' + form).remove()
-        }
-
-    </script>
+    <script type="text/javascript" src="../../intro.js"></script>
 </body>
 
 </html>
