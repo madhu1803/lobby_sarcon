@@ -1,0 +1,107 @@
+// temp elements placed in the body for introduction
+    // let intro_elements = [{
+    //         step: "1",
+    //         height: "55px",
+    //         width: "1500px",
+    //         top: "10px",
+    //         left: "10px",
+    //         data_intro: "use this nav bar to navigate!"
+    //     }, {
+    //         step: "2",
+    //         height: "23%",
+    //         width: "50%",
+    //         top: "10%",
+    //         left: "25%",
+    //         data_intro: "exhibitor logo"
+    //     },
+    //     {
+    //         step: "3",
+    //         height: "22%",
+    //         width: "35%",
+    //         top: "55%",
+    //         data_intro: "halls here"
+    //     },
+    //     {
+    //         step: "4",
+    //         height: "22%",
+    //         width: "35%",
+    //         top: "55%",
+    //         left: "33%",
+    //         data_intro: "halls here"
+    //     },
+    //     {
+    //         step: "5",
+    //         height: "22%",
+    //         width: "35%",
+    //         top: "55%",
+    //         left: "65%",
+    //         data_intro: "halls here"
+    //     },
+    //     {
+    //         step: "6",
+    //         height: "20%",
+    //         width: "21%",
+    //         top: "65%",
+    //         left: "40%",
+    //         data_intro: "help desk"
+    //     },
+    //     {
+    //         step: "7",
+    //         height: "5%",
+    //         width: "20%",
+    //         top: "95%",
+    //         left: "71%",
+    //         data_intro: "qnz"
+    //     },
+    //     {
+    //         step: "8",
+    //         height: "10%",
+    //         width: "25%",
+    //         top: "85%",
+    //         left: "41%",
+    //         data_intro: "event"
+    //     }
+    //]
+
+
+    let introduced = localStorage.getItem("is_introduced", false)
+    if (introduced === undefined || introduced === null) {
+        introduced = false
+    }
+
+    if (!introduced) {
+        // intro is necessary, create the temp elements and make them fly in body
+        intro_elements.forEach((element, index) => {
+            let intro_ele = document.createElement("div")
+            intro_ele.setAttribute("id", `intro_element_id-${index}`)
+            intro_ele.style.height = element.height
+            intro_ele.style.width = element.width
+            intro_ele.style.top = element.top
+            intro_ele.style.left = element.left
+            intro_ele.style.position = "absolute"
+            intro_ele.style.background = "transparent"
+            intro_ele.style.opacity = "0.2"
+            intro_ele.setAttribute("data-step", element.step)
+            intro_ele.setAttribute("data-intro", element.data_intro)
+            document.body.appendChild(intro_ele)
+        });
+
+        introJs().start();
+
+        localStorage.setItem("is_introduced", true)
+    }
+
+    introJs.fn.oncomplete(function() {
+        // remove temp elements after done
+        intro_elements.forEach((element, index) => {
+            let intro_ele = document.getElementById(`intro_element_id-${index}`)
+            intro_ele.remove()
+        });
+    });
+    </script>
+
+    <style>
+    .introjs-helperLayer {
+        opacity: 0.3 !important;
+    }
+    </style>

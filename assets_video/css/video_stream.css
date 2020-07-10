@@ -218,7 +218,8 @@
 
 #quick-network-chat-btn span,
 #chat-modal-btn span {
-    color: #F8C146;
+    width: 20px;
+    color: #157AF6 !important;
 }
 
 @media (min-width: 993px) {

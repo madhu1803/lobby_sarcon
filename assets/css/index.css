@@ -146,9 +146,9 @@ body {
 }
 
 /* grid system  jumbotron*/
-#lobby .grid-container .row .auditorium-container .jumbotron,
-#lobby .grid-container .row .exhibition-container .jumbotron,
-#lobby .grid-container .row .networking-container .jumbotron {
+.auditorium-container .jumbotron,
+.exhibition-container .jumbotron,
+.networking-container .jumbotron {
   height: 500px;
 }
 
