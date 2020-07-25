@@ -278,38 +278,6 @@ body {
   padding-top: 10px;
 }
 
-#exhibition_hall .exhibitors-container .multiple-items {
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-#exhibition_hall .exhibitors-container .multiple-items .booth-image {
-  margin-bottom: 30px;
-}
-
-#exhibition_hall .exhibitors-container .multiple-items img {
-  height: 30vh;
-}
-
-#exhibition_hall .exhibitors-container .multiple-items a {
-  color: white !important;
-}
-
-#exhibition_hall .exhibitors-container .multiple-items p {
-  margin-bottom: 0 !important;
-}
-
-@media (min-width: 768px) {
-  .slick-slide {
-    height: 77vh !important;
-  }
-}
-
-@media (max-width: 576px) {
-  #exhibition_hall .exhibitors-container .multiple-items img {
-    height: 100px;
-  }
-}
 
 /*------------------------------------------------  general chat tab content btns, private booth modal ------------------------------------------------ */
 
