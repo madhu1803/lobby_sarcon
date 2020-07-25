@@ -84,49 +84,9 @@ $("body").scroll(function () {
   }
 });
 
-//------------------------------------------- EXPO HALL BOOTH  -------------------------------------------//
-
-//expo hall - slick caorousel
-$(document).ready(function () {
-  width = $(window).width();
-  if (width >= 992) {
-    $(".multiple-items").slick({
-      rows: 2,
-      slidesPerRow: 3,
-      infinite: true,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 3000,
-    });
-  } else if (width <= 576) {
-    $(".multiple-items").slick({
-      infinite: true,
-      rows: 2,
-      slidesPerRow: 2,
-      slidesToScroll: 2,
-      autoplay: true,
-      autoplaySpeed: 3000,
-    });
-  } else if (width >= 768 && width > 576) {
-    $(".multiple-items").slick({
-      infinite: true,
-      rows: 2,
-      slidesPerRow: 3,
-      slidesToScroll: 2,
-      autoplay: true,
-      autoplaySpeed: 3000,
-    });
-  }
-});
-
-//on logo click - go to virtual booth
-function VirtualBooth() {
-  document.getElementById("virtual_booth").click();
-}
-
 //------------------------------------------- MODAL CUSTOM JS -------------------------------------------//
 function searchResults() {
-  $('.search-results').toggleClass('d-none')
+  $(".search-results").toggleClass("d-none");
 }
 //Business card modal
 function openBusinessCardModal() {
@@ -186,7 +146,7 @@ window.addEventListener("resize", function () {
   }
 });
 
-var url_string = window.location.href
+var url_string = window.location.href;
 var url = new URL(url_string);
 var c = url.searchParams.get("tab_id");
-$('#' + c).click()
+$("#" + c).click();
