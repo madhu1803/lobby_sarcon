@@ -137,7 +137,7 @@ $(".tab-item").click(function () {
 
 function VirtualBooth(){
   alert("virtual booth")
-  // $('.tab-item #virtual_booth').click()
+  $('.tab-item #virtual_booth').click()
 
 }
 
