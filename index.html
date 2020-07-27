@@ -283,66 +283,6 @@
                             <img class="img-fluid img-thumbnail" src="assets/images/harvard.jpeg" alt="">
                         </a>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-6">
-                        <a onclick="VirtualBooth()" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" src="assets/images/hbo.jpeg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6">
-                        <a onclick="VirtualBooth()" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" src="assets/images/pepsi.jpeg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6">
-                        <a onclick="VirtualBooth()" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" src="assets/images/twitter.jpeg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6">
-                        <a onclick="VirtualBooth()" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" src="assets/images/hbo.jpeg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6">
-                        <a onclick="VirtualBooth()" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" src="assets/images/addidas.jpeg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6">
-                        <a onclick="VirtualBooth()" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" src="assets/images/doritos.jpeg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6">
-                        <a onclick="VirtualBooth()" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" src="assets/images/harley-davidson.jpeg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6">
-                        <a onclick="VirtualBooth()" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" src="assets/images/harvard.jpeg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6">
-                        <a onclick="VirtualBooth()" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" src="assets/images/hbo.jpeg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6">
-                        <a onclick="VirtualBooth()" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" src="assets/images/pepsi.jpeg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6">
-                        <a onclick="VirtualBooth()" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" src="assets/images/twitter.jpeg" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6">
-                        <a onclick="VirtualBooth()" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" src="assets/images/hbo.jpeg" alt="">
-                        </a>
-                    </div>
                 </div>
                 <!-- container -->
                 <button type="button" class="btn btn-primary load-more-btn">Load More</button>
@@ -2615,37 +2555,48 @@
         // ajax req
         $(document).ready(function () {
             window.page = 1
-            $(".load-more-btn").click(function () {
+
+            function loadmore(){
                 $.ajax({
-                    url: "https://gprs-api.geopits.com/common/images/?page=1",
+                    url: `https://gprs-api.geopits.com/common/images/?page=${window.page}`,
                     beforeSend: function (xhr) {
                             /* Authorization header */
                             xhr.setRequestHeader("Authorization", "sessionid 6ehsar0xpdhxv3dh36pantzpaewu4aah");
                     },
                     success: function (result) {
                         alert('success')
-                        window.page = window.page + 1
-                        let data = result.results
+                        if(result.next !== null){
 
-                        for(let index = 0;index<data.length;index++){
-                            let single_data = data[index]
-                            console.log(single_data.image)
+                            window.page = window.page + 1
+                            let data = result.results
 
-                            var col_div = document.createElement("div");
-                            col_div.className = "col-lg-3 col-md-4 col-6";
+                            for(let index = 0;index<data.length;index++){
+                                let single_data = data[index]
+                                console.log(single_data.image)
 
-                            var col_a = document.createElement("a");
-                            col_a.className = "d-block mb-4 h-100";
-                            col_a.onclick= VirtualBooth
+                                var col_div = document.createElement("div");
+                                col_div.className = "col-lg-3 col-md-4 col-6";
 
-                            var col_img = document.createElement("img");
-                            col_img.className = "img-fluid img-thumbnail";
-                            col_img.src= single_data.image
+                                var col_a = document.createElement("a");
+                                col_a.className = "d-block mb-4 h-100";
+                                col_a.onclick= VirtualBooth
 
-                            col_a.appendChild(col_img)   
-                            col_div.appendChild(col_a)  
+                                var col_img = document.createElement("img");
+                                col_img.className = "img-fluid img-thumbnail";
+                                col_img.src= single_data.image
 
-                            document.getElementById('logo-row').appendChild(col_div)        
+                                col_a.appendChild(col_img)   
+                                col_div.appendChild(col_a)  
+
+                                document.getElementById('logo-row').appendChild(col_div)     
+
+                            } 
+
+                        }
+                        
+                        else{
+                            alert("data not available")
+                            $(".load-more-btn").css('display','none')
 
                         }
 
@@ -2655,8 +2606,16 @@
                         console.log(jqXHR,exception)
                     },
                 });
+            }
+            loadmore();
+
+            $(".load-more-btn").click(function () {
+                loadmore()
+
             });
+
         });
+
     </script>
 </body>
 
