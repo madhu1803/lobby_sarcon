@@ -135,6 +135,12 @@ $(".tab-item").click(function () {
   $(".private-booth-btn").delay(3000).fadeIn(500);
 });
 
+function VirtualBooth(){
+  alert("virtual booth")
+  // $('.tab-item #virtual_booth').click()
+
+}
+
 //chat Modal
 window.addEventListener("resize", function () {
   width = $(window).width();
