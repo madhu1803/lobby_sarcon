@@ -278,6 +278,18 @@ body {
   padding: 50px;
 }
 
+.exhibitors-container {
+  position: relative;
+}
+
+@media (min-width: 992px) {
+
+  #exhibition_hall .exhibitors-container .search-form {
+    position: absolute;
+    right: 20px;
+  }
+}
+
 
 /*------------------------------------------------  general chat tab content btns, private booth modal ------------------------------------------------ */
 
